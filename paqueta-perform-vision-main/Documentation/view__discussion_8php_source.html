@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentation-PandArtists:  Fichier source de Views/view_discussion.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentation-PandArtists<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Documentation en HTML</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e47e4de72e0320db55f81376ac4f26ec.html">Views</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">view_discussion.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="view__discussion_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php require <span class="stringliteral">&quot;view_begin.php&quot;</span>; ?&gt;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>&lt;?php require <span class="stringliteral">&quot;view_menu.php&quot;</span>; ?&gt;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>&lt;link rel=<span class="stringliteral">&quot;stylesheet&quot;</span> <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;Content/css/messages.css&quot;</span>&gt;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>&lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;chat-global&quot;</span>&gt;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;nav-top&quot;</span>&gt;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;location&quot;</span>&gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            &lt;a <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;?controller=discussion&quot;</span>&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                &lt;img src=<span class="stringliteral">&quot;Content/img/left-chevron.svg&quot;</span>&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            &lt;/a&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        &lt;/div&gt;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;utilisateur&quot;</span>&gt;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            &lt;p&gt;&lt;?= $nom_receiver ?&gt;&lt;/p&gt;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            &lt;p&gt;&lt;?= $prenom_receiver ?&gt;&lt;/p&gt;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        &lt;/div&gt;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;logos-call&quot;</span>&gt;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>           </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        &lt;/div&gt;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    &lt;/div&gt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;conversation&quot;</span>&gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        &lt;?php <span class="keywordflow">foreach</span> ($messages as <a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>): ?&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            &lt;?php</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                $isSender = (<a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>[<span class="stringliteral">&#39;id_utilisateur&#39;</span>] == $user_id);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="view__discussion_8php.html#a29f93f106554d426d06fc8db9137913e">   30</a></span>                <a class="code hl_variable" href="view__discussion_8php.html#a29f93f106554d426d06fc8db9137913e">$talkClass</a> = $isSender ? <span class="stringliteral">&#39;right&#39;</span> : <span class="stringliteral">&#39;left&#39;</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="view__discussion_8php.html#ac62167326fcdc762297fe76407218b55">   31</a></span>                <a class="code hl_variable" href="view__discussion_8php.html#ac62167326fcdc762297fe76407218b55">$avatar</a> = $isSender ? $photo_de_profil : $photo_receiver;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="comment">// Vérifie si le message nécessite une validation et si l&#39;utilisateur est l&#39;expéditeur</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="view__discussion_8php.html#a600a9a9ffd23e2b6d548036911b3e1d8">   34</a></span>                <a class="code hl_variable" href="view__discussion_8php.html#a600a9a9ffd23e2b6d548036911b3e1d8">$requiresValidation</a> = (!<a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>[<span class="stringliteral">&#39;validation_moderation&#39;</span>] &amp;&amp; $isSender);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="comment">// Détermine la couleur du texte en fonction de la validation et de l&#39;expéditeur</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="view__discussion_8php.html#ab99343d4912650d1363355564aa6c179">   37</a></span>                <a class="code hl_variable" href="view__discussion_8php.html#ab99343d4912650d1363355564aa6c179">$textColor</a> = (<a class="code hl_variable" href="view__discussion_8php.html#a600a9a9ffd23e2b6d548036911b3e1d8">$requiresValidation</a>) ? <span class="stringliteral">&#39;yellow&#39;</span> : ($isSender ? <span class="stringliteral">&#39;white&#39;</span> : <span class="stringliteral">&#39;black&#39;</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="comment">// Si l&#39;utilisateur est modérateur, ignore la vérification</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <span class="keywordflow">if</span> ($isModo) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    <a class="code hl_variable" href="view__discussion_8php.html#a600a9a9ffd23e2b6d548036911b3e1d8">$requiresValidation</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keywordflow">if</span> (!$isModo &amp;&amp; (!<a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>[<span class="stringliteral">&#39;validation_moderation&#39;</span>] &amp;&amp; !$isSender)) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            ?&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;talk &lt;?= $talkClass ?&gt;&quot;</span>&gt;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="view__discussion_8php.html#ad3cbc25733e58f9cfae1731b47c28ded">   49</a></span>                &lt;?php <span class="keywordflow">if</span> (<a class="code hl_variable" href="view__discussion_8php.html#a29f93f106554d426d06fc8db9137913e">$talkClass</a> === <span class="stringliteral">&#39;left&#39;</span>): ?&gt;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    &lt;img src=<span class="stringliteral">&quot;Content/img/&lt;?= $avatar ?&gt;&quot;</span> alt=<span class="stringliteral">&quot;User Photo&quot;</span>&gt;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                &lt;?php <a class="code hl_variable" href="view__formateurs_8php.html#a3d05b980a4716049c52fef666f7d43d3">endif</a>; ?&gt;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                &lt;p style=<span class="stringliteral">&quot;color: &lt;?= $textColor; ?&gt;;&quot;</span>&gt;&lt;?= <a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>[<span class="stringliteral">&#39;texte&#39;</span>] ?&gt;&lt;/p&gt;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                &lt;?php <span class="keywordflow">if</span> ($isModo &amp;&amp; !<a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>[<span class="stringliteral">&#39;validation_moderation&#39;</span>]): ?&gt;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    &lt;a <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;?controller=discussion&amp;action=validate_message&amp;id_message=&lt;?= $message[&#39;id_message&#39;] ?&gt;&quot;</span>&gt;Valider&lt;/a&gt;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                &lt;?php <a class="code hl_variable" href="view__formateurs_8php.html#a3d05b980a4716049c52fef666f7d43d3">endif</a>; ?&gt;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                &lt;?php <span class="keywordflow">if</span> (<a class="code hl_variable" href="view__discussion_8php.html#a29f93f106554d426d06fc8db9137913e">$talkClass</a> === <span class="stringliteral">&#39;right&#39;</span>): ?&gt;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                    &lt;img src=<span class="stringliteral">&quot;Content/img/&lt;?= $avatar ?&gt;&quot;</span> alt=<span class="stringliteral">&quot;User Photo&quot;</span>&gt;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                &lt;?php <a class="code hl_variable" href="view__formateurs_8php.html#a3d05b980a4716049c52fef666f7d43d3">endif</a>; ?&gt;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="view__discussion_8php.html#abfce4ba1c7a91e60965fa33210b76f43">   60</a></span>        &lt;?php <a class="code hl_variable" href="view__discussion_8php.html#abfce4ba1c7a91e60965fa33210b76f43">endforeach</a>; ?&gt;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    &lt;/div&gt;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    &lt;form <span class="keyword">class</span>=<span class="stringliteral">&quot;chat-form&quot;</span> method=<span class="stringliteral">&quot;post&quot;</span> action=<span class="stringliteral">&quot;?controller=discussion&amp;action=envoi_message&quot;</span>&gt;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;container-inputs-stuffs&quot;</span>&gt;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>           &lt;input type=<span class="stringliteral">&quot;hidden&quot;</span> name=<span class="stringliteral">&quot;discussionId&quot;</span> value=<span class="stringliteral">&quot;&lt;?= $_GET[&#39;id&#39;] ?&gt;&quot;</span>&gt;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;files-logo-cont&quot;</span>&gt;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;group-inp&quot;</span>&gt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                &lt;textarea name=<span class="stringliteral">&quot;texte_message&quot;</span> placeholder=<span class="stringliteral">&quot;Enter your message here&quot;</span> minlength=<span class="stringliteral">&quot;1&quot;</span> maxlength=<span class="stringliteral">&quot;1500&quot;</span>&gt;&lt;/textarea&gt;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            &lt;button <span class="keyword">class</span>=<span class="stringliteral">&quot;submit-msg-btn&quot;</span>&gt;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                &lt;img src=<span class="stringliteral">&quot;Content/img/send.svg&quot;</span>&gt;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            &lt;/button&gt;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        &lt;/div&gt;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    &lt;/form&gt;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>&lt;/div&gt;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>&lt;?php require <span class="stringliteral">&quot;view_end.php&quot;</span>; ?&gt;</div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_abf17cb2dba2ed17cb28aa5f37deb5293"><div class="ttname"><a href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a></div><div class="ttdeci">$message</div><div class="ttdef"><b>Definition</b> <a href="_r_s_a__claire_8php_source.html#l00112">RSA_claire.php:112</a></div></div>
+<div class="ttc" id="aview__discussion_8php_html_a29f93f106554d426d06fc8db9137913e"><div class="ttname"><a href="view__discussion_8php.html#a29f93f106554d426d06fc8db9137913e">$talkClass</a></div><div class="ttdeci">$talkClass</div><div class="ttdef"><b>Definition</b> <a href="#l00030">view_discussion.php:30</a></div></div>
+<div class="ttc" id="aview__discussion_8php_html_a600a9a9ffd23e2b6d548036911b3e1d8"><div class="ttname"><a href="view__discussion_8php.html#a600a9a9ffd23e2b6d548036911b3e1d8">$requiresValidation</a></div><div class="ttdeci">$requiresValidation</div><div class="ttdef"><b>Definition</b> <a href="#l00034">view_discussion.php:34</a></div></div>
+<div class="ttc" id="aview__discussion_8php_html_ab99343d4912650d1363355564aa6c179"><div class="ttname"><a href="view__discussion_8php.html#ab99343d4912650d1363355564aa6c179">$textColor</a></div><div class="ttdeci">$textColor</div><div class="ttdef"><b>Definition</b> <a href="#l00037">view_discussion.php:37</a></div></div>
+<div class="ttc" id="aview__discussion_8php_html_abfce4ba1c7a91e60965fa33210b76f43"><div class="ttname"><a href="view__discussion_8php.html#abfce4ba1c7a91e60965fa33210b76f43">endforeach</a></div><div class="ttdeci">if( $isModo &amp;&amp;! $message endforeach[ 'validation_moderation']) if($talkClass==='right')</div><div class="ttdef"><b>Definition</b> <a href="#l00060">view_discussion.php:56</a></div></div>
+<div class="ttc" id="aview__discussion_8php_html_ac62167326fcdc762297fe76407218b55"><div class="ttname"><a href="view__discussion_8php.html#ac62167326fcdc762297fe76407218b55">$avatar</a></div><div class="ttdeci">$avatar</div><div class="ttdef"><b>Definition</b> <a href="#l00031">view_discussion.php:31</a></div></div>
+<div class="ttc" id="aview__formateurs_8php_html_a3d05b980a4716049c52fef666f7d43d3"><div class="ttname"><a href="view__formateurs_8php.html#a3d05b980a4716049c52fef666f7d43d3">endif</a></div><div class="ttdeci">foreach($categories as $category) if( $themes !==null) if($formateurs !==null)($formateurs as $formateur) endif</div><div class="ttdef"><b>Definition</b> <a href="view__formateurs_8php_source.html#l00109">view_formateurs.php:73</a></div></div>
+<div class="ttc" id="aview__menu_8php_html_a64e24b8a39a2f9e88811e46d4acf77db"><div class="ttname"><a href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a></div><div class="ttdeci">&lt; link rel=&quot;stylesheet&quot; href=&quot;https: &lt;!-- STYLESHEET --&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;Content/css/menu.css&quot; /&gt;&lt;!-- Sidebar --&gt;&lt;div class=&quot;sidebar&quot;&gt;&lt;div class=&quot;logo-details&quot;&gt;&lt;div class=&quot;logo_name&quot;&gt;&lt;nobr&gt; Perform Vision&lt;/nobr&gt;&lt;/div&gt;&lt;i class='bx bx-menu' id=&quot;btn&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;ul class=&quot;nav-list&quot;&gt;&lt;!-- Dashboard --&gt;&lt;li&gt;&lt;a &lt;?php echo ($_GET['controller'] == 'dashboard') ? 'class=&quot;actu&quot;' : ''; ?&gt; href</div><div class="ttdef"><b>Definition</b> <a href="view__menu_8php_source.html#l00017">view_menu.php:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

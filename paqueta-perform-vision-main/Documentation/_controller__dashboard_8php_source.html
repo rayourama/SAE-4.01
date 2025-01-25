@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentation-PandArtists:  Fichier source de Controllers/Controller_dashboard.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentation-PandArtists<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Documentation en HTML</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f1e231c396d6a78f925b250f39acb3ba.html">Controllers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Controller_dashboard.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_controller__dashboard_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_controller__dashboard.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="class_controller__dashboard.html">Controller_dashboard</a> <span class="keyword">extends</span> <a class="code hl_class" href="class_controller.html">Controller</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_controller__dashboard.html#a01b60145383403c94d0a923048b29c7a">   22</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_controller__dashboard.html#a01b60145383403c94d0a923048b29c7a">action_default</a>()</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        $this-&gt;<a class="code hl_function" href="class_controller__dashboard.html#a35c5f18a9c00f4d18109a940e40d25e5">action_dashboard</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_controller__dashboard.html#a35c5f18a9c00f4d18109a940e40d25e5">   32</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_controller__dashboard.html#a35c5f18a9c00f4d18109a940e40d25e5">action_dashboard</a>()</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        $user = <a class="code hl_function" href="functions_8php.html#a825b98d484b61fd5974011c03c3184d0">checkUserAccess</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="comment">// Si accès refusé, affiche un message et rend la vue d&#39;authentification</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span> (!$user) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            echo <span class="stringliteral">&quot;Accès non autorisé.&quot;</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            $this-&gt;<a class="code hl_function" href="class_controller.html#a1c1e472a07816694bf30219d61981c31">render</a>(<span class="stringliteral">&#39;auth&#39;</span>, []);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">return</span>;  <span class="comment">// Empêche l&#39;exécution du reste du code</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="comment">// Récupère le rôle de l&#39;utilisateur</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        $role = <a class="code hl_function" href="functions_8php.html#a68cc6f5eb78b574e5ad8b673e3b370ee">getUserRole</a>($user);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="comment">// Récupère le modèle</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        $model = <a class="code hl_function" href="class_model.html#aabe69344490065ea05784e9f71512bc1">Model::getModel</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="comment">// Récupère les discussions de l&#39;utilisateur</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        $discussions = $model-&gt;recupererDiscussion($user[<span class="stringliteral">&#39;id_utilisateur&#39;</span>]);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        $discussionList = [];</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="comment">// Parcourt les discussions pour obtenir les détails nécessaires</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">foreach</span> ($discussions as $discussion) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            $interlocuteurId = ($role === <span class="stringliteral">&#39;Client&#39;</span>) ? $discussion[<span class="stringliteral">&#39;id_utilisateur_1&#39;</span>] : $discussion[<span class="stringliteral">&#39;id_utilisateur&#39;</span>];</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            $interlocuteur = $model-&gt;getUserById($interlocuteurId);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">if</span> (!$interlocuteur) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            $lastMessage = $model-&gt;getLastMessageInfo($interlocuteurId, $discussion[<span class="stringliteral">&#39;id_discussion&#39;</span>]);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            $discussionList[] = [</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="stringliteral">&#39;discussion_id&#39;</span> =&gt; $discussion[<span class="stringliteral">&#39;id_discussion&#39;</span>],</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="stringliteral">&#39;nom_interlocuteur&#39;</span> =&gt; $interlocuteur[<span class="stringliteral">&#39;nom&#39;</span>],</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="stringliteral">&#39;prenom_interlocuteur&#39;</span> =&gt; $interlocuteur[<span class="stringliteral">&#39;prenom&#39;</span>],</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="stringliteral">&#39;photo_interlocuteur&#39;</span> =&gt; $interlocuteur[<span class="stringliteral">&#39;photo_de_profil&#39;</span>],</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <span class="stringliteral">&#39;lastMessage&#39;</span> =&gt; $lastMessage,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            ];</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="comment">// Rend la vue &quot;dashboard&quot; avec les données utilisateur et les discussions</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $this-&gt;<a class="code hl_function" href="class_controller.html#a1c1e472a07816694bf30219d61981c31">render</a>(<span class="stringliteral">&#39;dashboard&#39;</span>, [</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="stringliteral">&#39;nom&#39;</span> =&gt; $user[<span class="stringliteral">&#39;nom&#39;</span>],</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="stringliteral">&#39;prenom&#39;</span> =&gt; $user[<span class="stringliteral">&#39;prenom&#39;</span>],</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="stringliteral">&#39;photo_de_profil&#39;</span> =&gt; $user[<span class="stringliteral">&#39;photo_de_profil&#39;</span>],</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="stringliteral">&#39;role&#39;</span> =&gt; $role,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="stringliteral">&#39;discussions&#39;</span> =&gt; $discussionList</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        ]);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>?&gt;</div>
+<div class="ttc" id="aclass_controller__dashboard_html"><div class="ttname"><a href="class_controller__dashboard.html">Controller_dashboard</a></div><div class="ttdef"><b>Definition</b> <a href="#l00020">Controller_dashboard.php:21</a></div></div>
+<div class="ttc" id="aclass_controller__dashboard_html_a01b60145383403c94d0a923048b29c7a"><div class="ttname"><a href="class_controller__dashboard.html#a01b60145383403c94d0a923048b29c7a">Controller_dashboard\action_default</a></div><div class="ttdeci">action_default()</div><div class="ttdef"><b>Definition</b> <a href="#l00022">Controller_dashboard.php:22</a></div></div>
+<div class="ttc" id="aclass_controller__dashboard_html_a35c5f18a9c00f4d18109a940e40d25e5"><div class="ttname"><a href="class_controller__dashboard.html#a35c5f18a9c00f4d18109a940e40d25e5">Controller_dashboard\action_dashboard</a></div><div class="ttdeci">action_dashboard()</div><div class="ttdef"><b>Definition</b> <a href="#l00032">Controller_dashboard.php:32</a></div></div>
+<div class="ttc" id="aclass_controller_html"><div class="ttname"><a href="class_controller.html">Controller</a></div><div class="ttdef"><b>Definition</b> <a href="_controller_8php_source.html#l00004">Controller.php:5</a></div></div>
+<div class="ttc" id="aclass_controller_html_a1c1e472a07816694bf30219d61981c31"><div class="ttname"><a href="class_controller.html#a1c1e472a07816694bf30219d61981c31">Controller\render</a></div><div class="ttdeci">render($vue, $data=[])</div><div class="ttdef"><b>Definition</b> <a href="_controller_8php_source.html#l00034">Controller.php:34</a></div></div>
+<div class="ttc" id="aclass_model_html_aabe69344490065ea05784e9f71512bc1"><div class="ttname"><a href="class_model.html#aabe69344490065ea05784e9f71512bc1">Model\getModel</a></div><div class="ttdeci">static getModel()</div><div class="ttdef"><b>Definition</b> <a href="_model_8php_source.html#l00029">Model.php:29</a></div></div>
+<div class="ttc" id="afunctions_8php_html_a68cc6f5eb78b574e5ad8b673e3b370ee"><div class="ttname"><a href="functions_8php.html#a68cc6f5eb78b574e5ad8b673e3b370ee">getUserRole</a></div><div class="ttdeci">getUserRole($user)</div><div class="ttdef"><b>Definition</b> <a href="functions_8php_source.html#l00046">functions.php:46</a></div></div>
+<div class="ttc" id="afunctions_8php_html_a825b98d484b61fd5974011c03c3184d0"><div class="ttname"><a href="functions_8php.html#a825b98d484b61fd5974011c03c3184d0">checkUserAccess</a></div><div class="ttdeci">checkUserAccess()</div><div class="ttdef"><b>Definition</b> <a href="functions_8php_source.html#l00022">functions.php:22</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

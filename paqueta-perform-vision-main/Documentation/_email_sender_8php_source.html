@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentation-PandArtists:  Fichier source de Utils/EmailSender.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentation-PandArtists<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Documentation en HTML</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0a824aa1f70ce3b829ef378253b085da.html">Utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">EmailSender.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_email_sender_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>use <a class="code hl_class" href="class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html">PHPMailer\PHPMailer\PHPMailer</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>use <a class="code hl_class" href="class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p.html">PHPMailer\PHPMailer\SMTP</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>use <a class="code hl_class" href="class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception.html">PHPMailer\PHPMailer\Exception</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_email_sender.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_email_sender.html">EmailSender</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_email_sender.html#aae43af21a113e7d13442010b9447e8de">   23</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="class_email_sender.html#aae43af21a113e7d13442010b9447e8de">sendVerificationEmail</a>($email, $subject, <a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        require <span class="stringliteral">&#39;PHPMailer/src/PHPMailer.php&#39;</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        require <span class="stringliteral">&#39;PHPMailer/src/SMTP.php&#39;</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        require <span class="stringliteral">&#39;PHPMailer/src/Exception.php&#39;</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        $mail = <span class="keyword">new</span> <a class="code hl_namespace" href="namespace_p_h_p_mailer.html">PHPMailer</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="comment">// Paramètres du serveur SMTP</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            $mail-&gt;isSMTP();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            $mail-&gt;Host = <span class="stringliteral">&#39;smtp.gmail.com&#39;</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            $mail-&gt;SMTPAuth = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            $mail-&gt;Username = <span class="stringliteral">&#39;no.reply.perform.vision@gmail.com&#39;</span>; </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            $mail-&gt;Password = <span class="stringliteral">&#39;votre_mdp&#39;</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            $mail-&gt;SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            $mail-&gt;Port = 587;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="comment">// Expéditeur et destinataire</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            $mail-&gt;setFrom(<span class="stringliteral">&#39;noreply.perform.vision@gmail.com&#39;</span>, <span class="stringliteral">&#39;perform vision&#39;</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            $mail-&gt;addAddress($email);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="comment">// Contenu de l&#39;e-mail</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            $mail-&gt;isHTML(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            $mail-&gt;Subject = $subject;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            $mail-&gt;Body = <a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="comment">// Envoyer l&#39;e-mail</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            $mail-&gt;send();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        } <span class="keywordflow">catch</span> (<a class="code hl_class" href="class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception.html">Exception</a> $e) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="comment">// Gérer les erreurs d&#39;envoi d&#39;e-mail</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            echo <span class="stringliteral">&#39;\n EmailSender: Erreur lors de l\&#39;envoi de l\&#39;e-mail : &#39;</span>, $mail-&gt;ErrorInfo ,<span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+</div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_abf17cb2dba2ed17cb28aa5f37deb5293"><div class="ttname"><a href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a></div><div class="ttdeci">$message</div><div class="ttdef"><b>Definition</b> <a href="_r_s_a__claire_8php_source.html#l00112">RSA_claire.php:112</a></div></div>
+<div class="ttc" id="aclass_email_sender_html"><div class="ttname"><a href="class_email_sender.html">EmailSender</a></div><div class="ttdef"><b>Definition</b> <a href="#l00011">EmailSender.php:11</a></div></div>
+<div class="ttc" id="aclass_email_sender_html_aae43af21a113e7d13442010b9447e8de"><div class="ttname"><a href="class_email_sender.html#aae43af21a113e7d13442010b9447e8de">EmailSender\sendVerificationEmail</a></div><div class="ttdeci">static sendVerificationEmail($email, $subject, $message)</div><div class="ttdef"><b>Definition</b> <a href="#l00023">EmailSender.php:23</a></div></div>
+<div class="ttc" id="aclass_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception_html"><div class="ttname"><a href="class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception.html">PHPMailer\PHPMailer\Exception</a></div><div class="ttdef"><b>Definition</b> <a href="_exception_8php_source.html#l00029">Exception.php:30</a></div></div>
+<div class="ttc" id="aclass_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer_html"><div class="ttname"><a href="class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html">PHPMailer\PHPMailer\PHPMailer</a></div><div class="ttdef"><b>Definition</b> <a href="_p_h_p_mailer_8php_source.html#l00032">PHPMailer.php:33</a></div></div>
+<div class="ttc" id="aclass_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_html"><div class="ttname"><a href="class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p.html">PHPMailer\PHPMailer\SMTP</a></div><div class="ttdef"><b>Definition</b> <a href="_s_m_t_p_8php_source.html#l00031">SMTP.php:32</a></div></div>
+<div class="ttc" id="anamespace_p_h_p_mailer_html"><div class="ttname"><a href="namespace_p_h_p_mailer.html">PHPMailer</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentation-PandArtists:  Fichier source de Views/view_panel_administrateur.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentation-PandArtists<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Documentation en HTML</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e47e4de72e0320db55f81376ac4f26ec.html">Views</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">view_panel_administrateur.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="view__panel__administrateur_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php require <span class="stringliteral">&quot;view_begin.php&quot;</span>; ?&gt;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>&lt;?php require <span class="stringliteral">&quot;view_menu.php&quot;</span>; ?&gt;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>&lt;link rel=<span class="stringliteral">&quot;preconnect&quot;</span> <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;https://fonts.googleapis.com&quot;</span>&gt;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>        &lt;link rel=<span class="stringliteral">&quot;preconnect&quot;</span> <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;https://fonts.gstatic.com&quot;</span> crossorigin&gt;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        &lt;link</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>            <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;https://fonts.googleapis.com/css2?family=Red+Hat+Display&amp;display=swap&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            rel=<span class="stringliteral">&quot;stylesheet&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            type=<span class="stringliteral">&#39;text/css&#39;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        &gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        &lt;link rel=<span class="stringliteral">&quot;stylesheet&quot;</span> <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&quot;</span> /&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>&lt;link rel=<span class="stringliteral">&quot;stylesheet&quot;</span> type=<span class="stringliteral">&quot;text/css&quot;</span> <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;Content/css/admin.css&quot;</span>&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>&lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;container&quot;</span>&gt;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;container-trending&quot;</span>&gt;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;container-headline&quot;</span>&gt;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                    &lt;span <span class="keyword">class</span>=<span class="stringliteral">&quot;material-symbols-outlined&quot;</span>&gt;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                        add_moderator</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                        &lt;/span&gt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                    Administrateur</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                &lt;/div&gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;container-description&quot;</span>&gt;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                  À modérer avec modération</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                &lt;/div&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            &lt;header&gt;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;tabs&quot;</span>&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    &lt;a <span class="keywordtype">id</span>=<span class="stringliteral">&quot;tab1&quot;</span> name=<span class="stringliteral">&quot;all&quot;</span> <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;#tab1&quot;</span>&gt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                       &lt;button <span class="keyword">class</span>=<span class="stringliteral">&quot;tablinks&quot;</span> onclick=<span class="stringliteral">&quot;openCity(event, &#39;Formateurs&#39;)&quot;</span>&gt;Formateurs&lt;/button&gt;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    &lt;/a&gt;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    &lt;a <span class="keywordtype">id</span>=<span class="stringliteral">&quot;tab2&quot;</span> name=<span class="stringliteral">&quot;developer&quot;</span> <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;#tab2&quot;</span>&gt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                        &lt;button <span class="keyword">class</span>=<span class="stringliteral">&quot;tablinks&quot;</span> onclick=<span class="stringliteral">&quot;openCity(event, &#39;Activités&#39;)&quot;</span>&gt;Activités&lt;/button&gt;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    &lt;/a&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                &lt;/div&gt;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            &lt;/header&gt;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;tab-content-wrapper&quot;</span>&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">&quot;Formateurs&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;tabcontent&quot;</span>&gt;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;recent-orders&quot;</span>&gt;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        &lt;table&gt;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            &lt;thead&gt;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                &lt;tr&gt;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                    &lt;th&gt;Nom&lt;/th&gt;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                    &lt;th&gt;Prenom&lt;/th&gt;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    &lt;th&gt;Formations&lt;/th&gt;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    &lt;th&gt;&lt;/th&gt;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                &lt;/tr&gt;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            &lt;/thead&gt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            &lt;tbody&gt;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="view__panel__administrateur_8php.html#a846e201a480047c5cf5a1c05707f273f">   65</a></span>                &lt;?php <span class="keywordflow">foreach</span> ($formateurs as $formateur) { ?&gt;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    &lt;tr&gt;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                        &lt;td&gt;&lt;?php echo $formateur[<span class="stringliteral">&#39;nom&#39;</span>]; ?&gt;&lt;/td&gt;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        &lt;td&gt;&lt;?php echo $formateur[<span class="stringliteral">&#39;prenom&#39;</span>]; ?&gt;&lt;/td&gt;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                        &lt;td&gt;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                            &lt;?php <span class="keywordflow">if</span> ($formateur[<span class="stringliteral">&#39;est_moderateur&#39;</span>]) { ?&gt;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                                &lt;a <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;?controller=panel&amp;action=manage_moderator&amp;id=&lt;?php echo $formateur[&#39;id_utilisateur&#39;]; ?&gt;&amp;manage=demote&quot;</span>&gt;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                                    &lt;button <span class="keyword">class</span>=<span class="stringliteral">&quot;butto&quot;</span>&gt;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                        &lt;span&gt;Rétrograder&lt;/span&gt;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                                    &lt;/button&gt;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                                &lt;/a&gt;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                            &lt;?php } <span class="keywordflow">else</span> { ?&gt;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                &lt;a <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;?controller=panel&amp;action=manage_moderator&amp;id=&lt;?php echo $formateur[&#39;id_utilisateur&#39;]; ?&gt;&amp;manage=promote&quot;</span>&gt;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                                    &lt;button <span class="keyword">class</span>=<span class="stringliteral">&quot;butto&quot;</span>&gt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                                        &lt;span&gt;Promouvoir&lt;/span&gt;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                                    &lt;/button&gt;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                                &lt;/a&gt;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                            &lt;?php } ?&gt;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        &lt;/td&gt;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    &lt;/tr&gt;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                &lt;?php } ?&gt;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            &lt;/tbody&gt;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        &lt;/table&gt;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        &lt;a <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;#&quot;</span>&gt;Show All&lt;/a&gt;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    &lt;/div&gt;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>&lt;/div&gt;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>              </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>              &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">&quot;Activités&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;tabcontent no&quot;</span>&gt;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;recent-orders&quot;</span>&gt;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                 </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                 &lt;center&gt;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    &lt;form action=<span class="stringliteral">&quot;?controller=panel&amp;action=add_activity&quot;</span> method=<span class="stringliteral">&quot;post&quot;</span> enctype=<span class="stringliteral">&quot;multipart/form-data&quot;</span>&gt;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                        &lt;label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;name&quot;</span>&gt;Nom:&lt;/label&gt;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                        &lt;input type=<span class="stringliteral">&quot;text&quot;</span> <span class="keywordtype">id</span>=<span class="stringliteral">&quot;name&quot;</span> name=<span class="stringliteral">&quot;name&quot;</span> required&gt;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                        &lt;label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;description&quot;</span>&gt;Description:&lt;/label&gt;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                        &lt;textarea <span class="keywordtype">id</span>=<span class="stringliteral">&quot;description&quot;</span> name=<span class="stringliteral">&quot;description&quot;</span> rows=<span class="stringliteral">&quot;4&quot;</span> required&gt;&lt;/textarea&gt;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                        &lt;label <span class="keywordflow">for</span>=<span class="stringliteral">&quot;photo&quot;</span>&gt;Photo:&lt;/label&gt;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                        &lt;input type=<span class="stringliteral">&quot;file&quot;</span> <span class="keywordtype">id</span>=<span class="stringliteral">&quot;photo&quot;</span> name=<span class="stringliteral">&quot;photo&quot;</span> accept=<span class="stringliteral">&quot;image/*&quot;</span> required&gt;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                        &lt;button <span class="keyword">class</span>=<span class="stringliteral">&quot;button1&quot;</span> type=<span class="stringliteral">&quot;submit&quot;</span>&gt;Soumettre&lt;/button&gt;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    &lt;/form&gt;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                &lt;/center&gt;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                  &lt;/div&gt;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                          &lt;/div&gt;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>              </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>              </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                          </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                      </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>              </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        &lt;/div&gt;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        &lt;script src=<span class="stringliteral">&quot;Content/script/admin.js&quot;</span>&gt;&lt;/script&gt;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>&lt;?php require <span class="stringliteral">&quot;view_end.php&quot;</span>; ?&gt;</div>
+<div class="ttc" id="aview__menu_8php_html_a64e24b8a39a2f9e88811e46d4acf77db"><div class="ttname"><a href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a></div><div class="ttdeci">&lt; link rel=&quot;stylesheet&quot; href=&quot;https: &lt;!-- STYLESHEET --&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;Content/css/menu.css&quot; /&gt;&lt;!-- Sidebar --&gt;&lt;div class=&quot;sidebar&quot;&gt;&lt;div class=&quot;logo-details&quot;&gt;&lt;div class=&quot;logo_name&quot;&gt;&lt;nobr&gt; Perform Vision&lt;/nobr&gt;&lt;/div&gt;&lt;i class='bx bx-menu' id=&quot;btn&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;ul class=&quot;nav-list&quot;&gt;&lt;!-- Dashboard --&gt;&lt;li&gt;&lt;a &lt;?php echo ($_GET['controller'] == 'dashboard') ? 'class=&quot;actu&quot;' : ''; ?&gt; href</div><div class="ttdef"><b>Definition</b> <a href="view__menu_8php_source.html#l00017">view_menu.php:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

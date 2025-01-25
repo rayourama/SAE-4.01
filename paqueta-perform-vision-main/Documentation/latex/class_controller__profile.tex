@@ -1,0 +1,87 @@
+\doxysection{Controller\+\_\+profile Class Reference}
+\hypertarget{class_controller__profile}{}\label{class_controller__profile}\index{Controller\_profile@{Controller\_profile}}
+Inheritance diagram for Controller\+\_\+profile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controller__profile}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller__profile_a01b60145383403c94d0a923048b29c7a}{action\+\_\+default}} ()
+\item 
+\mbox{\hyperlink{class_controller__profile_ae69e9134efa5134b40d4e85a33d73413}{action\+\_\+profile}} ()
+\item 
+\mbox{\hyperlink{class_controller__profile_afd638ceda05012d954d445e99a777627}{action\+\_\+modifier}} ()
+\item 
+\mbox{\hyperlink{class_controller__profile_a152b9e276280ba9fc7ed891518b20834}{action\+\_\+modifier\+\_\+info}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_controller}{Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_controller}{Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_a1c1e472a07816694bf30219d61981c31}{render}} (\$vue, \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_controller_a53461cb8504ac326c766aa31f4fe0a5c}{action\+\_\+error}} (\$message=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller__profile_a01b60145383403c94d0a923048b29c7a}\index{Controller\_profile@{Controller\_profile}!action\_default@{action\_default}}
+\index{action\_default@{action\_default}!Controller\_profile@{Controller\_profile}}
+\doxysubsubsection{\texorpdfstring{action\_default()}{action\_default()}}
+{\footnotesize\ttfamily \label{class_controller__profile_a01b60145383403c94d0a923048b29c7a} 
+action\+\_\+default (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Action par défaut du contrôleur (à définir dans les classes filles) 
+
+Reimplemented from \mbox{\hyperlink{class_controller_a01b60145383403c94d0a923048b29c7a}{Controller}}.
+
+\Hypertarget{class_controller__profile_afd638ceda05012d954d445e99a777627}\index{Controller\_profile@{Controller\_profile}!action\_modifier@{action\_modifier}}
+\index{action\_modifier@{action\_modifier}!Controller\_profile@{Controller\_profile}}
+\doxysubsubsection{\texorpdfstring{action\_modifier()}{action\_modifier()}}
+{\footnotesize\ttfamily \label{class_controller__profile_afd638ceda05012d954d445e99a777627} 
+action\+\_\+modifier (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Action pour afficher la page de modification du profil.
+
+Vérifie si l\textquotesingle{}utilisateur est connecté Prépare les données de base pour la vue en fonction du rôle de l\textquotesingle{}utilisateur (Client ou Formateur). Récupère les données spécifiques en fonction du rôle et affiche la vue correspondante.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_controller__profile_a152b9e276280ba9fc7ed891518b20834}\index{Controller\_profile@{Controller\_profile}!action\_modifier\_info@{action\_modifier\_info}}
+\index{action\_modifier\_info@{action\_modifier\_info}!Controller\_profile@{Controller\_profile}}
+\doxysubsubsection{\texorpdfstring{action\_modifier\_info()}{action\_modifier\_info()}}
+{\footnotesize\ttfamily \label{class_controller__profile_a152b9e276280ba9fc7ed891518b20834} 
+action\+\_\+modifier\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Action pour modifier les informations du profil.
+
+Vérifie si la requête est de type POST, sinon redirige vers le profil Vérifie si l\textquotesingle{}utilisateur est connecté Met à jour les informations du profil utilisateur Redirige vers le profil après les edits.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_controller__profile_ae69e9134efa5134b40d4e85a33d73413}\index{Controller\_profile@{Controller\_profile}!action\_profile@{action\_profile}}
+\index{action\_profile@{action\_profile}!Controller\_profile@{Controller\_profile}}
+\doxysubsubsection{\texorpdfstring{action\_profile()}{action\_profile()}}
+{\footnotesize\ttfamily \label{class_controller__profile_ae69e9134efa5134b40d4e85a33d73413} 
+action\+\_\+profile (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Action pour afficher le profil de l\textquotesingle{}utilisateur connecté.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\mbox{\hyperlink{_controller__profile_8php}{Controller\+\_\+profile.\+php}}\end{DoxyCompactItemize}

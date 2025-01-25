@@ -1,0 +1,118 @@
+\doxysection{RSA\+\_\+optimisation.\+php File Reference}
+\hypertarget{_r_s_a__optimisation_8php}{}\label{_r_s_a__optimisation_8php}\index{RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_ad5bd2ffe99f08615ce5e371feff693b3}{mod\+Pow\+Original}} (\$base, \$exposant, \$modulo)
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_a4157b8386bf6e3c03d0274d034a300ea}{mod\+Pow\+Optimisee}} (\$base, \$exposant, \$modulo)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_ac78df45419614d6db964d0bd9e542c63}{\$base}} = "{}123456789"{}
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_afdef299541c7488560426ce0213e36c0}{\$exposant}} = "{}987654321"{}
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_a3d2213733425f7b16ec66b3d7730e3b4}{\$modulo}} = "{}999999999"{}
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_a7253b46755dd632e95284710eb4df45c}{\$debut\+Original}} = microtime(true)
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_a8d6a81ce8a814baeac7bc2f48a061f57}{\$resultat\+Original}} = \mbox{\hyperlink{_r_s_a__optimisation_8php_ad5bd2ffe99f08615ce5e371feff693b3}{mod\+Pow\+Original}}(\$base, \$exposant, \$modulo)
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_a2d3d2b38d4b77ae6e8e1093cb399404e}{\$fin\+Original}} = microtime(true)
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_aa6a8944825b8fd9c550e0ba07d9ecd9e}{\$temps\+Execution\+Original}} = \$fin\+Original -\/ \$debut\+Original
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_a71e7f11011d565c8d37a8fff8388973d}{\$debut\+Optimisee}} = microtime(true)
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_affb9209f24379ea52021433065488cab}{\$resultat\+Optimisee}} = \mbox{\hyperlink{_r_s_a__optimisation_8php_a4157b8386bf6e3c03d0274d034a300ea}{mod\+Pow\+Optimisee}}(\$base, \$exposant, \$modulo)
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_a5f6d27dfdee90f52496d9b46f05278f3}{\$fin\+Optimisee}} = microtime(true)
+\item 
+\mbox{\hyperlink{_r_s_a__optimisation_8php_a0be93caab7d6c9ef027d2b364389a5c0}{\$temps\+Execution\+Optimisee}} = \$fin\+Optimisee -\/ \$debut\+Optimisee
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_r_s_a__optimisation_8php_a4157b8386bf6e3c03d0274d034a300ea}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!modPowOptimisee@{modPowOptimisee}}
+\index{modPowOptimisee@{modPowOptimisee}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{modPowOptimisee()}{modPowOptimisee()}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_a4157b8386bf6e3c03d0274d034a300ea} 
+mod\+Pow\+Optimisee (\begin{DoxyParamCaption}\item[{}]{\$base}{, }\item[{}]{\$exposant}{, }\item[{}]{\$modulo}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__optimisation_8php_ad5bd2ffe99f08615ce5e371feff693b3}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!modPowOriginal@{modPowOriginal}}
+\index{modPowOriginal@{modPowOriginal}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{modPowOriginal()}{modPowOriginal()}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_ad5bd2ffe99f08615ce5e371feff693b3} 
+mod\+Pow\+Original (\begin{DoxyParamCaption}\item[{}]{\$base}{, }\item[{}]{\$exposant}{, }\item[{}]{\$modulo}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_r_s_a__optimisation_8php_ac78df45419614d6db964d0bd9e542c63}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$base@{\$base}}
+\index{\$base@{\$base}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$base}{\$base}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_ac78df45419614d6db964d0bd9e542c63} 
+\$base = "{}123456789"{}}
+
+\Hypertarget{_r_s_a__optimisation_8php_a71e7f11011d565c8d37a8fff8388973d}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$debutOptimisee@{\$debutOptimisee}}
+\index{\$debutOptimisee@{\$debutOptimisee}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$debutOptimisee}{\$debutOptimisee}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_a71e7f11011d565c8d37a8fff8388973d} 
+\$debut\+Optimisee = microtime(true)}
+
+\Hypertarget{_r_s_a__optimisation_8php_a7253b46755dd632e95284710eb4df45c}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$debutOriginal@{\$debutOriginal}}
+\index{\$debutOriginal@{\$debutOriginal}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$debutOriginal}{\$debutOriginal}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_a7253b46755dd632e95284710eb4df45c} 
+\$debut\+Original = microtime(true)}
+
+\Hypertarget{_r_s_a__optimisation_8php_afdef299541c7488560426ce0213e36c0}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$exposant@{\$exposant}}
+\index{\$exposant@{\$exposant}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$exposant}{\$exposant}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_afdef299541c7488560426ce0213e36c0} 
+\$exposant = "{}987654321"{}}
+
+\Hypertarget{_r_s_a__optimisation_8php_a5f6d27dfdee90f52496d9b46f05278f3}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$finOptimisee@{\$finOptimisee}}
+\index{\$finOptimisee@{\$finOptimisee}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$finOptimisee}{\$finOptimisee}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_a5f6d27dfdee90f52496d9b46f05278f3} 
+\$fin\+Optimisee = microtime(true)}
+
+\Hypertarget{_r_s_a__optimisation_8php_a2d3d2b38d4b77ae6e8e1093cb399404e}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$finOriginal@{\$finOriginal}}
+\index{\$finOriginal@{\$finOriginal}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$finOriginal}{\$finOriginal}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_a2d3d2b38d4b77ae6e8e1093cb399404e} 
+\$fin\+Original = microtime(true)}
+
+\Hypertarget{_r_s_a__optimisation_8php_a3d2213733425f7b16ec66b3d7730e3b4}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$modulo@{\$modulo}}
+\index{\$modulo@{\$modulo}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$modulo}{\$modulo}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_a3d2213733425f7b16ec66b3d7730e3b4} 
+\$modulo = "{}999999999"{}}
+
+\Hypertarget{_r_s_a__optimisation_8php_affb9209f24379ea52021433065488cab}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$resultatOptimisee@{\$resultatOptimisee}}
+\index{\$resultatOptimisee@{\$resultatOptimisee}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$resultatOptimisee}{\$resultatOptimisee}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_affb9209f24379ea52021433065488cab} 
+\$resultat\+Optimisee = \mbox{\hyperlink{_r_s_a__optimisation_8php_a4157b8386bf6e3c03d0274d034a300ea}{mod\+Pow\+Optimisee}}(\$base, \$exposant, \$modulo)}
+
+\Hypertarget{_r_s_a__optimisation_8php_a8d6a81ce8a814baeac7bc2f48a061f57}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$resultatOriginal@{\$resultatOriginal}}
+\index{\$resultatOriginal@{\$resultatOriginal}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$resultatOriginal}{\$resultatOriginal}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_a8d6a81ce8a814baeac7bc2f48a061f57} 
+\$resultat\+Original = \mbox{\hyperlink{_r_s_a__optimisation_8php_ad5bd2ffe99f08615ce5e371feff693b3}{mod\+Pow\+Original}}(\$base, \$exposant, \$modulo)}
+
+\Hypertarget{_r_s_a__optimisation_8php_a0be93caab7d6c9ef027d2b364389a5c0}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$tempsExecutionOptimisee@{\$tempsExecutionOptimisee}}
+\index{\$tempsExecutionOptimisee@{\$tempsExecutionOptimisee}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$tempsExecutionOptimisee}{\$tempsExecutionOptimisee}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_a0be93caab7d6c9ef027d2b364389a5c0} 
+\$temps\+Execution\+Optimisee = \$fin\+Optimisee -\/ \$debut\+Optimisee}
+
+\Hypertarget{_r_s_a__optimisation_8php_aa6a8944825b8fd9c550e0ba07d9ecd9e}\index{RSA\_optimisation.php@{RSA\_optimisation.php}!\$tempsExecutionOriginal@{\$tempsExecutionOriginal}}
+\index{\$tempsExecutionOriginal@{\$tempsExecutionOriginal}!RSA\_optimisation.php@{RSA\_optimisation.php}}
+\doxysubsubsection{\texorpdfstring{\$tempsExecutionOriginal}{\$tempsExecutionOriginal}}
+{\footnotesize\ttfamily \label{_r_s_a__optimisation_8php_aa6a8944825b8fd9c550e0ba07d9ecd9e} 
+\$temps\+Execution\+Original = \$fin\+Original -\/ \$debut\+Original}
+

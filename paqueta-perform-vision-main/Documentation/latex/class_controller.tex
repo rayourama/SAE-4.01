@@ -1,0 +1,79 @@
+\doxysection{Controller Class Reference}
+\hypertarget{class_controller}{}\label{class_controller}\index{Controller@{Controller}}
+Inheritance diagram for Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{class_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_controller_a01b60145383403c94d0a923048b29c7a}{action\+\_\+default}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_a1c1e472a07816694bf30219d61981c31}{render}} (\$vue, \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_controller_a53461cb8504ac326c766aa31f4fe0a5c}{action\+\_\+error}} (\$message=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_controller_a095c5d389db211932136b53f25f39685}\index{Controller@{Controller}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_controller_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructeur. Lance l\textquotesingle{}action correspondante 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller_a01b60145383403c94d0a923048b29c7a}\index{Controller@{Controller}!action\_default@{action\_default}}
+\index{action\_default@{action\_default}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{action\_default()}{action\_default()}}
+{\footnotesize\ttfamily \label{class_controller_a01b60145383403c94d0a923048b29c7a} 
+action\+\_\+default (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Action par défaut du contrôleur (à définir dans les classes filles) 
+
+Reimplemented in \mbox{\hyperlink{class_controller__activity_a01b60145383403c94d0a923048b29c7a}{Controller\+\_\+activity}}, \mbox{\hyperlink{class_controller__auth_a01b60145383403c94d0a923048b29c7a}{Controller\+\_\+auth}}, \mbox{\hyperlink{class_controller__dashboard_a01b60145383403c94d0a923048b29c7a}{Controller\+\_\+dashboard}}, \mbox{\hyperlink{class_controller__discussion_a01b60145383403c94d0a923048b29c7a}{Controller\+\_\+discussion}}, \mbox{\hyperlink{class_controller__formateurs_a01b60145383403c94d0a923048b29c7a}{Controller\+\_\+formateurs}}, \mbox{\hyperlink{class_controller__home_a01b60145383403c94d0a923048b29c7a}{Controller\+\_\+home}}, \mbox{\hyperlink{class_controller__information_a01b60145383403c94d0a923048b29c7a}{Controller\+\_\+information}}, \mbox{\hyperlink{class_controller__panel_a01b60145383403c94d0a923048b29c7a}{Controller\+\_\+panel}}, and \mbox{\hyperlink{class_controller__profile_a01b60145383403c94d0a923048b29c7a}{Controller\+\_\+profile}}.
+
+\Hypertarget{class_controller_a53461cb8504ac326c766aa31f4fe0a5c}\index{Controller@{Controller}!action\_error@{action\_error}}
+\index{action\_error@{action\_error}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{action\_error()}{action\_error()}}
+{\footnotesize\ttfamily \label{class_controller_a53461cb8504ac326c766aa31f4fe0a5c} 
+action\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$message}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Méthode affichant une page d\textquotesingle{}erreur 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Message d\textquotesingle{}erreur à afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+aucun 
+\end{DoxyReturn}
+\Hypertarget{class_controller_a1c1e472a07816694bf30219d61981c31}\index{Controller@{Controller}!render@{render}}
+\index{render@{render}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_controller_a1c1e472a07816694bf30219d61981c31} 
+render (\begin{DoxyParamCaption}\item[{}]{\$vue}{, }\item[{}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Affiche la vue 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$vue} & nom de la vue \\
+\hline
+array & {\em \$data} & tableau contenant les données à passer à la vue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+aucun 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\mbox{\hyperlink{_controller_8php}{Controller.\+php}}\end{DoxyCompactItemize}

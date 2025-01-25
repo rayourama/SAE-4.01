@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentation-PandArtists:  Fichier source de Views/view_formateurs_details.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentation-PandArtists<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Documentation en HTML</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e47e4de72e0320db55f81376ac4f26ec.html">Views</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">view_formateurs_details.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="view__formateurs__details_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php require <span class="stringliteral">&quot;view_begin.php&quot;</span>; ?&gt;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>&lt;?php require <span class="stringliteral">&quot;view_menu.php&quot;</span>; ?&gt;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>&lt;link rel=<span class="stringliteral">&quot;stylesheet&quot;</span> <a class="code hl_variable" href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a>=<span class="stringliteral">&quot;Content/css/profildes.css&quot;</span> /&gt;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>&lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;formateurs-container&quot;</span>&gt;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    &lt;article <span class="keyword">class</span>=<span class="stringliteral">&quot;card&quot;</span>&gt;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&#39;content&#39;</span>&gt;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;card-header&quot;</span>&gt;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;latest-article&quot;</span>&gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                    &lt;?php echo $formateur[<span class="stringliteral">&#39;prenom&#39;</span>] . <span class="charliteral">&#39; &#39;</span> . $formateur[<span class="stringliteral">&#39;nom&#39;</span>]; ?&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                &lt;/div&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;competences title&quot;</span>&gt;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                Compétences :</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;competences values&quot;</span>&gt;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                &lt;?php <span class="keywordflow">foreach</span> ($categories as $categorie) : ?&gt;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                    &lt;?php echo $categorie[<span class="stringliteral">&#39;nom_categorie&#39;</span>]; ?&gt;,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="view__formateurs__details_8php.html#a672d9707ef91db026c210f98cc601123">   21</a></span>                &lt;?php <a class="code hl_variable" href="view__formateurs__details_8php.html#a672d9707ef91db026c210f98cc601123">endforeach</a>; ?&gt;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;sous-categories title&quot;</span>&gt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                Sous catégories :</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;sous-categories values&quot;</span>&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                &lt;?php <span class="keywordflow">foreach</span> ($themes as $theme) : ?&gt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    &lt;?php echo $theme[<span class="stringliteral">&#39;nom_theme&#39;</span>]; ?&gt;,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                &lt;?php <a class="code hl_variable" href="view__formateurs__details_8php.html#a672d9707ef91db026c210f98cc601123">endforeach</a>; ?&gt;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;expertise title&quot;</span>&gt;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                Expertise professionnelle :</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            &lt;/div&gt;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;expertise values&quot;</span>&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                &lt;ul&gt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="view__formateurs__details_8php.html#a07962f4447697bc0e18c718b481b48a7">   38</a></span>                    &lt;?php <span class="keywordflow">foreach</span> ($expertises as $expertise) : ?&gt;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                        &lt;li&gt;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                            &lt;p&gt;Thème: &lt;?php echo $expertise[<span class="stringliteral">&#39;nom_theme&#39;</span>]; ?&gt;&lt;/p&gt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                            &lt;p&gt;Durée de l<span class="stringliteral">&#39;Expérience: &lt;?php echo $expertise[&#39;</span>duree_experience<span class="stringliteral">&#39;]; ?&gt; heures&lt;/p&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="stringliteral">                            &lt;?php foreach ($niveaux as $niveau) : ?&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="stringliteral">                                &lt;?php if ($niveau[&#39;</span>id_niveau<span class="stringliteral">&#39;] === $expertise[&#39;</span>id_niveau<span class="stringliteral">&#39;]) : ?&gt;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="stringliteral">                                    &lt;p&gt;Niveau: &lt;?php echo $niveau[&#39;</span>libelle_niveau<span class="stringliteral">&#39;]; ?&gt;&lt;/p&gt;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="view__formateurs__details_8php.html#a765b11a51dc9f4bb418cf71585909197">   45</a></span><span class="stringliteral">                                &lt;?php endif; ?&gt;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="stringliteral">                            &lt;?php endforeach; ?&gt;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="stringliteral">                            &lt;p&gt;Commentaire: &lt;?php echo $expertise[&#39;</span>commentaire<span class="stringliteral">&#39;]; ?&gt;&lt;/p&gt;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="stringliteral">                        &lt;/li&gt;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="stringliteral">                        &lt;br&gt;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="stringliteral">                    &lt;?php endforeach; ?&gt;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="stringliteral">                &lt;/ul&gt;</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="stringliteral">            &lt;/div&gt;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="stringliteral">            &lt;div class=&quot;experiences title&quot;&gt;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="stringliteral">                Expériences pédagogiques :</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="stringliteral">            &lt;/div&gt;</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="stringliteral">            &lt;div class=&quot;experiences values&quot;&gt;</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="stringliteral">                &lt;ul&gt;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="stringliteral">                    &lt;?php foreach ($pedagogicalExperience as $experience) : ?&gt;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="stringliteral">                        &lt;li&gt;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="stringliteral">                            &lt;p&gt;Thème: &lt;?php echo $experience[&#39;</span>nom_theme<span class="stringliteral">&#39;]; ?&gt;&lt;/p&gt;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="stringliteral">                            &lt;p&gt;Public: &lt;?php echo $experience[&#39;</span>libelle_public<span class="stringliteral">&#39;]; ?&gt;&lt;/p&gt;</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="stringliteral">                            &lt;p&gt;Volume Horaire Moyen par Session: &lt;?php echo $experience[&#39;</span>volume_h_moyen_session<span class="stringliteral">&#39;]; ?&gt; heures&lt;/p&gt;</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="stringliteral">                            &lt;p&gt;Nombre de Sessions Effectuées: &lt;?php echo $experience[&#39;</span>nb_session_effectuee<span class="stringliteral">&#39;]; ?&gt;&lt;/p&gt;</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="stringliteral">                            &lt;p&gt;Commentaire: &lt;?php echo $experience[&#39;</span>commentaire<span class="stringliteral">&#39;]; ?&gt;&lt;/p&gt;</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="stringliteral">                        &lt;/li&gt;</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="stringliteral">                        &lt;br&gt;</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="stringliteral">                    &lt;?php endforeach; ?&gt;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="stringliteral">                &lt;/ul&gt;</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="stringliteral">            &lt;/div&gt;</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="stringliteral">            &lt;form action=&quot;?controller=discussion&amp;action=start_discussion&quot; method=&quot;post&quot;&gt;</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="stringliteral">                &lt;input type=&quot;hidden&quot; name=&quot;id_formateur&quot; value=&quot;&lt;?php echo $formateur[&#39;</span>id_utilisateur<span class="stringliteral">&#39;]; ?&gt;&quot;&gt;</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="stringliteral">                &lt;button id=&quot;search-button&quot; type=&quot;submit&quot;&gt;Discuter&lt;/button&gt;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="stringliteral">            &lt;/form&gt;</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="stringliteral">        &lt;/div&gt;</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="stringliteral">    &lt;/article&gt;</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="stringliteral">&lt;?php require &quot;view_end.php&quot;; ?&gt;</span></div>
+<div class="ttc" id="aview__formateurs__details_8php_html_a672d9707ef91db026c210f98cc601123"><div class="ttname"><a href="view__formateurs__details_8php.html#a672d9707ef91db026c210f98cc601123">endforeach</a></div><div class="ttdeci">foreach($categories as $categorie) endforeach</div><div class="ttdef"><b>Definition</b> <a href="#l00021">view_formateurs_details.php:19</a></div></div>
+<div class="ttc" id="aview__menu_8php_html_a64e24b8a39a2f9e88811e46d4acf77db"><div class="ttname"><a href="view__menu_8php.html#a64e24b8a39a2f9e88811e46d4acf77db">href</a></div><div class="ttdeci">&lt; link rel=&quot;stylesheet&quot; href=&quot;https: &lt;!-- STYLESHEET --&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;Content/css/menu.css&quot; /&gt;&lt;!-- Sidebar --&gt;&lt;div class=&quot;sidebar&quot;&gt;&lt;div class=&quot;logo-details&quot;&gt;&lt;div class=&quot;logo_name&quot;&gt;&lt;nobr&gt; Perform Vision&lt;/nobr&gt;&lt;/div&gt;&lt;i class='bx bx-menu' id=&quot;btn&quot;&gt;&lt;/i&gt;&lt;/div&gt;&lt;ul class=&quot;nav-list&quot;&gt;&lt;!-- Dashboard --&gt;&lt;li&gt;&lt;a &lt;?php echo ($_GET['controller'] == 'dashboard') ? 'class=&quot;actu&quot;' : ''; ?&gt; href</div><div class="ttdef"><b>Definition</b> <a href="view__menu_8php_source.html#l00017">view_menu.php:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

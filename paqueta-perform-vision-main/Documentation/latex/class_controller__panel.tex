@@ -1,0 +1,127 @@
+\doxysection{Controller\+\_\+panel Class Reference}
+\hypertarget{class_controller__panel}{}\label{class_controller__panel}\index{Controller\_panel@{Controller\_panel}}
+Inheritance diagram for Controller\+\_\+panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controller__panel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller__panel_a01b60145383403c94d0a923048b29c7a}{action\+\_\+default}} ()
+\item 
+\mbox{\hyperlink{class_controller__panel_ae3fc5519221b1f25f364b38813988cb1}{action\+\_\+panel}} ()
+\item 
+\mbox{\hyperlink{class_controller__panel_aabe87c709e81f68c34e506f1991ebdd7}{action\+\_\+manage\+\_\+moderator}} ()
+\item 
+\mbox{\hyperlink{class_controller__panel_a2d8c83df3da8f27bfbc0c7d6e986ff0d}{action\+\_\+add\+\_\+activity}} ()
+\item 
+\mbox{\hyperlink{class_controller__panel_ac48b89f8a544b3d6f6b090cf16b11116}{action\+\_\+add\+\_\+affranchi}} ()
+\item 
+\mbox{\hyperlink{class_controller__panel_a54118cca374aa4f304f677bc21057f8b}{action\+\_\+details\+\_\+form}} ()
+\item 
+\mbox{\hyperlink{class_controller__panel_a7eb8f457dec7fe4fd5eca04acce448cc}{action\+\_\+get\+Competences}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_controller}{Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_controller}{Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_a1c1e472a07816694bf30219d61981c31}{render}} (\$vue, \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_controller_a53461cb8504ac326c766aa31f4fe0a5c}{action\+\_\+error}} (\$message=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller__panel_a2d8c83df3da8f27bfbc0c7d6e986ff0d}\index{Controller\_panel@{Controller\_panel}!action\_add\_activity@{action\_add\_activity}}
+\index{action\_add\_activity@{action\_add\_activity}!Controller\_panel@{Controller\_panel}}
+\doxysubsubsection{\texorpdfstring{action\_add\_activity()}{action\_add\_activity()}}
+{\footnotesize\ttfamily \label{class_controller__panel_a2d8c83df3da8f27bfbc0c7d6e986ff0d} 
+action\+\_\+add\+\_\+activity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Action pour ajouter une nouvelle activité.
+
+Vérifie si l\textquotesingle{}utilisateur est connecté et a le rôle d\textquotesingle{}administrateur. créer une nouvelle activité via la requête POST Gère l\textquotesingle{}upload de l\textquotesingle{}image associée à l\textquotesingle{}activité. Ajoute l\textquotesingle{}activité avec les données récupérées. Redirige vers le panneau de contrôle après l\textquotesingle{}ajout de l\textquotesingle{}activité.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_controller__panel_ac48b89f8a544b3d6f6b090cf16b11116}\index{Controller\_panel@{Controller\_panel}!action\_add\_affranchi@{action\_add\_affranchi}}
+\index{action\_add\_affranchi@{action\_add\_affranchi}!Controller\_panel@{Controller\_panel}}
+\doxysubsubsection{\texorpdfstring{action\_add\_affranchi()}{action\_add\_affranchi()}}
+{\footnotesize\ttfamily \label{class_controller__panel_ac48b89f8a544b3d6f6b090cf16b11116} 
+action\+\_\+add\+\_\+affranchi (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Action pour affranchir un utilisateur.
+
+Vérifie si l\textquotesingle{}utilisateur est connecté et a le rôle de modérateur. Récupère l\textquotesingle{}ID de l\textquotesingle{}utilisateur Affranchit l\textquotesingle{}utilisateur. Redirige vers le panneau de contrôle après l\textquotesingle{}affranchissement.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_controller__panel_a01b60145383403c94d0a923048b29c7a}\index{Controller\_panel@{Controller\_panel}!action\_default@{action\_default}}
+\index{action\_default@{action\_default}!Controller\_panel@{Controller\_panel}}
+\doxysubsubsection{\texorpdfstring{action\_default()}{action\_default()}}
+{\footnotesize\ttfamily \label{class_controller__panel_a01b60145383403c94d0a923048b29c7a} 
+action\+\_\+default (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Action par défaut du contrôleur (à définir dans les classes filles) 
+
+Reimplemented from \mbox{\hyperlink{class_controller_a01b60145383403c94d0a923048b29c7a}{Controller}}.
+
+\Hypertarget{class_controller__panel_a54118cca374aa4f304f677bc21057f8b}\index{Controller\_panel@{Controller\_panel}!action\_details\_form@{action\_details\_form}}
+\index{action\_details\_form@{action\_details\_form}!Controller\_panel@{Controller\_panel}}
+\doxysubsubsection{\texorpdfstring{action\_details\_form()}{action\_details\_form()}}
+{\footnotesize\ttfamily \label{class_controller__panel_a54118cca374aa4f304f677bc21057f8b} 
+action\+\_\+details\+\_\+form (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_controller__panel_a7eb8f457dec7fe4fd5eca04acce448cc}\index{Controller\_panel@{Controller\_panel}!action\_getCompetences@{action\_getCompetences}}
+\index{action\_getCompetences@{action\_getCompetences}!Controller\_panel@{Controller\_panel}}
+\doxysubsubsection{\texorpdfstring{action\_getCompetences()}{action\_getCompetences()}}
+{\footnotesize\ttfamily \label{class_controller__panel_a7eb8f457dec7fe4fd5eca04acce448cc} 
+action\+\_\+get\+Competences (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gère l\textquotesingle{}action de récupération des compétences,themes,expertises de chaque formateur.
+
+Si l\textquotesingle{}utilisateur n\textquotesingle{}est ni administrateur ni modérateur, elle affiche un message d\textquotesingle{}erreur et redirige vers la page d\textquotesingle{}authentification. Sinon, si l\textquotesingle{}utilisateur est modérateur, elle récupère les discussions et les utilisateurs non affranchis puis les compétences des formateurs. Sinon, si l\textquotesingle{}utilisateur est administrateur, elle récupère la liste des formateurs avec statut de modérateur.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_controller__panel_aabe87c709e81f68c34e506f1991ebdd7}\index{Controller\_panel@{Controller\_panel}!action\_manage\_moderator@{action\_manage\_moderator}}
+\index{action\_manage\_moderator@{action\_manage\_moderator}!Controller\_panel@{Controller\_panel}}
+\doxysubsubsection{\texorpdfstring{action\_manage\_moderator()}{action\_manage\_moderator()}}
+{\footnotesize\ttfamily \label{class_controller__panel_aabe87c709e81f68c34e506f1991ebdd7} 
+action\+\_\+manage\+\_\+moderator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gère l\textquotesingle{}action de gestion des modérateurs.
+
+Si la requête n\textquotesingle{}est pas une requête GET, redirige vers le panneau de contrôle. Vérifie si l\textquotesingle{}utilisateur est connecté et a le rôle d\textquotesingle{}administrateur. Récupère l\textquotesingle{}ID du formateur et l\textquotesingle{}action à effectuer (promotion ou rétrogradation). Effectue l\textquotesingle{}action correspondante sur le formateur. Redirige vers le panneau de contrôle après l\textquotesingle{}exécution de l\textquotesingle{}action.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_controller__panel_ae3fc5519221b1f25f364b38813988cb1}\index{Controller\_panel@{Controller\_panel}!action\_panel@{action\_panel}}
+\index{action\_panel@{action\_panel}!Controller\_panel@{Controller\_panel}}
+\doxysubsubsection{\texorpdfstring{action\_panel()}{action\_panel()}}
+{\footnotesize\ttfamily \label{class_controller__panel_ae3fc5519221b1f25f364b38813988cb1} 
+action\+\_\+panel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gère l\textquotesingle{}action de l\textquotesingle{}administration.
+
+Si l\textquotesingle{}utilisateur n\textquotesingle{}est ni administrateur ni modérateur, elle affiche un message d\textquotesingle{}erreur et redirige vers la page d\textquotesingle{}authentification. Sinon, si l\textquotesingle{}utilisateur est modérateur, elle récupère les discussions et les utilisateurs non affranchis. Sinon, si l\textquotesingle{}utilisateur est administrateur, elle récupère la liste des formateurs avec statut de modérateur.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\mbox{\hyperlink{_controller__panel_8php}{Controller\+\_\+panel.\+php}}\end{DoxyCompactItemize}

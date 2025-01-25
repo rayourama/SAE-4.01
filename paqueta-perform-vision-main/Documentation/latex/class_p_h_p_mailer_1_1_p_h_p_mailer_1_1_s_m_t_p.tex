@@ -1,0 +1,937 @@
+\doxysection{SMTP Class Reference}
+\hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p}{}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p}\index{SMTP@{SMTP}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a8ba3e5680f88f2675bf0fe988aecd3cd}{connect}} (\$host, \$port=null, \$timeout=30, \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a58d9443a0a1690565edae142b85e0e26}{start\+TLS}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ac0f806c79c3e07aad4210ff0e36b2453}{authenticate}} ( \$username, \$password, \$authtype=null, \$\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth}{OAuth}}=null)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a166cb1f72761ff7c95d5d24055fe03f5}{connected}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aa69c8bf1f1dcf4e72552efff1fe3e87e}{close}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a3893229db738c613fc3f0914d73e989d}{data}} (\$msg\+\_\+data)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2a59be5d33c27c52e66644a984194406}{hello}} (\$host=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_af1cd1f904bc5404a8eb7fc4cf350fd67}{mail}} (\$from)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2800929a8de0de9326f43190323d47bd}{quit}} (\$close\+\_\+on\+\_\+error=true)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ae6c02c05dcdc29ea92be073522bd3a77}{recipient}} (\$address, \$dsn=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a76a05d34c50649f4002e9e3dab737db7}{xclient}} (array \$vars)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a06bd4d1e4270cbabec07624d194bacfb}{send\+And\+Mail}} (\$from)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a658837563d19069ce530b5665a28b71b}{verify}} (\$name)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a5b0d7b9e52bc856532f248f24da5d2d7}{noop}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab10781ebc3a61aab9a66e68d9f5de6ad}{turn}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a4cd57115636899682008aff01b9b1c0f}{client\+\_\+send}} (\$\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a3893229db738c613fc3f0914d73e989d}{data}}, \$command=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a24ada5decce3d1b79cd82f5a90ccf404}{get\+Error}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2a6cd4dd343c98fc6b0288a64ba4f835}{get\+Server\+Ext\+List}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ae77c9963f74b0fa984b120846a09db7b}{get\+Server\+Ext}} (\$name)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a857f213c8353eafd4ace9b9ba634fc89}{get\+Last\+Reply}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a450b8d7a4dd1749a75f5dd0c48143f6f}{set\+Verp}} (\$enabled=false)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a0889923036c476f2d93a881ada060888}{get\+Verp}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2a086f3a7e0f0aab597c48c40371ef81}{set\+Debug\+Output}} (\$method=\textquotesingle{}echo\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a0447940c69b2fb0646a3bc2158215ab8}{get\+Debug\+Output}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aa77813947ee5266b5e31839356eed03c}{set\+Debug\+Level}} (\$level=0)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a122db96cedfc221cf187ce4328f992f7}{get\+Debug\+Level}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aa359a3fe4a000a856cc9cb7b8b92cb29}{set\+Timeout}} (\$timeout=0)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_abac5019c5daf3a27d739aa3a249fdb31}{get\+Timeout}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a604bb81facb6fb4aea9c099b5244a332}{get\+Last\+Transaction\+ID}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_af71005841ce53adac00581ab0ba24c1f}{VERSION}} = \textquotesingle{}6.\+9.\+1\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_afa2c3d8a05f37e1aac11b9789aab2d4e}{LE}} = "{}\textbackslash{}r\textbackslash{}n"{}
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_adbbe510a37f177c138ebb598c3fdb161}{DEFAULT\+\_\+\+PORT}} = 25
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ac1cf443bdb1fb9e54c9b76f7a369f8dd}{DEFAULT\+\_\+\+SECURE\+\_\+\+PORT}} = 465
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a466169b7248c947b2d0d468a955573e7}{MAX\+\_\+\+LINE\+\_\+\+LENGTH}} = 998
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a59dc88994da310e530d378c50b12870b}{MAX\+\_\+\+REPLY\+\_\+\+LENGTH}} = 512
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ad36a2f0b30093f91a7b53bd815a0a143}{DEBUG\+\_\+\+OFF}} = 0
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ae7eea3acb25b5a4367764bcd2f6da5ea}{DEBUG\+\_\+\+CLIENT}} = 1
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a72dc4712d174a8bfd77415d88a9a2fb3}{DEBUG\+\_\+\+SERVER}} = 2
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a9a8bb8dbeb4eb52455545a52bbe35fa6}{DEBUG\+\_\+\+CONNECTION}} = 3
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a9a6a605b541c69171fd68f103e947458}{DEBUG\+\_\+\+LOWLEVEL}} = 4
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a09ca59ee83fba6c8137646a13f1664d1}{\$do\+\_\+debug}} = self\+::\+DEBUG\+\_\+\+OFF
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a532f3412f3d97a106a36ff2b49409e42}{\$\+Debugoutput}} = \textquotesingle{}echo\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_abf2ec34ae2e6abd0f598ea202a8fa807}{\$do\+\_\+verp}} = false
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_acaf3ec06f89f4024c5dbeb1a9ecf321c}{\$\+Timeout}} = 300
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a06202429705cff540be47481b453fef6}{\$\+Timelimit}} = 300
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a16ef56e54ffac07cf6125369bf443b25}{\$xclient\+\_\+allowed\+\_\+attributes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a946b64f536f4f3803f70603873590e71}{edebug}} (\$str, \$level=0)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a5091679decce8bf8002f63e19d2c8fc0}{get\+SMTPConnection}} (\$host, \$port=null, \$timeout=30, \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab64534872ef0e960ac18d1a383781830}{hmac}} (\$\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a3893229db738c613fc3f0914d73e989d}{data}}, \$key)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2bbc3656b8c44e29ee5621ee7afc891f}{send\+Hello}} (\$\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2a59be5d33c27c52e66644a984194406}{hello}}, \$host)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a526777ee97d964128c3c8c235f318437}{parse\+Hello\+Fields}} (\$type)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ad277f27506e6e9cdea6073ffa5f7b476}{send\+Command}} (\$command, \$commandstring, \$expect)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a4079f7abca5539c318c911c5249b6dff}{get\+\_\+lines}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab7cbdee885b82ec97d12356f551b6d10}{set\+Error}} (\$message, \$detail=\textquotesingle{}\textquotesingle{}, \$smtp\+\_\+code=\textquotesingle{}\textquotesingle{}, \$smtp\+\_\+code\+\_\+ex=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_acb559d3cb2bc25af136569849af26196}{error\+Handler}} (\$errno, \$errmsg, \$errfile=\textquotesingle{}\textquotesingle{}, \$errline=0)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a52016c87c4e4883172bb771d7484ab19}{record\+Last\+Transaction\+ID}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a8a963ff3fd663a9a55ee15aa4386f09a}{\$smtp\+\_\+transaction\+\_\+id\+\_\+patterns}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aced5eaebf2a46f909fc56a5eb420c10a}{\$last\+\_\+smtp\+\_\+transaction\+\_\+id}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a11fc42e903bf60dedd8cd6e06e84e419}{\$smtp\+\_\+conn}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aeba2ab722cedda53dbb7ec1a59f45550}{\$error}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab3ac5873d7f4a2cb378440532aec336e}{\$helo\+\_\+rply}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ac93a6162b0ecb254be5fdcaa385b2c5c}{\$server\+\_\+caps}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a02b4360fc11497c217a66518ca6f09ff}{\$last\+\_\+reply}} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_p_h_p_mailer}{PHPMailer} RFC821 SMTP email transport class. Implements RFC 821 SMTP commands and provides some utility methods for sending mail to an SMTP server.
+
+\begin{DoxyAuthor}{Author}
+Chris Ryan 
+
+Marcus Bointon \href{mailto:phpmailer@synchromedia.co.uk}{\texttt{ phpmailer@synchromedia.\+co.\+uk}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ac0f806c79c3e07aad4210ff0e36b2453}\index{SMTP@{SMTP}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ac0f806c79c3e07aad4210ff0e36b2453} 
+authenticate (\begin{DoxyParamCaption}\item[{}]{\$username}{, }\item[{}]{\$password}{, }\item[{}]{\$authtype}{ = {\ttfamily null}, }\item[{}]{\$\+OAuth}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Perform SMTP authentication. Must be run after hello().
+
+\begin{DoxySeeAlso}{See also}
+hello()
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & The user name \\
+\hline
+string & {\em \$password} & The password \\
+\hline
+string & {\em \$authtype} & The auth type (CRAM-\/\+MD5, PLAIN, LOGIN, XOAUTH2) \\
+\hline
+OAuth\+Token\+Provider & {\em \$\+OAuth} & An optional OAuth\+Token\+Provider instance for XOAUTH2 authentication\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if successfully authenticated 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a4cd57115636899682008aff01b9b1c0f}\index{SMTP@{SMTP}!client\_send@{client\_send}}
+\index{client\_send@{client\_send}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{client\_send()}{client\_send()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a4cd57115636899682008aff01b9b1c0f} 
+client\+\_\+send (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$command}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Send raw data to the server.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & The data to send \\
+\hline
+string & {\em \$command} & Optionally, the command this is part of, used only for controlling debug output\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}bool The number of bytes sent to the server or false on error 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aa69c8bf1f1dcf4e72552efff1fe3e87e}\index{SMTP@{SMTP}!close@{close}}
+\index{close@{close}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aa69c8bf1f1dcf4e72552efff1fe3e87e} 
+close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Close the socket and clean up the state of the class. Don\textquotesingle{}t use this function without first trying to use QUIT.
+
+\begin{DoxySeeAlso}{See also}
+quit() 
+\end{DoxySeeAlso}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a8ba3e5680f88f2675bf0fe988aecd3cd}\index{SMTP@{SMTP}!connect@{connect}}
+\index{connect@{connect}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a8ba3e5680f88f2675bf0fe988aecd3cd} 
+connect (\begin{DoxyParamCaption}\item[{}]{\$host}{, }\item[{}]{\$port}{ = {\ttfamily null}, }\item[{}]{\$timeout}{ = {\ttfamily 30}, }\item[{}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Connect to an SMTP server.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & SMTP server IP or host name \\
+\hline
+int & {\em \$port} & The port number to connect to \\
+\hline
+int & {\em \$timeout} & How long to wait for the connection to open \\
+\hline
+array & {\em \$options} & An array of options for stream\+\_\+context\+\_\+create()\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a166cb1f72761ff7c95d5d24055fe03f5}\index{SMTP@{SMTP}!connected@{connected}}
+\index{connected@{connected}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{connected()}{connected()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a166cb1f72761ff7c95d5d24055fe03f5} 
+connected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Check connection state.
+
+\begin{DoxyReturn}{Returns}
+bool True if connected 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a3893229db738c613fc3f0914d73e989d}\index{SMTP@{SMTP}!data@{data}}
+\index{data@{data}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a3893229db738c613fc3f0914d73e989d} 
+data (\begin{DoxyParamCaption}\item[{}]{\$msg\+\_\+data}{}\end{DoxyParamCaption})}
+
+Send an SMTP DATA command. Issues a data command and sends the msg\+\_\+data to the server, finalizing the mail transaction. \$msg\+\_\+data is the message that is to be sent with the headers. Each header needs to be on a single line followed by a $<$\+CRLF$>$ with the message headers and the message body being separated by an additional $<$\+CRLF$>$. Implements RFC 821\+: DATA $<$\+CRLF$>$.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg\+\_\+data} & Message data to send\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a946b64f536f4f3803f70603873590e71}\index{SMTP@{SMTP}!edebug@{edebug}}
+\index{edebug@{edebug}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{edebug()}{edebug()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a946b64f536f4f3803f70603873590e71} 
+edebug (\begin{DoxyParamCaption}\item[{}]{\$str}{, }\item[{}]{\$level}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Output debugging info via a user-\/selected method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & Debug string to output \\
+\hline
+int & {\em \$level} & The debug level of this message; see DEBUG\+\_\+\texorpdfstring{$\ast$}{*} constants\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+SMTP\textbackslash{}\$\+Debugoutput 
+
+SMTP\textbackslash{}\$do\+\_\+debug 
+\end{DoxySeeAlso}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_acb559d3cb2bc25af136569849af26196}\index{SMTP@{SMTP}!errorHandler@{errorHandler}}
+\index{errorHandler@{errorHandler}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{errorHandler()}{errorHandler()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_acb559d3cb2bc25af136569849af26196} 
+error\+Handler (\begin{DoxyParamCaption}\item[{}]{\$errno}{, }\item[{}]{\$errmsg}{, }\item[{}]{\$errfile}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$errline}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reports an error number and string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$errno} & The error number returned by PHP \\
+\hline
+string & {\em \$errmsg} & The error message returned by PHP \\
+\hline
+string & {\em \$errfile} & The file the error occurred in \\
+\hline
+int & {\em \$errline} & The line number the error occurred on \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a4079f7abca5539c318c911c5249b6dff}\index{SMTP@{SMTP}!get\_lines@{get\_lines}}
+\index{get\_lines@{get\_lines}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{get\_lines()}{get\_lines()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a4079f7abca5539c318c911c5249b6dff} 
+get\+\_\+lines (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Read the SMTP server\textquotesingle{}s response. Either before eof or socket timeout occurs on the operation. With SMTP we can tell if we have more lines to read if the 4th character is \textquotesingle{}-\/\textquotesingle{} symbol. If it is a space then we don\textquotesingle{}t need to read anything else.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a122db96cedfc221cf187ce4328f992f7}\index{SMTP@{SMTP}!getDebugLevel@{getDebugLevel}}
+\index{getDebugLevel@{getDebugLevel}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{getDebugLevel()}{getDebugLevel()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a122db96cedfc221cf187ce4328f992f7} 
+get\+Debug\+Level (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get debug output level.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a0447940c69b2fb0646a3bc2158215ab8}\index{SMTP@{SMTP}!getDebugOutput@{getDebugOutput}}
+\index{getDebugOutput@{getDebugOutput}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{getDebugOutput()}{getDebugOutput()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a0447940c69b2fb0646a3bc2158215ab8} 
+get\+Debug\+Output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get debug output method.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a24ada5decce3d1b79cd82f5a90ccf404}\index{SMTP@{SMTP}!getError@{getError}}
+\index{getError@{getError}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{getError()}{getError()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a24ada5decce3d1b79cd82f5a90ccf404} 
+get\+Error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the latest error.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a857f213c8353eafd4ace9b9ba634fc89}\index{SMTP@{SMTP}!getLastReply@{getLastReply}}
+\index{getLastReply@{getLastReply}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{getLastReply()}{getLastReply()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a857f213c8353eafd4ace9b9ba634fc89} 
+get\+Last\+Reply (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the last reply from the server.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a604bb81facb6fb4aea9c099b5244a332}\index{SMTP@{SMTP}!getLastTransactionID@{getLastTransactionID}}
+\index{getLastTransactionID@{getLastTransactionID}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{getLastTransactionID()}{getLastTransactionID()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a604bb81facb6fb4aea9c099b5244a332} 
+get\+Last\+Transaction\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the queue/transaction ID of the last SMTP transaction If no reply has been received yet, it will return null. If no pattern was matched, it will return false.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+record\+Last\+Transaction\+ID() 
+\end{DoxySeeAlso}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ae77c9963f74b0fa984b120846a09db7b}\index{SMTP@{SMTP}!getServerExt@{getServerExt}}
+\index{getServerExt@{getServerExt}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{getServerExt()}{getServerExt()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ae77c9963f74b0fa984b120846a09db7b} 
+get\+Server\+Ext (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Get metadata about the SMTP server from its HELO/\+EHLO response. The method works in three ways, dependent on argument value and current state\+:
+\begin{DoxyEnumerate}
+\item HELO/\+EHLO has not been sent -\/ returns null and populates \$this-\/\texorpdfstring{$>$}{>}error.
+\item HELO has been sent -\/ \$name == \textquotesingle{}HELO\textquotesingle{}\+: returns server name \$name == \textquotesingle{}EHLO\textquotesingle{}\+: returns boolean false \$name == any other string\+: returns null and populates \$this-\/\texorpdfstring{$>$}{>}error
+\item EHLO has been sent -\/ \$name == \textquotesingle{}HELO\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}EHLO\textquotesingle{}\+: returns the server name \$name == any other string\+: if extension \$name exists, returns True or its options (e.\+g. AUTH mechanisms supported). Otherwise returns False.
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of SMTP extension or \textquotesingle{}HELO\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}EHLO\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2a6cd4dd343c98fc6b0288a64ba4f835}\index{SMTP@{SMTP}!getServerExtList@{getServerExtList}}
+\index{getServerExtList@{getServerExtList}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{getServerExtList()}{getServerExtList()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2a6cd4dd343c98fc6b0288a64ba4f835} 
+get\+Server\+Ext\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get SMTP extensions available on the server.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a5091679decce8bf8002f63e19d2c8fc0}\index{SMTP@{SMTP}!getSMTPConnection@{getSMTPConnection}}
+\index{getSMTPConnection@{getSMTPConnection}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{getSMTPConnection()}{getSMTPConnection()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a5091679decce8bf8002f63e19d2c8fc0} 
+get\+SMTPConnection (\begin{DoxyParamCaption}\item[{}]{\$host}{, }\item[{}]{\$port}{ = {\ttfamily null}, }\item[{}]{\$timeout}{ = {\ttfamily 30}, }\item[{}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create connection to the SMTP server.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & SMTP server IP or host name \\
+\hline
+int & {\em \$port} & The port number to connect to \\
+\hline
+int & {\em \$timeout} & How long to wait for the connection to open \\
+\hline
+array & {\em \$options} & An array of options for stream\+\_\+context\+\_\+create()\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}resource 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_abac5019c5daf3a27d739aa3a249fdb31}\index{SMTP@{SMTP}!getTimeout@{getTimeout}}
+\index{getTimeout@{getTimeout}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{getTimeout()}{getTimeout()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_abac5019c5daf3a27d739aa3a249fdb31} 
+get\+Timeout (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get SMTP timeout.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a0889923036c476f2d93a881ada060888}\index{SMTP@{SMTP}!getVerp@{getVerp}}
+\index{getVerp@{getVerp}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{getVerp()}{getVerp()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a0889923036c476f2d93a881ada060888} 
+get\+Verp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get VERP address generation mode.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2a59be5d33c27c52e66644a984194406}\index{SMTP@{SMTP}!hello@{hello}}
+\index{hello@{hello}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{hello()}{hello()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2a59be5d33c27c52e66644a984194406} 
+hello (\begin{DoxyParamCaption}\item[{}]{\$host}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Send an SMTP HELO or EHLO command. Used to identify the sending server to the receiving server. This makes sure that client and server are in a known state. Implements RFC 821\+: HELO $<$\+SP$>$ $<$domain$>$ $<$\+CRLF$>$ and RFC 2821 EHLO.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & The host name or IP to connect to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab64534872ef0e960ac18d1a383781830}\index{SMTP@{SMTP}!hmac@{hmac}}
+\index{hmac@{hmac}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{hmac()}{hmac()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab64534872ef0e960ac18d1a383781830} 
+hmac (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calculate an MD5 HMAC hash. Works like hash\+\_\+hmac(\textquotesingle{}md5\textquotesingle{}, \$data, \$key) in case that function is not available.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & The data to hash \\
+\hline
+string & {\em \$key} & The key to hash with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_af1cd1f904bc5404a8eb7fc4cf350fd67}\index{SMTP@{SMTP}!mail@{mail}}
+\index{mail@{mail}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{mail()}{mail()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_af1cd1f904bc5404a8eb7fc4cf350fd67} 
+mail (\begin{DoxyParamCaption}\item[{}]{\$from}{}\end{DoxyParamCaption})}
+
+Send an SMTP MAIL command. Starts a mail transaction from the email address specified in \$from. Returns true if successful or false otherwise. If True the mail transaction is started and then one or more recipient commands may be called followed by a data command. Implements RFC 821\+: MAIL $<$\+SP$>$ FROM\+:\texorpdfstring{$<$}{<}reverse-\/path\texorpdfstring{$>$}{>} $<$\+CRLF$>$.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & Source address of this message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a5b0d7b9e52bc856532f248f24da5d2d7}\index{SMTP@{SMTP}!noop@{noop}}
+\index{noop@{noop}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{noop()}{noop()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a5b0d7b9e52bc856532f248f24da5d2d7} 
+noop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Send an SMTP NOOP command. Used to keep keep-\/alives alive, doesn\textquotesingle{}t actually do anything.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a526777ee97d964128c3c8c235f318437}\index{SMTP@{SMTP}!parseHelloFields@{parseHelloFields}}
+\index{parseHelloFields@{parseHelloFields}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{parseHelloFields()}{parseHelloFields()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a526777ee97d964128c3c8c235f318437} 
+parse\+Hello\+Fields (\begin{DoxyParamCaption}\item[{}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse a reply to HELO/\+EHLO command to discover server extensions. In case of HELO, the only parameter that can be discovered is a server name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & {\ttfamily HELO} or {\ttfamily EHLO} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2800929a8de0de9326f43190323d47bd}\index{SMTP@{SMTP}!quit@{quit}}
+\index{quit@{quit}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2800929a8de0de9326f43190323d47bd} 
+quit (\begin{DoxyParamCaption}\item[{}]{\$close\+\_\+on\+\_\+error}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Send an SMTP QUIT command. Closes the socket if there is no error or the \$close\+\_\+on\+\_\+error argument is true. Implements from RFC 821\+: QUIT $<$\+CRLF$>$.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$close\+\_\+on\+\_\+error} & Should the connection close if an error occurs?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ae6c02c05dcdc29ea92be073522bd3a77}\index{SMTP@{SMTP}!recipient@{recipient}}
+\index{recipient@{recipient}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{recipient()}{recipient()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ae6c02c05dcdc29ea92be073522bd3a77} 
+recipient (\begin{DoxyParamCaption}\item[{}]{\$address}{, }\item[{}]{\$dsn}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Send an SMTP RCPT command. Sets the TO argument to \$toaddr. Returns true if the recipient was accepted false if it was rejected. Implements from RFC 821\+: RCPT $<$\+SP$>$ TO\+:\texorpdfstring{$<$}{<}forward-\/path\texorpdfstring{$>$}{>} $<$\+CRLF$>$.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & The address the message is being sent to \\
+\hline
+string & {\em \$dsn} & Comma separated list of DSN notifications. NEVER, SUCCESS, FAILURE or DELAY. If you specify NEVER all other notifications are ignored.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a52016c87c4e4883172bb771d7484ab19}\index{SMTP@{SMTP}!recordLastTransactionID@{recordLastTransactionID}}
+\index{recordLastTransactionID@{recordLastTransactionID}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{recordLastTransactionID()}{recordLastTransactionID()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a52016c87c4e4883172bb771d7484ab19} 
+record\+Last\+Transaction\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extract and return the ID of the last SMTP transaction based on a list of patterns provided in SMTP\textbackslash{}\$smtp\+\_\+transaction\+\_\+id\+\_\+patterns. Relies on the host providing the ID in response to a DATA command. If no reply has been received yet, it will return null. If no pattern was matched, it will return false.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a4a20559544fdf4dcb457e258dc976cf8}\index{SMTP@{SMTP}!reset@{reset}}
+\index{reset@{reset}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a4a20559544fdf4dcb457e258dc976cf8} 
+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Send an SMTP RSET command. Abort any transaction that is currently in progress. Implements RFC 821\+: RSET $<$\+CRLF$>$.
+
+\begin{DoxyReturn}{Returns}
+bool True on success 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a06bd4d1e4270cbabec07624d194bacfb}\index{SMTP@{SMTP}!sendAndMail@{sendAndMail}}
+\index{sendAndMail@{sendAndMail}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{sendAndMail()}{sendAndMail()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a06bd4d1e4270cbabec07624d194bacfb} 
+send\+And\+Mail (\begin{DoxyParamCaption}\item[{}]{\$from}{}\end{DoxyParamCaption})}
+
+Send an SMTP SAML command. Starts a mail transaction from the email address specified in \$from. Returns true if successful or false otherwise. If True the mail transaction is started and then one or more recipient commands may be called followed by a data command. This command will send the message to the users terminal if they are logged in and send them an email. Implements RFC 821\+: SAML $<$\+SP$>$ FROM\+:\texorpdfstring{$<$}{<}reverse-\/path\texorpdfstring{$>$}{>} $<$\+CRLF$>$.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & The address the message is from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ad277f27506e6e9cdea6073ffa5f7b476}\index{SMTP@{SMTP}!sendCommand@{sendCommand}}
+\index{sendCommand@{sendCommand}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{sendCommand()}{sendCommand()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ad277f27506e6e9cdea6073ffa5f7b476} 
+send\+Command (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{}]{\$commandstring}{, }\item[{}]{\$expect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send a command to an SMTP server and check its return code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & The command name -\/ not sent to the server \\
+\hline
+string & {\em \$commandstring} & The actual command to send \\
+\hline
+int | array & {\em \$expect} & One or more expected integer success codes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True on success 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2bbc3656b8c44e29ee5621ee7afc891f}\index{SMTP@{SMTP}!sendHello@{sendHello}}
+\index{sendHello@{sendHello}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{sendHello()}{sendHello()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2bbc3656b8c44e29ee5621ee7afc891f} 
+send\+Hello (\begin{DoxyParamCaption}\item[{}]{\$hello}{, }\item[{}]{\$host}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send an SMTP HELO or EHLO command. Low-\/level implementation used by hello().
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hello} & The HELO string \\
+\hline
+string & {\em \$host} & The hostname to say we are\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+hello() 
+\end{DoxySeeAlso}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aa77813947ee5266b5e31839356eed03c}\index{SMTP@{SMTP}!setDebugLevel@{setDebugLevel}}
+\index{setDebugLevel@{setDebugLevel}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{setDebugLevel()}{setDebugLevel()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aa77813947ee5266b5e31839356eed03c} 
+set\+Debug\+Level (\begin{DoxyParamCaption}\item[{}]{\$level}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Set debug output level.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2a086f3a7e0f0aab597c48c40371ef81}\index{SMTP@{SMTP}!setDebugOutput@{setDebugOutput}}
+\index{setDebugOutput@{setDebugOutput}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{setDebugOutput()}{setDebugOutput()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a2a086f3a7e0f0aab597c48c40371ef81} 
+set\+Debug\+Output (\begin{DoxyParamCaption}\item[{}]{\$method}{ = {\ttfamily \textquotesingle{}echo\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Set debug output method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | callable & {\em \$method} & The name of the mechanism to use for debugging output, or a callable to handle it \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab7cbdee885b82ec97d12356f551b6d10}\index{SMTP@{SMTP}!setError@{setError}}
+\index{setError@{setError}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{setError()}{setError()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab7cbdee885b82ec97d12356f551b6d10} 
+set\+Error (\begin{DoxyParamCaption}\item[{}]{\$message}{, }\item[{}]{\$detail}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$smtp\+\_\+code}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$smtp\+\_\+code\+\_\+ex}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set error messages and codes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & The error message \\
+\hline
+string & {\em \$detail} & Further detail on the error \\
+\hline
+string & {\em \$smtp\+\_\+code} & An associated SMTP error code \\
+\hline
+string & {\em \$smtp\+\_\+code\+\_\+ex} & Extended SMTP code \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aa359a3fe4a000a856cc9cb7b8b92cb29}\index{SMTP@{SMTP}!setTimeout@{setTimeout}}
+\index{setTimeout@{setTimeout}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{setTimeout()}{setTimeout()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aa359a3fe4a000a856cc9cb7b8b92cb29} 
+set\+Timeout (\begin{DoxyParamCaption}\item[{}]{\$timeout}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Set SMTP timeout.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & The timeout duration in seconds \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a450b8d7a4dd1749a75f5dd0c48143f6f}\index{SMTP@{SMTP}!setVerp@{setVerp}}
+\index{setVerp@{setVerp}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{setVerp()}{setVerp()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a450b8d7a4dd1749a75f5dd0c48143f6f} 
+set\+Verp (\begin{DoxyParamCaption}\item[{}]{\$enabled}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Enable or disable VERP address generation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$enabled} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a58d9443a0a1690565edae142b85e0e26}\index{SMTP@{SMTP}!startTLS@{startTLS}}
+\index{startTLS@{startTLS}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{startTLS()}{startTLS()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a58d9443a0a1690565edae142b85e0e26} 
+start\+TLS (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Initiate a TLS (encrypted) session.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab10781ebc3a61aab9a66e68d9f5de6ad}\index{SMTP@{SMTP}!turn@{turn}}
+\index{turn@{turn}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{turn()}{turn()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab10781ebc3a61aab9a66e68d9f5de6ad} 
+turn (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Send an SMTP TURN command. This is an optional command for SMTP that this class does not support. This method is here to make the RFC821 Definition complete for this class and {\itshape may} be implemented in future. Implements from RFC 821\+: TURN $<$\+CRLF$>$.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a658837563d19069ce530b5665a28b71b}\index{SMTP@{SMTP}!verify@{verify}}
+\index{verify@{verify}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a658837563d19069ce530b5665a28b71b} 
+verify (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Send an SMTP VRFY command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name to verify\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a76a05d34c50649f4002e9e3dab737db7}\index{SMTP@{SMTP}!xclient@{xclient}}
+\index{xclient@{xclient}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{xclient()}{xclient()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a76a05d34c50649f4002e9e3dab737db7} 
+xclient (\begin{DoxyParamCaption}\item[{array}]{\$vars}{}\end{DoxyParamCaption})}
+
+Send SMTP XCLIENT command to server and check its return code.
+
+\begin{DoxyReturn}{Returns}
+bool True on success 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a532f3412f3d97a106a36ff2b49409e42}\index{SMTP@{SMTP}!\$Debugoutput@{\$Debugoutput}}
+\index{\$Debugoutput@{\$Debugoutput}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$Debugoutput}{\$Debugoutput}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a532f3412f3d97a106a36ff2b49409e42} 
+\$Debugoutput = \textquotesingle{}echo\textquotesingle{}}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a09ca59ee83fba6c8137646a13f1664d1}\index{SMTP@{SMTP}!\$do\_debug@{\$do\_debug}}
+\index{\$do\_debug@{\$do\_debug}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$do\_debug}{\$do\_debug}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a09ca59ee83fba6c8137646a13f1664d1} 
+\$do\+\_\+debug = self\+::\+DEBUG\+\_\+\+OFF}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_abf2ec34ae2e6abd0f598ea202a8fa807}\index{SMTP@{SMTP}!\$do\_verp@{\$do\_verp}}
+\index{\$do\_verp@{\$do\_verp}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$do\_verp}{\$do\_verp}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_abf2ec34ae2e6abd0f598ea202a8fa807} 
+\$do\+\_\+verp = false}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aeba2ab722cedda53dbb7ec1a59f45550}\index{SMTP@{SMTP}!\$error@{\$error}}
+\index{\$error@{\$error}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$error}{\$error}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aeba2ab722cedda53dbb7ec1a59f45550} 
+\$error\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'error'}\ =>\ \textcolor{stringliteral}{''},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'detail'}\ =>\ \textcolor{stringliteral}{''},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'smtp\_code'}\ =>\ \textcolor{stringliteral}{''},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'smtp\_code\_ex'}\ =>\ \textcolor{stringliteral}{''},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab3ac5873d7f4a2cb378440532aec336e}\index{SMTP@{SMTP}!\$helo\_rply@{\$helo\_rply}}
+\index{\$helo\_rply@{\$helo\_rply}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$helo\_rply}{\$helo\_rply}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ab3ac5873d7f4a2cb378440532aec336e} 
+\$helo\+\_\+rply\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a02b4360fc11497c217a66518ca6f09ff}\index{SMTP@{SMTP}!\$last\_reply@{\$last\_reply}}
+\index{\$last\_reply@{\$last\_reply}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$last\_reply}{\$last\_reply}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a02b4360fc11497c217a66518ca6f09ff} 
+\$last\+\_\+reply = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aced5eaebf2a46f909fc56a5eb420c10a}\index{SMTP@{SMTP}!\$last\_smtp\_transaction\_id@{\$last\_smtp\_transaction\_id}}
+\index{\$last\_smtp\_transaction\_id@{\$last\_smtp\_transaction\_id}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$last\_smtp\_transaction\_id}{\$last\_smtp\_transaction\_id}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_aced5eaebf2a46f909fc56a5eb420c10a} 
+\$last\+\_\+smtp\+\_\+transaction\+\_\+id\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ac93a6162b0ecb254be5fdcaa385b2c5c}\index{SMTP@{SMTP}!\$server\_caps@{\$server\_caps}}
+\index{\$server\_caps@{\$server\_caps}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$server\_caps}{\$server\_caps}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ac93a6162b0ecb254be5fdcaa385b2c5c} 
+\$server\+\_\+caps\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a11fc42e903bf60dedd8cd6e06e84e419}\index{SMTP@{SMTP}!\$smtp\_conn@{\$smtp\_conn}}
+\index{\$smtp\_conn@{\$smtp\_conn}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$smtp\_conn}{\$smtp\_conn}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a11fc42e903bf60dedd8cd6e06e84e419} 
+\$smtp\+\_\+conn\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a8a963ff3fd663a9a55ee15aa4386f09a}\index{SMTP@{SMTP}!\$smtp\_transaction\_id\_patterns@{\$smtp\_transaction\_id\_patterns}}
+\index{\$smtp\_transaction\_id\_patterns@{\$smtp\_transaction\_id\_patterns}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$smtp\_transaction\_id\_patterns}{\$smtp\_transaction\_id\_patterns}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a8a963ff3fd663a9a55ee15aa4386f09a} 
+\$smtp\+\_\+transaction\+\_\+id\+\_\+patterns\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'exim'}\ =>\ \textcolor{stringliteral}{'/[\(\backslash\)d]\{3\}\ OK\ id=(.*)/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'sendmail'}\ =>\ \textcolor{stringliteral}{'/[\(\backslash\)d]\{3\}\ 2\(\backslash\).0\(\backslash\).0\ (.*)\ Message/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'postfix'}\ =>\ \textcolor{stringliteral}{'/[\(\backslash\)d]\{3\}\ 2\(\backslash\).0\(\backslash\).0\ Ok:\ queued\ as\ (.*)/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Microsoft\_ESMTP'}\ =>\ \textcolor{stringliteral}{'/[0-\/9]\{3\}\ 2\(\backslash\).[\(\backslash\)d]\(\backslash\).0\ (.*)@(?:.*)\ Queued\ mail\ for\ delivery/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Amazon\_SES'}\ =>\ \textcolor{stringliteral}{'/[\(\backslash\)d]\{3\}\ Ok\ (.*)/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'SendGrid'}\ =>\ \textcolor{stringliteral}{'/[\(\backslash\)d]\{3\}\ Ok:\ queued\ as\ (.*)/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'CampaignMonitor'}\ =>\ \textcolor{stringliteral}{'/[\(\backslash\)d]\{3\}\ 2\(\backslash\).0\(\backslash\).0\ OK:([a-\/zA-\/Z\(\backslash\)d]\{48\})/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Haraka'}\ =>\ \textcolor{stringliteral}{'/[\(\backslash\)d]\{3\}\ Message\ Queued\ \(\backslash\)((.*)\(\backslash\))/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'ZoneMTA'}\ =>\ \textcolor{stringliteral}{'/[\(\backslash\)d]\{3\}\ Message\ queued\ as\ (.*)/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Mailjet'}\ =>\ \textcolor{stringliteral}{'/[\(\backslash\)d]\{3\}\ OK\ queued\ as\ (.*)/'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a06202429705cff540be47481b453fef6}\index{SMTP@{SMTP}!\$Timelimit@{\$Timelimit}}
+\index{\$Timelimit@{\$Timelimit}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$Timelimit}{\$Timelimit}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a06202429705cff540be47481b453fef6} 
+\$Timelimit = 300}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_acaf3ec06f89f4024c5dbeb1a9ecf321c}\index{SMTP@{SMTP}!\$Timeout@{\$Timeout}}
+\index{\$Timeout@{\$Timeout}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$Timeout}{\$Timeout}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_acaf3ec06f89f4024c5dbeb1a9ecf321c} 
+\$Timeout = 300}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a16ef56e54ffac07cf6125369bf443b25}\index{SMTP@{SMTP}!\$xclient\_allowed\_attributes@{\$xclient\_allowed\_attributes}}
+\index{\$xclient\_allowed\_attributes@{\$xclient\_allowed\_attributes}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{\$xclient\_allowed\_attributes}{\$xclient\_allowed\_attributes}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a16ef56e54ffac07cf6125369bf443b25} 
+\$xclient\+\_\+allowed\+\_\+attributes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'NAME'},\ \textcolor{stringliteral}{'ADDR'},\ \textcolor{stringliteral}{'PORT'},\ \textcolor{stringliteral}{'PROTO'},\ \textcolor{stringliteral}{'HELO'},\ \textcolor{stringliteral}{'LOGIN'},\ \textcolor{stringliteral}{'DESTADDR'},\ \textcolor{stringliteral}{'DESTPORT'}}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ae7eea3acb25b5a4367764bcd2f6da5ea}\index{SMTP@{SMTP}!DEBUG\_CLIENT@{DEBUG\_CLIENT}}
+\index{DEBUG\_CLIENT@{DEBUG\_CLIENT}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_CLIENT}{DEBUG\_CLIENT}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ae7eea3acb25b5a4367764bcd2f6da5ea} 
+const DEBUG\+\_\+\+CLIENT = 1}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a9a8bb8dbeb4eb52455545a52bbe35fa6}\index{SMTP@{SMTP}!DEBUG\_CONNECTION@{DEBUG\_CONNECTION}}
+\index{DEBUG\_CONNECTION@{DEBUG\_CONNECTION}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_CONNECTION}{DEBUG\_CONNECTION}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a9a8bb8dbeb4eb52455545a52bbe35fa6} 
+const DEBUG\+\_\+\+CONNECTION = 3}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a9a6a605b541c69171fd68f103e947458}\index{SMTP@{SMTP}!DEBUG\_LOWLEVEL@{DEBUG\_LOWLEVEL}}
+\index{DEBUG\_LOWLEVEL@{DEBUG\_LOWLEVEL}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_LOWLEVEL}{DEBUG\_LOWLEVEL}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a9a6a605b541c69171fd68f103e947458} 
+const DEBUG\+\_\+\+LOWLEVEL = 4}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ad36a2f0b30093f91a7b53bd815a0a143}\index{SMTP@{SMTP}!DEBUG\_OFF@{DEBUG\_OFF}}
+\index{DEBUG\_OFF@{DEBUG\_OFF}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_OFF}{DEBUG\_OFF}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ad36a2f0b30093f91a7b53bd815a0a143} 
+const DEBUG\+\_\+\+OFF = 0}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a72dc4712d174a8bfd77415d88a9a2fb3}\index{SMTP@{SMTP}!DEBUG\_SERVER@{DEBUG\_SERVER}}
+\index{DEBUG\_SERVER@{DEBUG\_SERVER}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_SERVER}{DEBUG\_SERVER}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a72dc4712d174a8bfd77415d88a9a2fb3} 
+const DEBUG\+\_\+\+SERVER = 2}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_adbbe510a37f177c138ebb598c3fdb161}\index{SMTP@{SMTP}!DEFAULT\_PORT@{DEFAULT\_PORT}}
+\index{DEFAULT\_PORT@{DEFAULT\_PORT}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_PORT}{DEFAULT\_PORT}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_adbbe510a37f177c138ebb598c3fdb161} 
+const DEFAULT\+\_\+\+PORT = 25}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ac1cf443bdb1fb9e54c9b76f7a369f8dd}\index{SMTP@{SMTP}!DEFAULT\_SECURE\_PORT@{DEFAULT\_SECURE\_PORT}}
+\index{DEFAULT\_SECURE\_PORT@{DEFAULT\_SECURE\_PORT}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SECURE\_PORT}{DEFAULT\_SECURE\_PORT}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_ac1cf443bdb1fb9e54c9b76f7a369f8dd} 
+const DEFAULT\+\_\+\+SECURE\+\_\+\+PORT = 465}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_afa2c3d8a05f37e1aac11b9789aab2d4e}\index{SMTP@{SMTP}!LE@{LE}}
+\index{LE@{LE}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{LE}{LE}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_afa2c3d8a05f37e1aac11b9789aab2d4e} 
+const LE = "{}\textbackslash{}r\textbackslash{}n"{}}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a466169b7248c947b2d0d468a955573e7}\index{SMTP@{SMTP}!MAX\_LINE\_LENGTH@{MAX\_LINE\_LENGTH}}
+\index{MAX\_LINE\_LENGTH@{MAX\_LINE\_LENGTH}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{MAX\_LINE\_LENGTH}{MAX\_LINE\_LENGTH}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a466169b7248c947b2d0d468a955573e7} 
+const MAX\+\_\+\+LINE\+\_\+\+LENGTH = 998}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a59dc88994da310e530d378c50b12870b}\index{SMTP@{SMTP}!MAX\_REPLY\_LENGTH@{MAX\_REPLY\_LENGTH}}
+\index{MAX\_REPLY\_LENGTH@{MAX\_REPLY\_LENGTH}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{MAX\_REPLY\_LENGTH}{MAX\_REPLY\_LENGTH}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_a59dc88994da310e530d378c50b12870b} 
+const MAX\+\_\+\+REPLY\+\_\+\+LENGTH = 512}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_af71005841ce53adac00581ab0ba24c1f}\index{SMTP@{SMTP}!VERSION@{VERSION}}
+\index{VERSION@{VERSION}!SMTP@{SMTP}}
+\doxysubsubsection{\texorpdfstring{VERSION}{VERSION}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p_af71005841ce53adac00581ab0ba24c1f} 
+const VERSION = \textquotesingle{}6.\+9.\+1\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utils/\+PHPMailer/src/\mbox{\hyperlink{_s_m_t_p_8php}{SMTP.\+php}}\end{DoxyCompactItemize}

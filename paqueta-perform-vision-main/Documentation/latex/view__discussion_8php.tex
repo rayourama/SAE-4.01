@@ -1,0 +1,56 @@
+\doxysection{Views/view\+\_\+discussion.php File Reference}
+\hypertarget{view__discussion_8php}{}\label{view__discussion_8php}\index{Views/view\_discussion.php@{Views/view\_discussion.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{view__discussion_8php_a29f93f106554d426d06fc8db9137913e}{\$talk\+Class}} = \$is\+Sender ? \textquotesingle{}right\textquotesingle{} \+: \textquotesingle{}left\textquotesingle{}
+\item 
+\mbox{\hyperlink{view__discussion_8php_ac62167326fcdc762297fe76407218b55}{\$avatar}} = \$is\+Sender ? \$photo\+\_\+de\+\_\+profil \+: \$photo\+\_\+receiver
+\item 
+\mbox{\hyperlink{view__discussion_8php_a600a9a9ffd23e2b6d548036911b3e1d8}{\$requires\+Validation}} = (!\$message\mbox{[}\textquotesingle{}validation\+\_\+moderation\textquotesingle{}\mbox{]} \&\& \$is\+Sender)
+\item 
+\mbox{\hyperlink{view__discussion_8php_ab99343d4912650d1363355564aa6c179}{\$text\+Color}} = (\$requires\+Validation) ? \textquotesingle{}yellow\textquotesingle{} \+: (\$is\+Sender ? \textquotesingle{}white\textquotesingle{} \+: \textquotesingle{}black\textquotesingle{})
+\item 
+if(\$is\+Modo) if(! \$is\+Modo \&\&(! \$message \mbox{\hyperlink{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}{if}} \mbox{[} \textquotesingle{}validation\+\_\+moderation\textquotesingle{}\mbox{]} \&\&! \$is\+Sender))( \$talk\+Class===\textquotesingle{}left\textquotesingle{}) = \$text\+Color
+\item 
+\mbox{\hyperlink{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}{if}}( \$is\+Modo \&\&! \$message \mbox{\hyperlink{view__discussion_8php_abfce4ba1c7a91e60965fa33210b76f43}{endforeach}} \mbox{[} \textquotesingle{}validation\+\_\+moderation\textquotesingle{}\mbox{]}) \mbox{\hyperlink{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}{if}}(\$talk\+Class===\textquotesingle{}right\textquotesingle{}) = \$message\mbox{[}\textquotesingle{}texte\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{view__discussion_8php_ac62167326fcdc762297fe76407218b55}\index{view\_discussion.php@{view\_discussion.php}!\$avatar@{\$avatar}}
+\index{\$avatar@{\$avatar}!view\_discussion.php@{view\_discussion.php}}
+\doxysubsubsection{\texorpdfstring{\$avatar}{\$avatar}}
+{\footnotesize\ttfamily \label{view__discussion_8php_ac62167326fcdc762297fe76407218b55} 
+\$avatar = \$is\+Sender ? \$photo\+\_\+de\+\_\+profil \+: \$photo\+\_\+receiver}
+
+\Hypertarget{view__discussion_8php_a600a9a9ffd23e2b6d548036911b3e1d8}\index{view\_discussion.php@{view\_discussion.php}!\$requiresValidation@{\$requiresValidation}}
+\index{\$requiresValidation@{\$requiresValidation}!view\_discussion.php@{view\_discussion.php}}
+\doxysubsubsection{\texorpdfstring{\$requiresValidation}{\$requiresValidation}}
+{\footnotesize\ttfamily \label{view__discussion_8php_a600a9a9ffd23e2b6d548036911b3e1d8} 
+\$requires\+Validation = (!\$message\mbox{[}\textquotesingle{}validation\+\_\+moderation\textquotesingle{}\mbox{]} \&\& \$is\+Sender)}
+
+\Hypertarget{view__discussion_8php_a29f93f106554d426d06fc8db9137913e}\index{view\_discussion.php@{view\_discussion.php}!\$talkClass@{\$talkClass}}
+\index{\$talkClass@{\$talkClass}!view\_discussion.php@{view\_discussion.php}}
+\doxysubsubsection{\texorpdfstring{\$talkClass}{\$talkClass}}
+{\footnotesize\ttfamily \label{view__discussion_8php_a29f93f106554d426d06fc8db9137913e} 
+\$talk\+Class = \$is\+Sender ? \textquotesingle{}right\textquotesingle{} \+: \textquotesingle{}left\textquotesingle{}}
+
+\Hypertarget{view__discussion_8php_ab99343d4912650d1363355564aa6c179}\index{view\_discussion.php@{view\_discussion.php}!\$textColor@{\$textColor}}
+\index{\$textColor@{\$textColor}!view\_discussion.php@{view\_discussion.php}}
+\doxysubsubsection{\texorpdfstring{\$textColor}{\$textColor}}
+{\footnotesize\ttfamily \label{view__discussion_8php_ab99343d4912650d1363355564aa6c179} 
+\$text\+Color = (\$requires\+Validation) ? \textquotesingle{}yellow\textquotesingle{} \+: (\$is\+Sender ? \textquotesingle{}white\textquotesingle{} \+: \textquotesingle{}black\textquotesingle{})}
+
+\Hypertarget{view__discussion_8php_abfce4ba1c7a91e60965fa33210b76f43}\index{view\_discussion.php@{view\_discussion.php}!endforeach@{endforeach}}
+\index{endforeach@{endforeach}!view\_discussion.php@{view\_discussion.php}}
+\doxysubsubsection{\texorpdfstring{endforeach}{endforeach}}
+{\footnotesize\ttfamily \label{view__discussion_8php_abfce4ba1c7a91e60965fa33210b76f43} 
+\mbox{\hyperlink{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}{if}}(\$is\+Modo \&\&! \$message endforeach\mbox{[}\textquotesingle{}validation\+\_\+moderation\textquotesingle{}\mbox{]}) \mbox{\hyperlink{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}{if}} ( \$talk\+Class===\textquotesingle{}right\textquotesingle{}) = \$message\mbox{[}\textquotesingle{}texte\textquotesingle{}\mbox{]}}
+
+\Hypertarget{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}\index{view\_discussion.php@{view\_discussion.php}!if@{if}}
+\index{if@{if}!view\_discussion.php@{view\_discussion.php}}
+\doxysubsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily \label{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded} 
+if (\begin{DoxyParamCaption}\item[{}]{\$talk\+Class}{ = {\ttfamily ==~\textquotesingle{}left\textquotesingle{}}}\end{DoxyParamCaption}) = \$text\+Color}
+

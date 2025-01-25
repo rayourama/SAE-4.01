@@ -1,0 +1,143 @@
+\chapter{Upgrading from PHPMailer 5.2 to 6.0}
+\hypertarget{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g}{}\label{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g}\index{Upgrading from PHPMailer 5.2 to 6.0@{Upgrading from PHPMailer 5.2 to 6.0}}
+\label{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md27}%
+\Hypertarget{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md27}%
+ \doxylink{namespace_p_h_p_mailer}{PHPMailer} 6.\+0 is a major update, breaking backward compatibility.
+
+If you\textquotesingle{}re in doubt about how you should be using \doxylink{namespace_p_h_p_mailer}{PHPMailer} 6, take a look at the examples as they have all been updated to work in a \doxylink{namespace_p_h_p_mailer}{PHPMailer} 6.\+0 style.\hypertarget{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md28}{}\doxysection{\texorpdfstring{PHP Version}{PHP Version}}\label{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md28}
+\doxylink{namespace_p_h_p_mailer}{PHPMailer} 6.\+0 requires PHP 5.\+5 or later, and is fully compatible with PHP 7.\+0. \doxylink{namespace_p_h_p_mailer}{PHPMailer} 5.\+2 supported PHP 5.\+0 and upwards, so if you need to run on a legacy PHP version, see the \href{https://github.com/PHPMailer/PHPMailer/tree/5.2-stable}{\texttt{ PHPMailer 5.\+2-\/stable branch on Github}}.\hypertarget{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md29}{}\doxysection{\texorpdfstring{Loading PHPMailer}{Loading PHPMailer}}\label{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md29}
+The single biggest change will be in the way that you load \doxylink{namespace_p_h_p_mailer}{PHPMailer}. In earlier versions you may have done this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'PHPMailerAutoload.php'};}
+
+\end{DoxyCode}
+
+
+or
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'class.phpmailer.php'};}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'class.smtp.php'};}
+
+\end{DoxyCode}
+
+
+We recommend that you load \doxylink{namespace_p_h_p_mailer}{PHPMailer} via composer, using its standard autoloader, which you probably won\textquotesingle{}t need to load if you\textquotesingle{}re using it already, but in case you\textquotesingle{}re not, you will need to do this instead\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'vendor/autoload.php'};}
+
+\end{DoxyCode}
+
+
+If you\textquotesingle{}re not using composer, you can still load the classes manually, depending on what you\textquotesingle{}re using\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'src/PHPMailer.php'};}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'src/SMTP.php'};}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'src/Exception.php'};}
+
+\end{DoxyCode}
+\hypertarget{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md30}{}\doxysection{\texorpdfstring{Namespace}{Namespace}}\label{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md30}
+\doxylink{namespace_p_h_p_mailer}{PHPMailer} 6 uses a \href{http://php.net/manual/en/language.namespaces.rationale.php}{\texttt{ namespace}} of {\ttfamily \doxylink{namespace_p_h_p_mailer}{PHPMailer}\textbackslash{}\doxylink{namespace_p_h_p_mailer}{PHPMailer}}, because it\textquotesingle{}s the \doxylink{namespace_p_h_p_mailer}{PHPMailer} project within the \doxylink{namespace_p_h_p_mailer}{PHPMailer} organisation. You {\bfseries{must}} import (with a {\ttfamily use} statement) classes you\textquotesingle{}re using explicitly into your own namespace, or reference them absolutely in the global namespace -\/ all the examples do this. This means the fully-\/qualified name of the main \doxylink{namespace_p_h_p_mailer}{PHPMailer} class is {\ttfamily \doxylink{namespace_p_h_p_mailer}{PHPMailer}\textbackslash{}\doxylink{namespace_p_h_p_mailer}{PHPMailer}\textbackslash{}\doxylink{namespace_p_h_p_mailer}{PHPMailer}}, which is a bit of a mouthful, but there\textquotesingle{}s no harm in it! If you are using other \doxylink{namespace_p_h_p_mailer}{PHPMailer} classes explicitly (such as {\ttfamily SMTP} or {\ttfamily Exception}), you will need to import them into your namespace too.
+
+For example you might create an instance like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }MyProject;}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer\(\backslash\)PHPMailer\(\backslash\)PHPMailer}};}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'vendor/autoload.php'};}
+\DoxyCodeLine{\$mail\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{namespace_p_h_p_mailer}{PHPMailer}};}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+
+
+or alternatively, using a fully qualified name\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }MyProject;}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'vendor/autoload.php'};}
+\DoxyCodeLine{\$mail\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer}{PHPMailer\(\backslash\)PHPMailer\(\backslash\)PHPMailer}};}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+
+
+Note that {\ttfamily use} statements apply {\itshape only} to the file they appear in (they are local aliases), so if an included file contains {\ttfamily use} statements, it will not import the namespaced classes into the file you\textquotesingle{}re including from.\hypertarget{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md31}{}\doxysection{\texorpdfstring{Namespaced exceptions}{Namespaced exceptions}}\label{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md31}
+\doxylink{namespace_p_h_p_mailer}{PHPMailer} now uses its own namespaced {\ttfamily Exception} class, so if you were previously catching exceptions of type {\ttfamily phpmailer\+Exception} (or subclasses of that), you will need to update them to use the \doxylink{namespace_p_h_p_mailer}{PHPMailer} namespace, and make any existing {\ttfamily Exception} references use the global namespace, i.\+e. {\ttfamily \textbackslash{}Exception}. If your original code was\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{...}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{catch}\ (phpmailerException\ \$e)\ \{}
+\DoxyCodeLine{\ \ \ \ echo\ \$e-\/>errorMessage();}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{catch}\ (Exception\ \$e)\ \{}
+\DoxyCodeLine{\ \ \ \ echo\ \$e-\/>getMessage();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Convert it to\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_exception}{PHPMailer\(\backslash\)PHPMailer\(\backslash\)Exception}};}
+\DoxyCodeLine{...}
+\DoxyCodeLine{try\ \{}
+\DoxyCodeLine{...}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{catch}\ (Exception\ \$e)\ \{}
+\DoxyCodeLine{\ \ \ \ echo\ \$e-\/>errorMessage();}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{catch}\ (\(\backslash\)Exception\ \$e)\ \{}
+\DoxyCodeLine{\ \ \ \ echo\ \$e-\/>getMessage();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md32}{}\doxysection{\texorpdfstring{OAuth2 Support}{OAuth2 Support}}\label{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md32}
+The OAuth2 implementation has been completely redesigned using the \href{http://oauth2-client.thephpleague.com}{\texttt{ OAuth2 packages}} from the \href{http://thephpleague.com}{\texttt{ League of extraordinary packages}}, providing support for many more OAuth services, and you\textquotesingle{}ll need to update your code if you were using OAuth in 5.\+2. See \href{https://github.com/PHPMailer/PHPMailer/tree/master/examples}{\texttt{ the examples}} and documentation in the \href{https://github.com/PHPMailer/PHPMailer/wiki}{\texttt{ PHPMailer wiki}}.\hypertarget{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md33}{}\doxysection{\texorpdfstring{Extras}{Extras}}\label{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md33}
+Additional classes previously bundled in the {\ttfamily Extras} folder (such as htmlfilter and Easy\+Peasy\+ICS) have been removed -\/ use equivalent packages from \href{https://packagist.org}{\texttt{ packagist.\+org}} instead.\hypertarget{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md34}{}\doxysection{\texorpdfstring{Other upgrade changes}{Other upgrade changes}}\label{md__utils_2_p_h_p_mailer_2_u_p_g_r_a_d_i_n_g_autotoc_md34}
+See the changelog for full details.
+\begin{DoxyItemize}
+\item File structure simplified, classes live in the {\ttfamily src/} folder
+\item Most statically called functions now use the {\ttfamily static} keyword instead of {\ttfamily self}, so it\textquotesingle{}s possible to override static internal functions in subclasses, for example {\ttfamily validate\+Address()}
+\item Complete RFC standardisation on CRLF ({\ttfamily \textbackslash{}r\textbackslash{}n}) line breaks by default\+:
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{namespace_p_h_p_mailer}{PHPMailer}\+:\+:\$LE} still exists, but all uses of it are changed to {\ttfamily static\+:\+:\$LE} for easier overriding. It may be changed to {\ttfamily \textbackslash{}n} automatically when sending via {\ttfamily mail()} on UNIX-\/like OSs
+\item {\ttfamily PHPMailer\+::\+CRLF} line ending constant removed
+\item The length of the line break is no longer used in line length calculations
+\item Similar changes to line break handling in SMTP and POP3 classes
+\end{DoxyItemize}
+\item All elements previously marked as deprecated have been removed\+:
+\begin{DoxyItemize}
+\item {\ttfamily PHPMailer-\/\texorpdfstring{$>$}{>}Version}
+\item {\ttfamily PHPMailer-\/\texorpdfstring{$>$}{>}Return\+Path}
+\item {\ttfamily PHPMailer-\/\texorpdfstring{$>$}{>}Plugin\+Dir}
+\item {\ttfamily PHPMailer-\/\texorpdfstring{$>$}{>}encode\+QPphp()}
+\item {\ttfamily SMTP-\/\texorpdfstring{$>$}{>}CRLF}
+\item {\ttfamily SMTP-\/\texorpdfstring{$>$}{>}Version}
+\item {\ttfamily SMTP-\/\texorpdfstring{$>$}{>}SMTP\+\_\+\+PORT}
+\item {\ttfamily POP3-\/\texorpdfstring{$>$}{>}CRLF}
+\item {\ttfamily POP3-\/\texorpdfstring{$>$}{>}Version}
+\end{DoxyItemize}
+\item NTLM authentication has been removed -\/ it never worked anyway!
+\begin{DoxyItemize}
+\item {\ttfamily PHPMailer-\/\texorpdfstring{$>$}{>}Workstation}
+\item {\ttfamily PHPMailer-\/\texorpdfstring{$>$}{>}Realm}
+\end{DoxyItemize}
+\item {\ttfamily SMTP\+::authenticate} method signature changed
+\item {\ttfamily parse\+Addresses()} is now static
+\item {\ttfamily validate\+Address()} is now called statically from {\ttfamily parse\+Addresses()}
+\item {\ttfamily idn\+Supported()} is now static and is called statically from {\ttfamily punyencode\+Address()}
+\item {\ttfamily PHPMailer-\/\texorpdfstring{$>$}{>}Single\+To\+Array} is now protected 
+\end{DoxyItemize}

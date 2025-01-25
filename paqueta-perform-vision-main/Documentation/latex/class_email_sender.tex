@@ -1,0 +1,40 @@
+\doxysection{Email\+Sender Class Reference}
+\hypertarget{class_email_sender}{}\label{class_email_sender}\index{EmailSender@{EmailSender}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_email_sender_aae43af21a113e7d13442010b9447e8de}{send\+Verification\+Email}} (\$email, \$subject, \$message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe pour envoyer des e-\/mails de vérification. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_email_sender_aae43af21a113e7d13442010b9447e8de}\index{EmailSender@{EmailSender}!sendVerificationEmail@{sendVerificationEmail}}
+\index{sendVerificationEmail@{sendVerificationEmail}!EmailSender@{EmailSender}}
+\doxysubsubsection{\texorpdfstring{sendVerificationEmail()}{sendVerificationEmail()}}
+{\footnotesize\ttfamily \label{class_email_sender_aae43af21a113e7d13442010b9447e8de} 
+static send\+Verification\+Email (\begin{DoxyParamCaption}\item[{}]{\$email}{, }\item[{}]{\$subject}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Envoie un e-\/mail de vérification.
+
+Cette fonction utilise la bibliothèque \doxylink{namespace_p_h_p_mailer}{PHPMailer} pour envoyer un e-\/mail de vérification via un serveur SMTP.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & L\textquotesingle{}adresse e-\/mail du destinataire. \\
+\hline
+string & {\em \$subject} & Le sujet de l\textquotesingle{}e-\/mail. \\
+\hline
+string & {\em \$message} & Le contenu de l\textquotesingle{}e-\/mail. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utils/\mbox{\hyperlink{_email_sender_8php}{Email\+Sender.\+php}}\end{DoxyCompactItemize}

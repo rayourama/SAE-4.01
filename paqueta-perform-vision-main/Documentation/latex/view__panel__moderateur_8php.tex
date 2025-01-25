@@ -1,0 +1,54 @@
+\doxysection{Views/view\+\_\+panel\+\_\+moderateur.php File Reference}
+\hypertarget{view__panel__moderateur_8php}{}\label{view__panel__moderateur_8php}\index{Views/view\_panel\_moderateur.php@{Views/view\_panel\_moderateur.php}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}{if}}( \$formateurs !==null)( \$formateurs as \$formateur)( \$formateur\mbox{[} \textquotesingle{}nom\textquotesingle{}\mbox{]}) ?$>$$<$/td $>$$<$ td $>$$<$? \mbox{\hyperlink{view__panel__moderateur_8php_a672d9707ef91db026c210f98cc601123}{endforeach}} = \$formateur\mbox{[}\textquotesingle{}id\+\_\+utilisateur\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{view__panel__moderateur_8php_a82cd33ca97ff99f2fcc5e9c81d65251b}{endif}}
+\item 
+\mbox{\hyperlink{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}{if}}( \$discussions) \mbox{\hyperlink{view__panel__moderateur_8php_a92952b013fed8e8b29f270480fb2d2a7}{(\$discussions as \$discussion)}} (\$discussion\mbox{[}\textquotesingle{}nom\+\_\+client\textquotesingle{}\mbox{]}) . \textquotesingle{} \textquotesingle{} . htmlspecialchars(\$discussion\mbox{[}\textquotesingle{}prenom\+\_\+client\textquotesingle{}\mbox{]}) ?$>$$<$/td $>$$<$ td $>$$<$? = htmlspecialchars(\$discussion\mbox{[}\textquotesingle{}id\+\_\+discussion\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{index_8php_a6939b0a4b00a826fd68317194eabcf21}{else}} \mbox{\hyperlink{view__panel__moderateur_8php_a8e01dcc96c43199448ee66f7c2ae8ea6}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}
+\item 
+\mbox{\hyperlink{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}{if}}(\$utilisateurs) \mbox{\hyperlink{view__panel__moderateur_8php_af4469cde51a471be873f15e28f6e9448}{else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{view__panel__moderateur_8php_a92952b013fed8e8b29f270480fb2d2a7}\index{view\_panel\_moderateur.php@{view\_panel\_moderateur.php}!(\$discussions as \$discussion)@{(\$discussions as \$discussion)}}
+\index{(\$discussions as \$discussion)@{(\$discussions as \$discussion)}!view\_panel\_moderateur.php@{view\_panel\_moderateur.php}}
+\doxysubsubsection{\texorpdfstring{(\$discussions as \$discussion)}{(\$discussions as \$discussion)}}
+{\footnotesize\ttfamily \label{view__panel__moderateur_8php_a92952b013fed8e8b29f270480fb2d2a7} 
+\mbox{\hyperlink{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}{if}}(\$discussions) ( \$discussions as \$discussion)( \$discussion\mbox{[} \textquotesingle{}nom\+\_\+client\textquotesingle{}\mbox{]}) . \textquotesingle{} \textquotesingle{} . htmlspecialchars( \$discussion\mbox{[} \textquotesingle{}prenom\+\_\+client\textquotesingle{}\mbox{]}) ?$>$$<$/td $>$$<$ td $>$$<$? (\begin{DoxyParamCaption}\item[{}]{\$discussions}{}\end{DoxyParamCaption}) = htmlspecialchars(\$discussion\mbox{[}\textquotesingle{}id\+\_\+discussion\textquotesingle{}\mbox{]})}
+
+\Hypertarget{view__panel__moderateur_8php_a8e01dcc96c43199448ee66f7c2ae8ea6}\index{view\_panel\_moderateur.php@{view\_panel\_moderateur.php}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!view\_panel\_moderateur.php@{view\_panel\_moderateur.php}}
+\doxysubsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily \label{view__panel__moderateur_8php_a8e01dcc96c43199448ee66f7c2ae8ea6} 
+\mbox{\hyperlink{index_8php_a6939b0a4b00a826fd68317194eabcf21}{else}} \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+\Hypertarget{view__panel__moderateur_8php_af4469cde51a471be873f15e28f6e9448}\index{view\_panel\_moderateur.php@{view\_panel\_moderateur.php}!else@{else}}
+\index{else@{else}!view\_panel\_moderateur.php@{view\_panel\_moderateur.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \label{view__panel__moderateur_8php_af4469cde51a471be873f15e28f6e9448} 
+\mbox{\hyperlink{view__discussion_8php_ad3cbc25733e58f9cfae1731b47c28ded}{if}} ( \$utilisateurs) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ echo\ \textcolor{stringliteral}{'<tr><td\ colspan="{}4"{}>Aucun\ utilisateur\ non\ affranchi\ disponible.</td></tr>'}}
+
+\end{DoxyCode}
+\Hypertarget{view__panel__moderateur_8php_a672d9707ef91db026c210f98cc601123}\index{view\_panel\_moderateur.php@{view\_panel\_moderateur.php}!endforeach@{endforeach}}
+\index{endforeach@{endforeach}!view\_panel\_moderateur.php@{view\_panel\_moderateur.php}}
+\doxysubsubsection{\texorpdfstring{endforeach}{endforeach}}
+{\footnotesize\ttfamily \label{view__panel__moderateur_8php_a672d9707ef91db026c210f98cc601123} 
+endforeach = \$formateur\mbox{[}\textquotesingle{}id\+\_\+utilisateur\textquotesingle{}\mbox{]}}
+
+\Hypertarget{view__panel__moderateur_8php_a82cd33ca97ff99f2fcc5e9c81d65251b}\index{view\_panel\_moderateur.php@{view\_panel\_moderateur.php}!endif@{endif}}
+\index{endif@{endif}!view\_panel\_moderateur.php@{view\_panel\_moderateur.php}}
+\doxysubsubsection{\texorpdfstring{endif}{endif}}
+{\footnotesize\ttfamily \label{view__panel__moderateur_8php_a82cd33ca97ff99f2fcc5e9c81d65251b} 
+endif}
+

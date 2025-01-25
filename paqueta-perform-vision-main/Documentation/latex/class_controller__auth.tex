@@ -1,0 +1,108 @@
+\doxysection{Controller\+\_\+auth Class Reference}
+\hypertarget{class_controller__auth}{}\label{class_controller__auth}\index{Controller\_auth@{Controller\_auth}}
+Inheritance diagram for Controller\+\_\+auth\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controller__auth}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller__auth_a174141b98a3424c2b845597a11d44dcc}{action\+\_\+auth}} ()
+\item 
+\mbox{\hyperlink{class_controller__auth_a01b60145383403c94d0a923048b29c7a}{action\+\_\+default}} ()
+\item 
+\mbox{\hyperlink{class_controller__auth_abed6550e04a5c46758d89b007a12f2a9}{action\+\_\+login}} ()
+\item 
+\mbox{\hyperlink{class_controller__auth_a16f48d2dee5183b49e71ce4395cfb666}{action\+\_\+register}} ()
+\item 
+\mbox{\hyperlink{class_controller__auth_a2d0cb5ee5f2e1b05f9a49f007a3e7bf6}{action\+\_\+change\+\_\+mdp}} ()
+\item 
+\mbox{\hyperlink{class_controller__auth_aaf2bb0c7d0f3c38182aea872003d9dd0}{action\+\_\+logout}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_controller}{Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_controller}{Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_a1c1e472a07816694bf30219d61981c31}{render}} (\$vue, \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_controller_a53461cb8504ac326c766aa31f4fe0a5c}{action\+\_\+error}} (\$message=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller__auth_a174141b98a3424c2b845597a11d44dcc}\index{Controller\_auth@{Controller\_auth}!action\_auth@{action\_auth}}
+\index{action\_auth@{action\_auth}!Controller\_auth@{Controller\_auth}}
+\doxysubsubsection{\texorpdfstring{action\_auth()}{action\_auth()}}
+{\footnotesize\ttfamily \label{class_controller__auth_a174141b98a3424c2b845597a11d44dcc} 
+action\+\_\+auth (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Affiche la vue "{}auth"{}.
+
+Cette fonction est responsable d\textquotesingle{}afficher la vue "{}auth"{}. Elle ne prend pas de paramètres et ne retourne aucune valeur.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_controller__auth_a2d0cb5ee5f2e1b05f9a49f007a3e7bf6}\index{Controller\_auth@{Controller\_auth}!action\_change\_mdp@{action\_change\_mdp}}
+\index{action\_change\_mdp@{action\_change\_mdp}!Controller\_auth@{Controller\_auth}}
+\doxysubsubsection{\texorpdfstring{action\_change\_mdp()}{action\_change\_mdp()}}
+{\footnotesize\ttfamily \label{class_controller__auth_a2d0cb5ee5f2e1b05f9a49f007a3e7bf6} 
+action\+\_\+change\+\_\+mdp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Change le mot de passe de l\textquotesingle{}utilisateur quand le mot de passe est oublié
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_controller__auth_a01b60145383403c94d0a923048b29c7a}\index{Controller\_auth@{Controller\_auth}!action\_default@{action\_default}}
+\index{action\_default@{action\_default}!Controller\_auth@{Controller\_auth}}
+\doxysubsubsection{\texorpdfstring{action\_default()}{action\_default()}}
+{\footnotesize\ttfamily \label{class_controller__auth_a01b60145383403c94d0a923048b29c7a} 
+action\+\_\+default (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Fonction contrôlant le processus de connexion
+
+Cette fonction vérifie si la requête est de type POST et si les champs email et password sont définis et non vides. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_controller_a01b60145383403c94d0a923048b29c7a}{Controller}}.
+
+\Hypertarget{class_controller__auth_abed6550e04a5c46758d89b007a12f2a9}\index{Controller\_auth@{Controller\_auth}!action\_login@{action\_login}}
+\index{action\_login@{action\_login}!Controller\_auth@{Controller\_auth}}
+\doxysubsubsection{\texorpdfstring{action\_login()}{action\_login()}}
+{\footnotesize\ttfamily \label{class_controller__auth_abed6550e04a5c46758d89b007a12f2a9} 
+action\+\_\+login (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_controller__auth_aaf2bb0c7d0f3c38182aea872003d9dd0}\index{Controller\_auth@{Controller\_auth}!action\_logout@{action\_logout}}
+\index{action\_logout@{action\_logout}!Controller\_auth@{Controller\_auth}}
+\doxysubsubsection{\texorpdfstring{action\_logout()}{action\_logout()}}
+{\footnotesize\ttfamily \label{class_controller__auth_aaf2bb0c7d0f3c38182aea872003d9dd0} 
+action\+\_\+logout (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Détruis la session en déconnectant l\textquotesingle{}utilisateur.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_controller__auth_a16f48d2dee5183b49e71ce4395cfb666}\index{Controller\_auth@{Controller\_auth}!action\_register@{action\_register}}
+\index{action\_register@{action\_register}!Controller\_auth@{Controller\_auth}}
+\doxysubsubsection{\texorpdfstring{action\_register()}{action\_register()}}
+{\footnotesize\ttfamily \label{class_controller__auth_a16f48d2dee5183b49e71ce4395cfb666} 
+action\+\_\+register (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Inscription d\textquotesingle{}un nouvel utilisateur.
+
+Cette fonction vérifie si la requête est une requête POST et vérifie que les champs requis ne sont pas vides. Elle nettoie ensuite les valeurs des champs et vérifie les longueurs des champs. Elle vérifie également si l\textquotesingle{}email a un format valide et si le nom et le prénom ne contiennent que des lettres et des tirets. Si le rôle de l\textquotesingle{}utilisateur est valide, elle crée un nouvel utilisateur et génère un lien de vérification envoyé par email. Si la création de l\textquotesingle{}utilisateur réussit, elle affiche un message de succès et envoie un email de vérification. Sinon, elle affiche un message d\textquotesingle{}erreur. Si la requête n\textquotesingle{}est pas une requête POST, elle affiche un message d\textquotesingle{}erreur. Enfin, elle rend la vue "{}auth"{} sans données spécifiques. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Controllers/\mbox{\hyperlink{_controller__auth_8php}{Controller\+\_\+auth.\+php}}\end{DoxyCompactItemize}

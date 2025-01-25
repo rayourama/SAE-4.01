@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentation-PandArtists:  Fichier source de RSA_claire.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentation-PandArtists<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Documentation en HTML</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RSA_claire.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_r_s_a__claire_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#abe51ec8194fe374cd7224fc01fa9d836">    3</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__claire_8php.html#abe51ec8194fe374cd7224fc01fa9d836">generateRSAKeys</a>($bitLength) {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    $p = <a class="code hl_function" href="_r_s_a__claire_8php.html#a34088bec1759a00ba61a8d0404b0e11f">generatePrime</a>($bitLength);</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    $q = <a class="code hl_function" href="_r_s_a__claire_8php.html#a34088bec1759a00ba61a8d0404b0e11f">generatePrime</a>($bitLength);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    $n = gmp_mul($p, $q);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    $phi = gmp_mul(gmp_sub($p, 1), gmp_sub($q, 1));</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    $e = <a class="code hl_function" href="_r_s_a__claire_8php.html#a51d530aa7c949af3cb2de82e826ea24c">findCoprime</a>($phi, $bitLength);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    $d = <a class="code hl_function" href="_r_s_a__claire_8php.html#a88658fa99fc46df18a681231681ac299">modInverse</a>($e, $phi);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">return</span> [</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="stringliteral">&#39;publicKey&#39;</span> =&gt; [<span class="charliteral">&#39;e&#39;</span> =&gt; gmp_strval($e), <span class="charliteral">&#39;n&#39;</span> =&gt; gmp_strval($n)],</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="stringliteral">&#39;privateKey&#39;</span> =&gt; [<span class="charliteral">&#39;d&#39;</span> =&gt; gmp_strval($d), <span class="charliteral">&#39;n&#39;</span> =&gt; gmp_strval($n)]</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    ];</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a34088bec1759a00ba61a8d0404b0e11f">   19</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__claire_8php.html#a34088bec1759a00ba61a8d0404b0e11f">generatePrime</a>($bitLength) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        $randomNumber = gmp_random_bits($bitLength);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    } <span class="keywordflow">while</span> (!gmp_prob_prime($randomNumber, 50));</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> $randomNumber;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a51d530aa7c949af3cb2de82e826ea24c">   27</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__claire_8php.html#a51d530aa7c949af3cb2de82e826ea24c">findCoprime</a>($phi, $bitLength) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    $e = <a class="code hl_function" href="_r_s_a__claire_8php.html#a34088bec1759a00ba61a8d0404b0e11f">generatePrime</a>($bitLength);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    $phi = gmp_init($phi);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">while</span> (gmp_cmp(gmp_gcd($e, $phi), 1) != 0) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        $e = gmp_add($e, 1);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> $e;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a88658fa99fc46df18a681231681ac299">   38</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__claire_8php.html#a88658fa99fc46df18a681231681ac299">modInverse</a>($a, $m) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    $a = gmp_init($a);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    $m = gmp_init($m);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    $inv = gmp_invert($a, $m);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> $inv;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a2613ccb1caa1d2c17f79ac3c2d841dd1">   48</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__claire_8php.html#a2613ccb1caa1d2c17f79ac3c2d841dd1">modPow</a>(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a> = gmp_init(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a> = gmp_init(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a> = gmp_init(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    $resultatFinal = gmp_init(1);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">while</span> (gmp_cmp(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, 0) &gt; 0) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span> (gmp_cmp(gmp_mod(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, 2), 1) == 0) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            $resultatFinal = gmp_mod(gmp_mul($resultatFinal, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>), <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a> = gmp_mod(gmp_mul(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>), <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a> = gmp_div(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, 2);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> gmp_strval($resultatFinal);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a3aabd331eecc76ebbc2da2aa28743278">   69</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__claire_8php.html#a3aabd331eecc76ebbc2da2aa28743278">stringToNumber</a>($string) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    $result = gmp_init(<span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    $length = strlen($string);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">for</span> ($i = 0; $i &lt; $length; $i++) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $result = gmp_mul($result, <span class="stringliteral">&#39;256&#39;</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        $result = gmp_add($result, ord($string[$i]));</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a5b1d26b4318bad9cda7f6112a9c17e4e">   81</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__claire_8php.html#a5b1d26b4318bad9cda7f6112a9c17e4e">numberToString</a>($number) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    $result = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">while</span> (gmp_cmp($number, 0) &gt; 0) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        $byte = gmp_mod($number, <span class="stringliteral">&#39;256&#39;</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $result = chr((<span class="keywordtype">int</span>)gmp_strval($byte)) . $result;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $number = gmp_div($number, <span class="stringliteral">&#39;256&#39;</span>, GMP_ROUND_ZERO);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> $result;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a1aeb01b10e384dddc471f77a3bba06d5">   93</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__claire_8php.html#a1aeb01b10e384dddc471f77a3bba06d5">encryptRSA</a>(<a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>, <a class="code hl_variable" href="_r_s_a__claire_8php.html#a8d1062abadc25a988fb1aa01bfea74fe">$publicKey</a>) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    $numericMessage = <a class="code hl_function" href="_r_s_a__claire_8php.html#a3aabd331eecc76ebbc2da2aa28743278">stringToNumber</a>(<a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_variable" href="_r_s_a__claire_8php.html#a238e8759da54cfc6e0ecd929dbcd3f88">$encryptedMessage</a> = <a class="code hl_function" href="_r_s_a__claire_8php.html#a2613ccb1caa1d2c17f79ac3c2d841dd1">modPow</a>($numericMessage, <a class="code hl_variable" href="_r_s_a__claire_8php.html#a8d1062abadc25a988fb1aa01bfea74fe">$publicKey</a>[<span class="charliteral">&#39;e&#39;</span>], <a class="code hl_variable" href="_r_s_a__claire_8php.html#a8d1062abadc25a988fb1aa01bfea74fe">$publicKey</a>[<span class="charliteral">&#39;n&#39;</span>]);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="_r_s_a__claire_8php.html#a238e8759da54cfc6e0ecd929dbcd3f88">$encryptedMessage</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a47427aa08ed9aaf9cbf6a123a5dc8551">   99</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__claire_8php.html#a47427aa08ed9aaf9cbf6a123a5dc8551">decryptRSA</a>(<a class="code hl_variable" href="_r_s_a__claire_8php.html#a238e8759da54cfc6e0ecd929dbcd3f88">$encryptedMessage</a>, <a class="code hl_variable" href="_r_s_a__claire_8php.html#a0efebc1f06535a262ea0c2d33d794502">$privateKey</a>) {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    $decryptedNumericMessage = <a class="code hl_function" href="_r_s_a__claire_8php.html#a2613ccb1caa1d2c17f79ac3c2d841dd1">modPow</a>(<a class="code hl_variable" href="_r_s_a__claire_8php.html#a238e8759da54cfc6e0ecd929dbcd3f88">$encryptedMessage</a>, <a class="code hl_variable" href="_r_s_a__claire_8php.html#a0efebc1f06535a262ea0c2d33d794502">$privateKey</a>[<span class="charliteral">&#39;d&#39;</span>], <a class="code hl_variable" href="_r_s_a__claire_8php.html#a0efebc1f06535a262ea0c2d33d794502">$privateKey</a>[<span class="charliteral">&#39;n&#39;</span>]);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_variable" href="_r_s_a__claire_8php.html#a5b33c48077e6ab447ce0658014f10567">$decryptedMessage</a> = <a class="code hl_function" href="_r_s_a__claire_8php.html#a5b1d26b4318bad9cda7f6112a9c17e4e">numberToString</a>($decryptedNumericMessage);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="_r_s_a__claire_8php.html#a5b33c48077e6ab447ce0658014f10567">$decryptedMessage</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#af20635b6c08e03bfee9e3fc036fa80f3">  105</a></span><a class="code hl_variable" href="_r_s_a__claire_8php.html#af20635b6c08e03bfee9e3fc036fa80f3">$keys</a> = <a class="code hl_function" href="_r_s_a__claire_8php.html#abe51ec8194fe374cd7224fc01fa9d836">generateRSAKeys</a>(1024);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a8d1062abadc25a988fb1aa01bfea74fe">  106</a></span><a class="code hl_variable" href="_r_s_a__claire_8php.html#a8d1062abadc25a988fb1aa01bfea74fe">$publicKey</a> = <a class="code hl_variable" href="_r_s_a__claire_8php.html#af20635b6c08e03bfee9e3fc036fa80f3">$keys</a>[<span class="stringliteral">&#39;publicKey&#39;</span>];</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a0efebc1f06535a262ea0c2d33d794502">  107</a></span><a class="code hl_variable" href="_r_s_a__claire_8php.html#a0efebc1f06535a262ea0c2d33d794502">$privateKey</a> = <a class="code hl_variable" href="_r_s_a__claire_8php.html#af20635b6c08e03bfee9e3fc036fa80f3">$keys</a>[<span class="stringliteral">&#39;privateKey&#39;</span>];</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>echo <span class="stringliteral">&quot;Clé publique (n, e) : (&quot;</span> . <a class="code hl_variable" href="_r_s_a__claire_8php.html#a8d1062abadc25a988fb1aa01bfea74fe">$publicKey</a>[<span class="charliteral">&#39;n&#39;</span>] . <span class="stringliteral">&quot;, &quot;</span> . <a class="code hl_variable" href="_r_s_a__claire_8php.html#a8d1062abadc25a988fb1aa01bfea74fe">$publicKey</a>[<span class="charliteral">&#39;e&#39;</span>] . <span class="stringliteral">&quot;)&quot;</span> . PHP_EOL;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>echo <span class="stringliteral">&quot;Clé privée (n, d) : (&quot;</span> . <a class="code hl_variable" href="_r_s_a__claire_8php.html#a0efebc1f06535a262ea0c2d33d794502">$privateKey</a>[<span class="charliteral">&#39;n&#39;</span>] . <span class="stringliteral">&quot;, &quot;</span> . <a class="code hl_variable" href="_r_s_a__claire_8php.html#a0efebc1f06535a262ea0c2d33d794502">$privateKey</a>[<span class="charliteral">&#39;d&#39;</span>] . <span class="stringliteral">&quot;)&quot;</span> . PHP_EOL;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">  112</a></span><a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a> = <span class="stringliteral">&quot;Salut, ceci est un nouveau message à chiffrer et déchiffrer.&quot;</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a238e8759da54cfc6e0ecd929dbcd3f88">  114</a></span><a class="code hl_variable" href="_r_s_a__claire_8php.html#a238e8759da54cfc6e0ecd929dbcd3f88">$encryptedMessage</a> = <a class="code hl_function" href="_r_s_a__claire_8php.html#a1aeb01b10e384dddc471f77a3bba06d5">encryptRSA</a>(<a class="code hl_variable" href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a>, <a class="code hl_variable" href="_r_s_a__claire_8php.html#a8d1062abadc25a988fb1aa01bfea74fe">$publicKey</a>);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>echo <span class="stringliteral">&quot;Message chiffré : &quot;</span> . <a class="code hl_variable" href="_r_s_a__claire_8php.html#a238e8759da54cfc6e0ecd929dbcd3f88">$encryptedMessage</a> . PHP_EOL;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="_r_s_a__claire_8php.html#a5b33c48077e6ab447ce0658014f10567">  117</a></span><a class="code hl_variable" href="_r_s_a__claire_8php.html#a5b33c48077e6ab447ce0658014f10567">$decryptedMessage</a> = <a class="code hl_function" href="_r_s_a__claire_8php.html#a47427aa08ed9aaf9cbf6a123a5dc8551">decryptRSA</a>(<a class="code hl_variable" href="_r_s_a__claire_8php.html#a238e8759da54cfc6e0ecd929dbcd3f88">$encryptedMessage</a>, <a class="code hl_variable" href="_r_s_a__claire_8php.html#a0efebc1f06535a262ea0c2d33d794502">$privateKey</a>);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>echo <span class="stringliteral">&quot;Message déchiffré : &quot;</span> . <a class="code hl_variable" href="_r_s_a__claire_8php.html#a5b33c48077e6ab447ce0658014f10567">$decryptedMessage</a> . PHP_EOL;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>?&gt;</div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a0efebc1f06535a262ea0c2d33d794502"><div class="ttname"><a href="_r_s_a__claire_8php.html#a0efebc1f06535a262ea0c2d33d794502">$privateKey</a></div><div class="ttdeci">$privateKey</div><div class="ttdef"><b>Definition</b> <a href="#l00107">RSA_claire.php:107</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a1aeb01b10e384dddc471f77a3bba06d5"><div class="ttname"><a href="_r_s_a__claire_8php.html#a1aeb01b10e384dddc471f77a3bba06d5">encryptRSA</a></div><div class="ttdeci">encryptRSA($message, $publicKey)</div><div class="ttdef"><b>Definition</b> <a href="#l00093">RSA_claire.php:93</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a238e8759da54cfc6e0ecd929dbcd3f88"><div class="ttname"><a href="_r_s_a__claire_8php.html#a238e8759da54cfc6e0ecd929dbcd3f88">$encryptedMessage</a></div><div class="ttdeci">$encryptedMessage</div><div class="ttdef"><b>Definition</b> <a href="#l00114">RSA_claire.php:114</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a2613ccb1caa1d2c17f79ac3c2d841dd1"><div class="ttname"><a href="_r_s_a__claire_8php.html#a2613ccb1caa1d2c17f79ac3c2d841dd1">modPow</a></div><div class="ttdeci">modPow($base, $exposant, $modulo)</div><div class="ttdef"><b>Definition</b> <a href="#l00048">RSA_claire.php:48</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a34088bec1759a00ba61a8d0404b0e11f"><div class="ttname"><a href="_r_s_a__claire_8php.html#a34088bec1759a00ba61a8d0404b0e11f">generatePrime</a></div><div class="ttdeci">generatePrime($bitLength)</div><div class="ttdef"><b>Definition</b> <a href="#l00019">RSA_claire.php:19</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a3aabd331eecc76ebbc2da2aa28743278"><div class="ttname"><a href="_r_s_a__claire_8php.html#a3aabd331eecc76ebbc2da2aa28743278">stringToNumber</a></div><div class="ttdeci">stringToNumber($string)</div><div class="ttdef"><b>Definition</b> <a href="#l00069">RSA_claire.php:69</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a47427aa08ed9aaf9cbf6a123a5dc8551"><div class="ttname"><a href="_r_s_a__claire_8php.html#a47427aa08ed9aaf9cbf6a123a5dc8551">decryptRSA</a></div><div class="ttdeci">decryptRSA($encryptedMessage, $privateKey)</div><div class="ttdef"><b>Definition</b> <a href="#l00099">RSA_claire.php:99</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a51d530aa7c949af3cb2de82e826ea24c"><div class="ttname"><a href="_r_s_a__claire_8php.html#a51d530aa7c949af3cb2de82e826ea24c">findCoprime</a></div><div class="ttdeci">findCoprime($phi, $bitLength)</div><div class="ttdef"><b>Definition</b> <a href="#l00027">RSA_claire.php:27</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a5b1d26b4318bad9cda7f6112a9c17e4e"><div class="ttname"><a href="_r_s_a__claire_8php.html#a5b1d26b4318bad9cda7f6112a9c17e4e">numberToString</a></div><div class="ttdeci">numberToString($number)</div><div class="ttdef"><b>Definition</b> <a href="#l00081">RSA_claire.php:81</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a5b33c48077e6ab447ce0658014f10567"><div class="ttname"><a href="_r_s_a__claire_8php.html#a5b33c48077e6ab447ce0658014f10567">$decryptedMessage</a></div><div class="ttdeci">$decryptedMessage</div><div class="ttdef"><b>Definition</b> <a href="#l00117">RSA_claire.php:117</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a88658fa99fc46df18a681231681ac299"><div class="ttname"><a href="_r_s_a__claire_8php.html#a88658fa99fc46df18a681231681ac299">modInverse</a></div><div class="ttdeci">modInverse($a, $m)</div><div class="ttdef"><b>Definition</b> <a href="#l00038">RSA_claire.php:38</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_a8d1062abadc25a988fb1aa01bfea74fe"><div class="ttname"><a href="_r_s_a__claire_8php.html#a8d1062abadc25a988fb1aa01bfea74fe">$publicKey</a></div><div class="ttdeci">$publicKey</div><div class="ttdef"><b>Definition</b> <a href="#l00106">RSA_claire.php:106</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_abe51ec8194fe374cd7224fc01fa9d836"><div class="ttname"><a href="_r_s_a__claire_8php.html#abe51ec8194fe374cd7224fc01fa9d836">generateRSAKeys</a></div><div class="ttdeci">generateRSAKeys($bitLength)</div><div class="ttdef"><b>Definition</b> <a href="#l00003">RSA_claire.php:3</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_abf17cb2dba2ed17cb28aa5f37deb5293"><div class="ttname"><a href="_r_s_a__claire_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a></div><div class="ttdeci">$message</div><div class="ttdef"><b>Definition</b> <a href="#l00112">RSA_claire.php:112</a></div></div>
+<div class="ttc" id="a_r_s_a__claire_8php_html_af20635b6c08e03bfee9e3fc036fa80f3"><div class="ttname"><a href="_r_s_a__claire_8php.html#af20635b6c08e03bfee9e3fc036fa80f3">$keys</a></div><div class="ttdeci">$keys</div><div class="ttdef"><b>Definition</b> <a href="#l00105">RSA_claire.php:105</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_a3d2213733425f7b16ec66b3d7730e3b4"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a></div><div class="ttdeci">$modulo</div><div class="ttdef"><b>Definition</b> <a href="_r_s_a__optimisation_8php_source.html#l00044">RSA_optimisation.php:44</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_ac78df45419614d6db964d0bd9e542c63"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a></div><div class="ttdeci">$base</div><div class="ttdef"><b>Definition</b> <a href="_r_s_a__optimisation_8php_source.html#l00042">RSA_optimisation.php:42</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_afdef299541c7488560426ce0213e36c0"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a></div><div class="ttdeci">$exposant</div><div class="ttdef"><b>Definition</b> <a href="_r_s_a__optimisation_8php_source.html#l00043">RSA_optimisation.php:43</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

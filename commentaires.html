@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commentaires</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        p {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #0066cc;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        li {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        li::before {
+            content: "\2022";
+            color: #0066cc;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        a {
+            display:flex;
+            justify-content: center;
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #004080;
+        }
+        span{
+            color:#004080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Liste des fichiers avec les commentaires ajoutés via Doxygen</h1>
+    </header>
+
+    <p>Nous avons décidé de réaliser la documentation avec Doxygen situé sur le chemin suivant : <span>"./paqueta-perform-vision-main/Documentation/index.html"</span> En plus des commentaires du groupe PAQUETA sur certains fichiers, nous avons ajouté nos propres commentaires sur les fonctions à ajouter/modifier. De ce fait, les nouveaux commentaires sont répertoriés dans chaque fichier cité sur cette page HTML.</p>
+    <a href="./paqueta-perform-vision-main/Documentation/html/index.html">Retrouvez le lien de la documentation en cliquant juste ici <--</a>
+    <h2>Le répertoire Controllers :</h2>
+    <ul>
+        <li>Controller_dashboard.php</a></li>
+        <li>Controller_discussion.php</a></li>
+        <li>Controller_formateurs.php</a></li>
+        <li>Controller_home.php</a></li>
+        <li>Controller_panel.php</a></li>
+        <li>Controller_profile.php</a></li>
+    </ul>
+
+    <h2>Le répertoire Utils :</h2>
+    <ul>
+        <li>functions.php</a></li>
+    </ul>
+
+    <h2>Le répertoire Views :</h2>
+    <ul>
+        <li>view_home.php (Section FAQ)</a></li>
+        <li>view_modifiermonprofilClient.php</a></li>
+        <li>view_modifiermonprofilFormateur.php</a></li>
+    </ul>
+
+    <h2>Le répertoire Content/script :</h2>
+    <ul>
+        <li>admin.js</a></li>
+        <li>modo.js</a></li>
+        <li>modifiermonprofilFormateur.js</a></li>
+    </ul>
+</body>
+</html>

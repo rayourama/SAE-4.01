@@ -1,0 +1,379 @@
+\doxysection{POP3 Class Reference}
+\hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3}{}\label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3}\index{POP3@{POP3}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ac55c79054af31325841d18df662060a9}{authorise}} (\$host, \$port=false, \$timeout=false, \$username=\textquotesingle{}\textquotesingle{}, \$password=\textquotesingle{}\textquotesingle{}, \$debug\+\_\+level=0)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_aae9031598164fde5dd6d27bf9a35b813}{connect}} (\$host, \$port=false, \$tval=30)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a08dad698056dc775d5b63bb5f049a368}{login}} (\$username=\textquotesingle{}\textquotesingle{}, \$password=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_abe175fcf658475bc56e9d6fa02bc88ec}{disconnect}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a6e548ebf2656742bfd19939ead923ed2}{get\+Errors}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a34779155a9c8d84b2e01aecc928f7d30}{pop\+Before\+Smtp}} ( \$host, \$port=false, \$timeout=false, \$username=\textquotesingle{}\textquotesingle{}, \$password=\textquotesingle{}\textquotesingle{}, \$debug\+\_\+level=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_af71005841ce53adac00581ab0ba24c1f}{VERSION}} = \textquotesingle{}6.\+9.\+1\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_adbbe510a37f177c138ebb598c3fdb161}{DEFAULT\+\_\+\+PORT}} = 110
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ac44eb4a7126bb47c9fd4b520447bcc9e}{DEFAULT\+\_\+\+TIMEOUT}} = 30
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a09ca59ee83fba6c8137646a13f1664d1}{\$do\+\_\+debug}} = self\+::\+DEBUG\+\_\+\+OFF
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a711797613cb863ca0756df789c396bf2}{\$host}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_aa0787efab4b22e8a212882f3409d4c77}{\$port}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a19650abd43de047c5f64c5a1a84e4533}{\$tval}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}}
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_afa2c3d8a05f37e1aac11b9789aab2d4e}{LE}} = "{}\textbackslash{}r\textbackslash{}n"{}
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ad36a2f0b30093f91a7b53bd815a0a143}{DEBUG\+\_\+\+OFF}} = 0
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a72dc4712d174a8bfd77415d88a9a2fb3}{DEBUG\+\_\+\+SERVER}} = 1
+\item 
+const \mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ae7eea3acb25b5a4367764bcd2f6da5ea}{DEBUG\+\_\+\+CLIENT}} = 2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a036e1e5d5d4f9b5b0dd72bf9a2b8295d}{get\+Response}} (\$size=128)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a517133fc963d79977f1eae330e14e0d1}{send\+String}} (\$string)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a04047b99bcd87ed0d2222bbf2116ff79}{check\+Response}} (\$string)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a0bc8cac7e04a83c9ca87a99690ef1194}{set\+Error}} (\$error)
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a9a1c6d7d5abe85e004d8546e30933d94}{catch\+Warning}} (\$errno, \$errstr, \$errfile, \$errline)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ae846263e987b8fece9591cc0c2566b50}{\$pop\+\_\+conn}}
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_adb9756d4524181e191069eaa76afb6cf}{\$connected}} = false
+\item 
+\mbox{\hyperlink{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ab24faf4aa647cdcee494fc48524ad4ff}{\$errors}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_p_h_p_mailer}{PHPMailer} POP-\/\+Before-\/\+SMTP Authentication Class. Specifically for \doxylink{namespace_p_h_p_mailer}{PHPMailer} to use for RFC1939 POP-\/before-\/\+SMTP authentication. 1) This class does not support APOP authentication. 2) Opening and closing lots of POP3 connections can be quite slow. If you need to send a batch of emails then just perform the authentication once at the start, and then loop through your mail sending script. Providing this process doesn\textquotesingle{}t take longer than the verification period lasts on your POP3 server, you should be fine. 3) This is really ancient technology; you should only need to use it to talk to very old systems. 4) This POP3 class is deliberately lightweight and incomplete, implementing just enough to do authentication. If you want a more complete class there are other POP3 classes for PHP available.
+
+\begin{DoxyAuthor}{Author}
+Richard Davey (original author) \href{mailto:rich@corephp.co.uk}{\texttt{ rich@corephp.\+co.\+uk}} 
+
+Marcus Bointon (Synchro/coolbru) \href{mailto:phpmailer@synchromedia.co.uk}{\texttt{ phpmailer@synchromedia.\+co.\+uk}} 
+
+Jim Jagielski (jimjag) \href{mailto:jimjag@gmail.com}{\texttt{ jimjag@gmail.\+com}} 
+
+Andy Prevost (codeworxtech) \href{mailto:codeworxtech@users.sourceforge.net}{\texttt{ codeworxtech@users.\+sourceforge.\+net}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ac55c79054af31325841d18df662060a9}\index{POP3@{POP3}!authorise@{authorise}}
+\index{authorise@{authorise}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{authorise()}{authorise()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ac55c79054af31325841d18df662060a9} 
+authorise (\begin{DoxyParamCaption}\item[{}]{\$host}{, }\item[{}]{\$port}{ = {\ttfamily false}, }\item[{}]{\$timeout}{ = {\ttfamily false}, }\item[{}]{\$username}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$password}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$debug\+\_\+level}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Authenticate with a POP3 server. A connect, login, disconnect sequence appropriate for POP-\/before SMTP authorisation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & The hostname to connect to \\
+\hline
+int | bool & {\em \$port} & The port number to connect to \\
+\hline
+int | bool & {\em \$timeout} & The timeout value \\
+\hline
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+int & {\em \$debug\+\_\+level} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a9a1c6d7d5abe85e004d8546e30933d94}\index{POP3@{POP3}!catchWarning@{catchWarning}}
+\index{catchWarning@{catchWarning}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{catchWarning()}{catchWarning()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a9a1c6d7d5abe85e004d8546e30933d94} 
+catch\+Warning (\begin{DoxyParamCaption}\item[{}]{\$errno}{, }\item[{}]{\$errstr}{, }\item[{}]{\$errfile}{, }\item[{}]{\$errline}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+POP3 connection error handler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$errno} & \\
+\hline
+string & {\em \$errstr} & \\
+\hline
+string & {\em \$errfile} & \\
+\hline
+int & {\em \$errline} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a04047b99bcd87ed0d2222bbf2116ff79}\index{POP3@{POP3}!checkResponse@{checkResponse}}
+\index{checkResponse@{checkResponse}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{checkResponse()}{checkResponse()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a04047b99bcd87ed0d2222bbf2116ff79} 
+check\+Response (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks the POP3 server response. Looks for for +OK or -\/ERR.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_aae9031598164fde5dd6d27bf9a35b813}\index{POP3@{POP3}!connect@{connect}}
+\index{connect@{connect}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_aae9031598164fde5dd6d27bf9a35b813} 
+connect (\begin{DoxyParamCaption}\item[{}]{\$host}{, }\item[{}]{\$port}{ = {\ttfamily false}, }\item[{}]{\$tval}{ = {\ttfamily 30}}\end{DoxyParamCaption})}
+
+Connect to a POP3 server.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & \\
+\hline
+int | bool & {\em \$port} & \\
+\hline
+int & {\em \$tval} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_abe175fcf658475bc56e9d6fa02bc88ec}\index{POP3@{POP3}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_abe175fcf658475bc56e9d6fa02bc88ec} 
+disconnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Disconnect from the POP3 server. \Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a6e548ebf2656742bfd19939ead923ed2}\index{POP3@{POP3}!getErrors@{getErrors}}
+\index{getErrors@{getErrors}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{getErrors()}{getErrors()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a6e548ebf2656742bfd19939ead923ed2} 
+get\+Errors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get an array of error messages, if any.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a036e1e5d5d4f9b5b0dd72bf9a2b8295d}\index{POP3@{POP3}!getResponse@{getResponse}}
+\index{getResponse@{getResponse}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{getResponse()}{getResponse()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a036e1e5d5d4f9b5b0dd72bf9a2b8295d} 
+get\+Response (\begin{DoxyParamCaption}\item[{}]{\$size}{ = {\ttfamily 128}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a response from the POP3 server.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$size} & The maximum number of bytes to retrieve\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a08dad698056dc775d5b63bb5f049a368}\index{POP3@{POP3}!login@{login}}
+\index{login@{login}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a08dad698056dc775d5b63bb5f049a368} 
+login (\begin{DoxyParamCaption}\item[{}]{\$username}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$password}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Log in to the POP3 server. Does not support APOP (RFC 2828, 4949).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a34779155a9c8d84b2e01aecc928f7d30}\index{POP3@{POP3}!popBeforeSmtp@{popBeforeSmtp}}
+\index{popBeforeSmtp@{popBeforeSmtp}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{popBeforeSmtp()}{popBeforeSmtp()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a34779155a9c8d84b2e01aecc928f7d30} 
+static pop\+Before\+Smtp (\begin{DoxyParamCaption}\item[{}]{\$host}{, }\item[{}]{\$port}{ = {\ttfamily false}, }\item[{}]{\$timeout}{ = {\ttfamily false}, }\item[{}]{\$username}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$password}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$debug\+\_\+level}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Simple static wrapper for all-\/in-\/one POP before SMTP.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & The hostname to connect to \\
+\hline
+int | bool & {\em \$port} & The port number to connect to \\
+\hline
+int | bool & {\em \$timeout} & The timeout value \\
+\hline
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+int & {\em \$debug\+\_\+level} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a517133fc963d79977f1eae330e14e0d1}\index{POP3@{POP3}!sendString@{sendString}}
+\index{sendString@{sendString}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{sendString()}{sendString()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a517133fc963d79977f1eae330e14e0d1} 
+send\+String (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send raw data to the POP3 server.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a0bc8cac7e04a83c9ca87a99690ef1194}\index{POP3@{POP3}!setError@{setError}}
+\index{setError@{setError}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{setError()}{setError()}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a0bc8cac7e04a83c9ca87a99690ef1194} 
+set\+Error (\begin{DoxyParamCaption}\item[{}]{\$error}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add an error to the internal error store. Also display debug output if it\textquotesingle{}s enabled.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$error} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_adb9756d4524181e191069eaa76afb6cf}\index{POP3@{POP3}!\$connected@{\$connected}}
+\index{\$connected@{\$connected}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{\$connected}{\$connected}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_adb9756d4524181e191069eaa76afb6cf} 
+\$connected = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a09ca59ee83fba6c8137646a13f1664d1}\index{POP3@{POP3}!\$do\_debug@{\$do\_debug}}
+\index{\$do\_debug@{\$do\_debug}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{\$do\_debug}{\$do\_debug}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a09ca59ee83fba6c8137646a13f1664d1} 
+\$do\+\_\+debug = self\+::\+DEBUG\+\_\+\+OFF}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ab24faf4aa647cdcee494fc48524ad4ff}\index{POP3@{POP3}!\$errors@{\$errors}}
+\index{\$errors@{\$errors}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{\$errors}{\$errors}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ab24faf4aa647cdcee494fc48524ad4ff} 
+\$errors = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a711797613cb863ca0756df789c396bf2}\index{POP3@{POP3}!\$host@{\$host}}
+\index{\$host@{\$host}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{\$host}{\$host}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a711797613cb863ca0756df789c396bf2} 
+\$host}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\index{POP3@{POP3}!\$password@{\$password}}
+\index{\$password@{\$password}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{\$password}{\$password}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a607686ef9f99ea7c42f4f3dd3dbb2b0d} 
+\$password}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ae846263e987b8fece9591cc0c2566b50}\index{POP3@{POP3}!\$pop\_conn@{\$pop\_conn}}
+\index{\$pop\_conn@{\$pop\_conn}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{\$pop\_conn}{\$pop\_conn}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ae846263e987b8fece9591cc0c2566b50} 
+\$pop\+\_\+conn\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_aa0787efab4b22e8a212882f3409d4c77}\index{POP3@{POP3}!\$port@{\$port}}
+\index{\$port@{\$port}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{\$port}{\$port}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_aa0787efab4b22e8a212882f3409d4c77} 
+\$port}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a19650abd43de047c5f64c5a1a84e4533}\index{POP3@{POP3}!\$tval@{\$tval}}
+\index{\$tval@{\$tval}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{\$tval}{\$tval}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a19650abd43de047c5f64c5a1a84e4533} 
+\$tval}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a0eb82aa5f81cf845de4b36cd653c42cf}\index{POP3@{POP3}!\$username@{\$username}}
+\index{\$username@{\$username}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{\$username}{\$username}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a0eb82aa5f81cf845de4b36cd653c42cf} 
+\$username}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ae7eea3acb25b5a4367764bcd2f6da5ea}\index{POP3@{POP3}!DEBUG\_CLIENT@{DEBUG\_CLIENT}}
+\index{DEBUG\_CLIENT@{DEBUG\_CLIENT}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_CLIENT}{DEBUG\_CLIENT}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ae7eea3acb25b5a4367764bcd2f6da5ea} 
+const DEBUG\+\_\+\+CLIENT = 2}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ad36a2f0b30093f91a7b53bd815a0a143}\index{POP3@{POP3}!DEBUG\_OFF@{DEBUG\_OFF}}
+\index{DEBUG\_OFF@{DEBUG\_OFF}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_OFF}{DEBUG\_OFF}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ad36a2f0b30093f91a7b53bd815a0a143} 
+const DEBUG\+\_\+\+OFF = 0}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a72dc4712d174a8bfd77415d88a9a2fb3}\index{POP3@{POP3}!DEBUG\_SERVER@{DEBUG\_SERVER}}
+\index{DEBUG\_SERVER@{DEBUG\_SERVER}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_SERVER}{DEBUG\_SERVER}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_a72dc4712d174a8bfd77415d88a9a2fb3} 
+const DEBUG\+\_\+\+SERVER = 1}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_adbbe510a37f177c138ebb598c3fdb161}\index{POP3@{POP3}!DEFAULT\_PORT@{DEFAULT\_PORT}}
+\index{DEFAULT\_PORT@{DEFAULT\_PORT}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_PORT}{DEFAULT\_PORT}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_adbbe510a37f177c138ebb598c3fdb161} 
+const DEFAULT\+\_\+\+PORT = 110}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ac44eb4a7126bb47c9fd4b520447bcc9e}\index{POP3@{POP3}!DEFAULT\_TIMEOUT@{DEFAULT\_TIMEOUT}}
+\index{DEFAULT\_TIMEOUT@{DEFAULT\_TIMEOUT}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_TIMEOUT}{DEFAULT\_TIMEOUT}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_ac44eb4a7126bb47c9fd4b520447bcc9e} 
+const DEFAULT\+\_\+\+TIMEOUT = 30}
+
+\Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_afa2c3d8a05f37e1aac11b9789aab2d4e}\index{POP3@{POP3}!LE@{LE}}
+\index{LE@{LE}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{LE}{LE}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_afa2c3d8a05f37e1aac11b9789aab2d4e} 
+const LE = "{}\textbackslash{}r\textbackslash{}n"{}}
+
+Line break constant. \Hypertarget{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_af71005841ce53adac00581ab0ba24c1f}\index{POP3@{POP3}!VERSION@{VERSION}}
+\index{VERSION@{VERSION}!POP3@{POP3}}
+\doxysubsubsection{\texorpdfstring{VERSION}{VERSION}}
+{\footnotesize\ttfamily \label{class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_o_p3_af71005841ce53adac00581ab0ba24c1f} 
+const VERSION = \textquotesingle{}6.\+9.\+1\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utils/\+PHPMailer/src/\mbox{\hyperlink{_p_o_p3_8php}{POP3.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,291 @@
+\doxysection{Utils/functions.php File Reference}
+\hypertarget{functions_8php}{}\label{functions_8php}\index{Utils/functions.php@{Utils/functions.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{functions_8php_aba84049b81310c3cae600906c219ab07}{e}} (\$message)
+\item 
+\mbox{\hyperlink{functions_8php_a825b98d484b61fd5974011c03c3184d0}{check\+User\+Access}} ()
+\item 
+\mbox{\hyperlink{functions_8php_a68cc6f5eb78b574e5ad8b673e3b370ee}{get\+User\+Role}} (\$user)
+\item 
+\mbox{\hyperlink{functions_8php_a43aa3a7d0ad286970c6cf23815489f6c}{is\+User\+In\+Discussion}} (\$user\+Id, \$discussion)
+\item 
+\mbox{\hyperlink{functions_8php_a794bb25ead12b9fb6b2f0043a8e0cc6b}{encrypt\+With\+Public\+Key}} (\$str)
+\item 
+\mbox{\hyperlink{functions_8php_a639cdbd580fdcd3d0d4694797f76831f}{decrypt\+With\+Private\+Key}} (\$str)
+\item 
+\mbox{\hyperlink{functions_8php_abe51ec8194fe374cd7224fc01fa9d836}{generate\+RSAKeys}} (\$bit\+Length)
+\item 
+\mbox{\hyperlink{functions_8php_a34088bec1759a00ba61a8d0404b0e11f}{generate\+Prime}} (\$bit\+Length)
+\item 
+\mbox{\hyperlink{functions_8php_aad4a43246f91c0bcd568aab36946dcab}{find\+Coprime}} (\$phi)
+\item 
+\mbox{\hyperlink{functions_8php_a88658fa99fc46df18a681231681ac299}{mod\+Inverse}} (\$a, \$m)
+\item 
+\mbox{\hyperlink{functions_8php_a2613ccb1caa1d2c17f79ac3c2d841dd1}{mod\+Pow}} (\$base, \$exposant, \$modulo)
+\item 
+\mbox{\hyperlink{functions_8php_a3aabd331eecc76ebbc2da2aa28743278}{string\+To\+Number}} (\$string)
+\item 
+\mbox{\hyperlink{functions_8php_a5b1d26b4318bad9cda7f6112a9c17e4e}{number\+To\+String}} (\$number)
+\item 
+\mbox{\hyperlink{functions_8php_a1aeb01b10e384dddc471f77a3bba06d5}{encrypt\+RSA}} (\$message, \$public\+Key)
+\item 
+\mbox{\hyperlink{functions_8php_a47427aa08ed9aaf9cbf6a123a5dc8551}{decrypt\+RSA}} (\$encrypted\+Message, \$private\+Key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{functions_8php_a825b98d484b61fd5974011c03c3184d0}\index{functions.php@{functions.php}!checkUserAccess@{checkUserAccess}}
+\index{checkUserAccess@{checkUserAccess}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{checkUserAccess()}{checkUserAccess()}}
+{\footnotesize\ttfamily \label{functions_8php_a825b98d484b61fd5974011c03c3184d0} 
+check\+User\+Access (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Vérifie l\textquotesingle{}accès de l\textquotesingle{}utilisateur basé sur la session.
+
+Cette fonction vérifie si les identifiants de l\textquotesingle{}utilisateur et la session sont définis et si le temps d\textquotesingle{}expiration de la session n\textquotesingle{}est pas dépassé.
+
+\begin{DoxyReturn}{Returns}
+mixed Retourne l\textquotesingle{}objet \$user si l\textquotesingle{}accès est validé, sinon false. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a47427aa08ed9aaf9cbf6a123a5dc8551}\index{functions.php@{functions.php}!decryptRSA@{decryptRSA}}
+\index{decryptRSA@{decryptRSA}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{decryptRSA()}{decryptRSA()}}
+{\footnotesize\ttfamily \label{functions_8php_a47427aa08ed9aaf9cbf6a123a5dc8551} 
+decrypt\+RSA (\begin{DoxyParamCaption}\item[{}]{\$encrypted\+Message}{, }\item[{}]{\$private\+Key}{}\end{DoxyParamCaption})}
+
+Déchiffre un message avec RSA.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encrypted\+Message} & Le message chiffré. \\
+\hline
+array & {\em \$private\+Key} & La clé privée (d, n). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Le message déchiffré. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a639cdbd580fdcd3d0d4694797f76831f}\index{functions.php@{functions.php}!decryptWithPrivateKey@{decryptWithPrivateKey}}
+\index{decryptWithPrivateKey@{decryptWithPrivateKey}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{decryptWithPrivateKey()}{decryptWithPrivateKey()}}
+{\footnotesize\ttfamily \label{functions_8php_a639cdbd580fdcd3d0d4694797f76831f} 
+decrypt\+With\+Private\+Key (\begin{DoxyParamCaption}\item[{}]{\$str}{}\end{DoxyParamCaption})}
+
+Déchiffre une chaîne de caractères à l\textquotesingle{}aide d\textquotesingle{}une clé privée avec la bibliothèque Open\+SSL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & La chaîne chiffrée, encodée en base64. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string La chaîne déchiffrée. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_aba84049b81310c3cae600906c219ab07}\index{functions.php@{functions.php}!e@{e}}
+\index{e@{e}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{e()}{e()}}
+{\footnotesize\ttfamily \label{functions_8php_aba84049b81310c3cae600906c219ab07} 
+e (\begin{DoxyParamCaption}\item[{}]{\$message}{}\end{DoxyParamCaption})}
+
+Fonction échappant les caractères html dans \$message 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & chaîne à échapper \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string chaîne échappée 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a1aeb01b10e384dddc471f77a3bba06d5}\index{functions.php@{functions.php}!encryptRSA@{encryptRSA}}
+\index{encryptRSA@{encryptRSA}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{encryptRSA()}{encryptRSA()}}
+{\footnotesize\ttfamily \label{functions_8php_a1aeb01b10e384dddc471f77a3bba06d5} 
+encrypt\+RSA (\begin{DoxyParamCaption}\item[{}]{\$message}{, }\item[{}]{\$public\+Key}{}\end{DoxyParamCaption})}
+
+Chiffre un message avec RSA.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Le message à chiffrer. \\
+\hline
+array & {\em \$public\+Key} & La clé publique (e, n). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Le message chiffré. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a794bb25ead12b9fb6b2f0043a8e0cc6b}\index{functions.php@{functions.php}!encryptWithPublicKey@{encryptWithPublicKey}}
+\index{encryptWithPublicKey@{encryptWithPublicKey}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{encryptWithPublicKey()}{encryptWithPublicKey()}}
+{\footnotesize\ttfamily \label{functions_8php_a794bb25ead12b9fb6b2f0043a8e0cc6b} 
+encrypt\+With\+Public\+Key (\begin{DoxyParamCaption}\item[{}]{\$str}{}\end{DoxyParamCaption})}
+
+Chiffre une chaîne de caractères à l\textquotesingle{}aide d\textquotesingle{}une clé publique avec la bibliothèque Open\+SSL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & La chaîne de caractères à chiffrer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string La chaîne chiffrée, encodée en base64. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_aad4a43246f91c0bcd568aab36946dcab}\index{functions.php@{functions.php}!findCoprime@{findCoprime}}
+\index{findCoprime@{findCoprime}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{findCoprime()}{findCoprime()}}
+{\footnotesize\ttfamily \label{functions_8php_aad4a43246f91c0bcd568aab36946dcab} 
+find\+Coprime (\begin{DoxyParamCaption}\item[{}]{\$phi}{}\end{DoxyParamCaption})}
+
+Trouve un copremier à phi.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$phi} & La valeur de phi. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+GMP Un copremier à phi. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a34088bec1759a00ba61a8d0404b0e11f}\index{functions.php@{functions.php}!generatePrime@{generatePrime}}
+\index{generatePrime@{generatePrime}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{generatePrime()}{generatePrime()}}
+{\footnotesize\ttfamily \label{functions_8php_a34088bec1759a00ba61a8d0404b0e11f} 
+generate\+Prime (\begin{DoxyParamCaption}\item[{}]{\$bit\+Length}{}\end{DoxyParamCaption})}
+
+Génère un nombre premier aléatoire de la longueur en bits spécifiée.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$bit\+Length} & Longueur en bits du nombre premier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+GMP Nombre premier généré. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_abe51ec8194fe374cd7224fc01fa9d836}\index{functions.php@{functions.php}!generateRSAKeys@{generateRSAKeys}}
+\index{generateRSAKeys@{generateRSAKeys}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{generateRSAKeys()}{generateRSAKeys()}}
+{\footnotesize\ttfamily \label{functions_8php_abe51ec8194fe374cd7224fc01fa9d836} 
+generate\+RSAKeys (\begin{DoxyParamCaption}\item[{}]{\$bit\+Length}{}\end{DoxyParamCaption})}
+
+Génère une paire de clés RSA (publique et privée) sans utiliser de bibliothèque externe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$bit\+Length} & La longueur en bits pour la génération des nombres premiers. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Un tableau contenant la clé publique et la clé privée.
+\begin{DoxyItemize}
+\item \textquotesingle{}public\+Key\textquotesingle{} \+: \mbox{[}\textquotesingle{}e\textquotesingle{} =\texorpdfstring{$>$}{>} exponent, \textquotesingle{}n\textquotesingle{} =\texorpdfstring{$>$}{>} modulus\mbox{]}
+\item \textquotesingle{}private\+Key\textquotesingle{} \+: \mbox{[}\textquotesingle{}d\textquotesingle{} =\texorpdfstring{$>$}{>} exponent, \textquotesingle{}n\textquotesingle{} =\texorpdfstring{$>$}{>} modulus\mbox{]} 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a68cc6f5eb78b574e5ad8b673e3b370ee}\index{functions.php@{functions.php}!getUserRole@{getUserRole}}
+\index{getUserRole@{getUserRole}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{getUserRole()}{getUserRole()}}
+{\footnotesize\ttfamily \label{functions_8php_a68cc6f5eb78b574e5ad8b673e3b370ee} 
+get\+User\+Role (\begin{DoxyParamCaption}\item[{}]{\$user}{}\end{DoxyParamCaption})}
+
+Foonction pour avoir le rôle de l\textquotesingle{}utilisateur.
+
+Cette fonction détermine si l\textquotesingle{}utilisateur est un \textquotesingle{}Formateur\textquotesingle{} ou un \textquotesingle{}Client\textquotesingle{} en vérifiant l\textquotesingle{}existence des détails du formateur dans la base de données.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$user} & tableau avec les informations de l\textquotesingle{}utilisateur. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Retourne \textquotesingle{}Formateur\textquotesingle{} si l\textquotesingle{}utilisateur est un formateur, sinon \textquotesingle{}Client\textquotesingle{}. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a43aa3a7d0ad286970c6cf23815489f6c}\index{functions.php@{functions.php}!isUserInDiscussion@{isUserInDiscussion}}
+\index{isUserInDiscussion@{isUserInDiscussion}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{isUserInDiscussion()}{isUserInDiscussion()}}
+{\footnotesize\ttfamily \label{functions_8php_a43aa3a7d0ad286970c6cf23815489f6c} 
+is\+User\+In\+Discussion (\begin{DoxyParamCaption}\item[{}]{\$user\+Id}{, }\item[{}]{\$discussion}{}\end{DoxyParamCaption})}
+
+Cette fonction vérifie si l\textquotesingle{}identifiant de l\textquotesingle{}utilisateur correspond à l\textquotesingle{}un des identifiants des utilisateurs participant à la discussion.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$user\+Id} & Id de l\textquotesingle{}utilisateur. \\
+\hline
+array & {\em \$discussion} & tableau avec les informations de la discussion, incluant les identifiants des utilisateurs participants. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Retourne true si l\textquotesingle{}utilisateur participe à la discussion, sinon false. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a88658fa99fc46df18a681231681ac299}\index{functions.php@{functions.php}!modInverse@{modInverse}}
+\index{modInverse@{modInverse}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{modInverse()}{modInverse()}}
+{\footnotesize\ttfamily \label{functions_8php_a88658fa99fc46df18a681231681ac299} 
+mod\+Inverse (\begin{DoxyParamCaption}\item[{}]{\$a}{, }\item[{}]{\$m}{}\end{DoxyParamCaption})}
+
+Calcule l\textquotesingle{}inverse modulaire de a mod m.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$a} & Valeur a. \\
+\hline
+int | string & {\em \$m} & Modulo m. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+GMP L\textquotesingle{}inverse modulaire de a mod m. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a2613ccb1caa1d2c17f79ac3c2d841dd1}\index{functions.php@{functions.php}!modPow@{modPow}}
+\index{modPow@{modPow}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{modPow()}{modPow()}}
+{\footnotesize\ttfamily \label{functions_8php_a2613ccb1caa1d2c17f79ac3c2d841dd1} 
+mod\+Pow (\begin{DoxyParamCaption}\item[{}]{\$base}{, }\item[{}]{\$exposant}{, }\item[{}]{\$modulo}{}\end{DoxyParamCaption})}
+
+Calcule base\texorpdfstring{$^\wedge$}{\string^}exposant mod modulo.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$base} & Base. \\
+\hline
+int | string & {\em \$exposant} & Exposant. \\
+\hline
+int | string & {\em \$modulo} & Modulo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Le résultat de base\texorpdfstring{$^\wedge$}{\string^}exposant mod modulo. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a5b1d26b4318bad9cda7f6112a9c17e4e}\index{functions.php@{functions.php}!numberToString@{numberToString}}
+\index{numberToString@{numberToString}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{numberToString()}{numberToString()}}
+{\footnotesize\ttfamily \label{functions_8php_a5b1d26b4318bad9cda7f6112a9c17e4e} 
+number\+To\+String (\begin{DoxyParamCaption}\item[{}]{\$number}{}\end{DoxyParamCaption})}
+
+Convertit un nombre en chaîne.
+
+
+\begin{DoxyParams}[1]{Parameters}
+GMP & {\em \$number} & Le nombre à convertir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string La chaîne convertie. 
+\end{DoxyReturn}
+\Hypertarget{functions_8php_a3aabd331eecc76ebbc2da2aa28743278}\index{functions.php@{functions.php}!stringToNumber@{stringToNumber}}
+\index{stringToNumber@{stringToNumber}!functions.php@{functions.php}}
+\doxysubsubsection{\texorpdfstring{stringToNumber()}{stringToNumber()}}
+{\footnotesize\ttfamily \label{functions_8php_a3aabd331eecc76ebbc2da2aa28743278} 
+string\+To\+Number (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})}
+
+Convertit une chaîne en nombre.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & La chaîne à convertir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+GMP Le nombre converti. 
+\end{DoxyReturn}

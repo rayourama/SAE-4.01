@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentation-PandArtists:  Fichier source de RSA_optimisation.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentation-PandArtists<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Documentation en HTML</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RSA_optimisation.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_r_s_a__optimisation_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Fonction modPow originale</span></div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#ad5bd2ffe99f08615ce5e371feff693b3">    4</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__optimisation_8php.html#ad5bd2ffe99f08615ce5e371feff693b3">modPowOriginal</a>(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>) {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a> = gmp_init(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a> = gmp_init(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a> = gmp_init(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    $resultatFinal = gmp_init(1);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordflow">while</span> (gmp_cmp(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, 0) &gt; 0) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">if</span> (gmp_cmp(gmp_mod(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, 2), 1) == 0) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            $resultatFinal = gmp_mod(gmp_mul($resultatFinal, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>), <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a> = gmp_mod(gmp_mul(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>), <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a> = gmp_div(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, 2);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> gmp_strval($resultatFinal);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Fonction modPow optimisée</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#a4157b8386bf6e3c03d0274d034a300ea">   23</a></span><span class="keyword">function</span> <a class="code hl_function" href="_r_s_a__optimisation_8php.html#a4157b8386bf6e3c03d0274d034a300ea">modPowOptimisee</a>(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a> = gmp_init(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a> = gmp_init(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a> = gmp_init(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    $result = gmp_init(1);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">while</span> (gmp_cmp(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, 0) &gt; 0) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">if</span> (gmp_intval(gmp_and(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, 1)) == 1) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            $result = gmp_mod(gmp_mul($result, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>), <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a> = gmp_mod(gmp_mul(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>), <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a> = gmp_div(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, 2);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> gmp_strval($result);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">   42</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a> = <span class="stringliteral">&quot;123456789&quot;</span>;  </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">   43</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a> = <span class="stringliteral">&quot;987654321&quot;</span>;  </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">   44</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a> = <span class="stringliteral">&quot;999999999&quot;</span>;  </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#a7253b46755dd632e95284710eb4df45c">   46</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a7253b46755dd632e95284710eb4df45c">$debutOriginal</a> = microtime(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#a8d6a81ce8a814baeac7bc2f48a061f57">   47</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a8d6a81ce8a814baeac7bc2f48a061f57">$resultatOriginal</a> = <a class="code hl_function" href="_r_s_a__optimisation_8php.html#ad5bd2ffe99f08615ce5e371feff693b3">modPowOriginal</a>(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#a2d3d2b38d4b77ae6e8e1093cb399404e">   48</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a2d3d2b38d4b77ae6e8e1093cb399404e">$finOriginal</a> = microtime(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#aa6a8944825b8fd9c550e0ba07d9ecd9e">   49</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#aa6a8944825b8fd9c550e0ba07d9ecd9e">$tempsExecutionOriginal</a> = <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a2d3d2b38d4b77ae6e8e1093cb399404e">$finOriginal</a> - <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a7253b46755dd632e95284710eb4df45c">$debutOriginal</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>echo <span class="stringliteral">&quot;Résultat de modPow original : {$resultatOriginal}&lt;br&gt;&quot;</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>echo <span class="stringliteral">&quot;Temps d&#39;exécution pour la fonction modPow originale : {$tempsExecutionOriginal} secondes&lt;br&gt;&lt;br&gt;&quot;</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#a71e7f11011d565c8d37a8fff8388973d">   54</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a71e7f11011d565c8d37a8fff8388973d">$debutOptimisee</a> = microtime(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#affb9209f24379ea52021433065488cab">   55</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#affb9209f24379ea52021433065488cab">$resultatOptimisee</a> = <a class="code hl_function" href="_r_s_a__optimisation_8php.html#a4157b8386bf6e3c03d0274d034a300ea">modPowOptimisee</a>(<a class="code hl_variable" href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a>, <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#a5f6d27dfdee90f52496d9b46f05278f3">   56</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a5f6d27dfdee90f52496d9b46f05278f3">$finOptimisee</a> = microtime(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="_r_s_a__optimisation_8php.html#a0be93caab7d6c9ef027d2b364389a5c0">   57</a></span><a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a0be93caab7d6c9ef027d2b364389a5c0">$tempsExecutionOptimisee</a> = <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a5f6d27dfdee90f52496d9b46f05278f3">$finOptimisee</a> - <a class="code hl_variable" href="_r_s_a__optimisation_8php.html#a71e7f11011d565c8d37a8fff8388973d">$debutOptimisee</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>echo <span class="stringliteral">&quot;Résultat de modPow optimisée : {$resultatOptimisee}&lt;br&gt;&quot;</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>echo <span class="stringliteral">&quot;Temps d&#39;exécution pour la fonction modPow optimisée : {$tempsExecutionOptimisee} secondes&lt;br&gt;&quot;</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>?&gt;</div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_a0be93caab7d6c9ef027d2b364389a5c0"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#a0be93caab7d6c9ef027d2b364389a5c0">$tempsExecutionOptimisee</a></div><div class="ttdeci">$tempsExecutionOptimisee</div><div class="ttdef"><b>Definition</b> <a href="#l00057">RSA_optimisation.php:57</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_a2d3d2b38d4b77ae6e8e1093cb399404e"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#a2d3d2b38d4b77ae6e8e1093cb399404e">$finOriginal</a></div><div class="ttdeci">$finOriginal</div><div class="ttdef"><b>Definition</b> <a href="#l00048">RSA_optimisation.php:48</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_a3d2213733425f7b16ec66b3d7730e3b4"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#a3d2213733425f7b16ec66b3d7730e3b4">$modulo</a></div><div class="ttdeci">$modulo</div><div class="ttdef"><b>Definition</b> <a href="#l00044">RSA_optimisation.php:44</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_a4157b8386bf6e3c03d0274d034a300ea"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#a4157b8386bf6e3c03d0274d034a300ea">modPowOptimisee</a></div><div class="ttdeci">modPowOptimisee($base, $exposant, $modulo)</div><div class="ttdef"><b>Definition</b> <a href="#l00023">RSA_optimisation.php:23</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_a5f6d27dfdee90f52496d9b46f05278f3"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#a5f6d27dfdee90f52496d9b46f05278f3">$finOptimisee</a></div><div class="ttdeci">$finOptimisee</div><div class="ttdef"><b>Definition</b> <a href="#l00056">RSA_optimisation.php:56</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_a71e7f11011d565c8d37a8fff8388973d"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#a71e7f11011d565c8d37a8fff8388973d">$debutOptimisee</a></div><div class="ttdeci">$debutOptimisee</div><div class="ttdef"><b>Definition</b> <a href="#l00054">RSA_optimisation.php:54</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_a7253b46755dd632e95284710eb4df45c"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#a7253b46755dd632e95284710eb4df45c">$debutOriginal</a></div><div class="ttdeci">$debutOriginal</div><div class="ttdef"><b>Definition</b> <a href="#l00046">RSA_optimisation.php:46</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_a8d6a81ce8a814baeac7bc2f48a061f57"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#a8d6a81ce8a814baeac7bc2f48a061f57">$resultatOriginal</a></div><div class="ttdeci">$resultatOriginal</div><div class="ttdef"><b>Definition</b> <a href="#l00047">RSA_optimisation.php:47</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_aa6a8944825b8fd9c550e0ba07d9ecd9e"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#aa6a8944825b8fd9c550e0ba07d9ecd9e">$tempsExecutionOriginal</a></div><div class="ttdeci">$tempsExecutionOriginal</div><div class="ttdef"><b>Definition</b> <a href="#l00049">RSA_optimisation.php:49</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_ac78df45419614d6db964d0bd9e542c63"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#ac78df45419614d6db964d0bd9e542c63">$base</a></div><div class="ttdeci">$base</div><div class="ttdef"><b>Definition</b> <a href="#l00042">RSA_optimisation.php:42</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_ad5bd2ffe99f08615ce5e371feff693b3"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#ad5bd2ffe99f08615ce5e371feff693b3">modPowOriginal</a></div><div class="ttdeci">modPowOriginal($base, $exposant, $modulo)</div><div class="ttdef"><b>Definition</b> <a href="#l00004">RSA_optimisation.php:4</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_afdef299541c7488560426ce0213e36c0"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#afdef299541c7488560426ce0213e36c0">$exposant</a></div><div class="ttdeci">$exposant</div><div class="ttdef"><b>Definition</b> <a href="#l00043">RSA_optimisation.php:43</a></div></div>
+<div class="ttc" id="a_r_s_a__optimisation_8php_html_affb9209f24379ea52021433065488cab"><div class="ttname"><a href="_r_s_a__optimisation_8php.html#affb9209f24379ea52021433065488cab">$resultatOptimisee</a></div><div class="ttdeci">$resultatOptimisee</div><div class="ttdef"><b>Definition</b> <a href="#l00055">RSA_optimisation.php:55</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

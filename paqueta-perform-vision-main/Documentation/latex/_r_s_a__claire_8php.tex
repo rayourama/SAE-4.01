@@ -1,0 +1,134 @@
+\doxysection{RSA\+\_\+claire.\+php File Reference}
+\hypertarget{_r_s_a__claire_8php}{}\label{_r_s_a__claire_8php}\index{RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_abe51ec8194fe374cd7224fc01fa9d836}{generate\+RSAKeys}} (\$bit\+Length)
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a34088bec1759a00ba61a8d0404b0e11f}{generate\+Prime}} (\$bit\+Length)
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a51d530aa7c949af3cb2de82e826ea24c}{find\+Coprime}} (\$phi, \$bit\+Length)
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a88658fa99fc46df18a681231681ac299}{mod\+Inverse}} (\$a, \$m)
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a2613ccb1caa1d2c17f79ac3c2d841dd1}{mod\+Pow}} (\$base, \$exposant, \$modulo)
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a3aabd331eecc76ebbc2da2aa28743278}{string\+To\+Number}} (\$string)
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a5b1d26b4318bad9cda7f6112a9c17e4e}{number\+To\+String}} (\$number)
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a1aeb01b10e384dddc471f77a3bba06d5}{encrypt\+RSA}} (\$message, \$public\+Key)
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a47427aa08ed9aaf9cbf6a123a5dc8551}{decrypt\+RSA}} (\$encrypted\+Message, \$private\+Key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_af20635b6c08e03bfee9e3fc036fa80f3}{\$keys}} = \mbox{\hyperlink{_r_s_a__claire_8php_abe51ec8194fe374cd7224fc01fa9d836}{generate\+RSAKeys}}(1024)
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a8d1062abadc25a988fb1aa01bfea74fe}{\$public\+Key}} = \$keys\mbox{[}\textquotesingle{}public\+Key\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a0efebc1f06535a262ea0c2d33d794502}{\$private\+Key}} = \$keys\mbox{[}\textquotesingle{}private\+Key\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_abf17cb2dba2ed17cb28aa5f37deb5293}{\$message}} = "{}Salut, ceci est un nouveau message à chiffrer et déchiffrer."{}
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a238e8759da54cfc6e0ecd929dbcd3f88}{\$encrypted\+Message}} = \mbox{\hyperlink{_r_s_a__claire_8php_a1aeb01b10e384dddc471f77a3bba06d5}{encrypt\+RSA}}(\$message, \$public\+Key)
+\item 
+\mbox{\hyperlink{_r_s_a__claire_8php_a5b33c48077e6ab447ce0658014f10567}{\$decrypted\+Message}} = \mbox{\hyperlink{_r_s_a__claire_8php_a47427aa08ed9aaf9cbf6a123a5dc8551}{decrypt\+RSA}}(\$encrypted\+Message, \$private\+Key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_r_s_a__claire_8php_a47427aa08ed9aaf9cbf6a123a5dc8551}\index{RSA\_claire.php@{RSA\_claire.php}!decryptRSA@{decryptRSA}}
+\index{decryptRSA@{decryptRSA}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{decryptRSA()}{decryptRSA()}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a47427aa08ed9aaf9cbf6a123a5dc8551} 
+decrypt\+RSA (\begin{DoxyParamCaption}\item[{}]{\$encrypted\+Message}{, }\item[{}]{\$private\+Key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__claire_8php_a1aeb01b10e384dddc471f77a3bba06d5}\index{RSA\_claire.php@{RSA\_claire.php}!encryptRSA@{encryptRSA}}
+\index{encryptRSA@{encryptRSA}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{encryptRSA()}{encryptRSA()}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a1aeb01b10e384dddc471f77a3bba06d5} 
+encrypt\+RSA (\begin{DoxyParamCaption}\item[{}]{\$message}{, }\item[{}]{\$public\+Key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__claire_8php_a51d530aa7c949af3cb2de82e826ea24c}\index{RSA\_claire.php@{RSA\_claire.php}!findCoprime@{findCoprime}}
+\index{findCoprime@{findCoprime}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{findCoprime()}{findCoprime()}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a51d530aa7c949af3cb2de82e826ea24c} 
+find\+Coprime (\begin{DoxyParamCaption}\item[{}]{\$phi}{, }\item[{}]{\$bit\+Length}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__claire_8php_a34088bec1759a00ba61a8d0404b0e11f}\index{RSA\_claire.php@{RSA\_claire.php}!generatePrime@{generatePrime}}
+\index{generatePrime@{generatePrime}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{generatePrime()}{generatePrime()}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a34088bec1759a00ba61a8d0404b0e11f} 
+generate\+Prime (\begin{DoxyParamCaption}\item[{}]{\$bit\+Length}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__claire_8php_abe51ec8194fe374cd7224fc01fa9d836}\index{RSA\_claire.php@{RSA\_claire.php}!generateRSAKeys@{generateRSAKeys}}
+\index{generateRSAKeys@{generateRSAKeys}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{generateRSAKeys()}{generateRSAKeys()}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_abe51ec8194fe374cd7224fc01fa9d836} 
+generate\+RSAKeys (\begin{DoxyParamCaption}\item[{}]{\$bit\+Length}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__claire_8php_a88658fa99fc46df18a681231681ac299}\index{RSA\_claire.php@{RSA\_claire.php}!modInverse@{modInverse}}
+\index{modInverse@{modInverse}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{modInverse()}{modInverse()}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a88658fa99fc46df18a681231681ac299} 
+mod\+Inverse (\begin{DoxyParamCaption}\item[{}]{\$a}{, }\item[{}]{\$m}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__claire_8php_a2613ccb1caa1d2c17f79ac3c2d841dd1}\index{RSA\_claire.php@{RSA\_claire.php}!modPow@{modPow}}
+\index{modPow@{modPow}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{modPow()}{modPow()}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a2613ccb1caa1d2c17f79ac3c2d841dd1} 
+mod\+Pow (\begin{DoxyParamCaption}\item[{}]{\$base}{, }\item[{}]{\$exposant}{, }\item[{}]{\$modulo}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__claire_8php_a5b1d26b4318bad9cda7f6112a9c17e4e}\index{RSA\_claire.php@{RSA\_claire.php}!numberToString@{numberToString}}
+\index{numberToString@{numberToString}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{numberToString()}{numberToString()}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a5b1d26b4318bad9cda7f6112a9c17e4e} 
+number\+To\+String (\begin{DoxyParamCaption}\item[{}]{\$number}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__claire_8php_a3aabd331eecc76ebbc2da2aa28743278}\index{RSA\_claire.php@{RSA\_claire.php}!stringToNumber@{stringToNumber}}
+\index{stringToNumber@{stringToNumber}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{stringToNumber()}{stringToNumber()}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a3aabd331eecc76ebbc2da2aa28743278} 
+string\+To\+Number (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_r_s_a__claire_8php_a5b33c48077e6ab447ce0658014f10567}\index{RSA\_claire.php@{RSA\_claire.php}!\$decryptedMessage@{\$decryptedMessage}}
+\index{\$decryptedMessage@{\$decryptedMessage}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{\$decryptedMessage}{\$decryptedMessage}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a5b33c48077e6ab447ce0658014f10567} 
+\$decrypted\+Message = \mbox{\hyperlink{_r_s_a__claire_8php_a47427aa08ed9aaf9cbf6a123a5dc8551}{decrypt\+RSA}}(\$encrypted\+Message, \$private\+Key)}
+
+\Hypertarget{_r_s_a__claire_8php_a238e8759da54cfc6e0ecd929dbcd3f88}\index{RSA\_claire.php@{RSA\_claire.php}!\$encryptedMessage@{\$encryptedMessage}}
+\index{\$encryptedMessage@{\$encryptedMessage}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{\$encryptedMessage}{\$encryptedMessage}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a238e8759da54cfc6e0ecd929dbcd3f88} 
+\$encrypted\+Message = \mbox{\hyperlink{_r_s_a__claire_8php_a1aeb01b10e384dddc471f77a3bba06d5}{encrypt\+RSA}}(\$message, \$public\+Key)}
+
+\Hypertarget{_r_s_a__claire_8php_af20635b6c08e03bfee9e3fc036fa80f3}\index{RSA\_claire.php@{RSA\_claire.php}!\$keys@{\$keys}}
+\index{\$keys@{\$keys}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{\$keys}{\$keys}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_af20635b6c08e03bfee9e3fc036fa80f3} 
+\$keys = \mbox{\hyperlink{_r_s_a__claire_8php_abe51ec8194fe374cd7224fc01fa9d836}{generate\+RSAKeys}}(1024)}
+
+\Hypertarget{_r_s_a__claire_8php_abf17cb2dba2ed17cb28aa5f37deb5293}\index{RSA\_claire.php@{RSA\_claire.php}!\$message@{\$message}}
+\index{\$message@{\$message}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{\$message}{\$message}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_abf17cb2dba2ed17cb28aa5f37deb5293} 
+\$message = "{}Salut, ceci est un nouveau message à chiffrer et déchiffrer."{}}
+
+\Hypertarget{_r_s_a__claire_8php_a0efebc1f06535a262ea0c2d33d794502}\index{RSA\_claire.php@{RSA\_claire.php}!\$privateKey@{\$privateKey}}
+\index{\$privateKey@{\$privateKey}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{\$privateKey}{\$privateKey}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a0efebc1f06535a262ea0c2d33d794502} 
+\$private\+Key = \$keys\mbox{[}\textquotesingle{}private\+Key\textquotesingle{}\mbox{]}}
+
+\Hypertarget{_r_s_a__claire_8php_a8d1062abadc25a988fb1aa01bfea74fe}\index{RSA\_claire.php@{RSA\_claire.php}!\$publicKey@{\$publicKey}}
+\index{\$publicKey@{\$publicKey}!RSA\_claire.php@{RSA\_claire.php}}
+\doxysubsubsection{\texorpdfstring{\$publicKey}{\$publicKey}}
+{\footnotesize\ttfamily \label{_r_s_a__claire_8php_a8d1062abadc25a988fb1aa01bfea74fe} 
+\$public\+Key = \$keys\mbox{[}\textquotesingle{}public\+Key\textquotesingle{}\mbox{]}}
+

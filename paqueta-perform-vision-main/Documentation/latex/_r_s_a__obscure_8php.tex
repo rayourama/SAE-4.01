@@ -1,0 +1,54 @@
+\doxysection{RSA\+\_\+obscure.\+php File Reference}
+\hypertarget{_r_s_a__obscure_8php}{}\label{_r_s_a__obscure_8php}\index{RSA\_obscure.php@{RSA\_obscure.php}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_r_s_a__obscure_8php_a4ab2c547063e52107dd4fdba2d3f3a38}{generate\+Key\+Pair}} (\$key\+Bits=2048)
+\item 
+\mbox{\hyperlink{_r_s_a__obscure_8php_a794bb25ead12b9fb6b2f0043a8e0cc6b}{encrypt\+With\+Public\+Key}} (\$str)
+\item 
+\mbox{\hyperlink{_r_s_a__obscure_8php_a639cdbd580fdcd3d0d4694797f76831f}{decrypt\+With\+Private\+Key}} (\$str)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_r_s_a__obscure_8php_a238e8759da54cfc6e0ecd929dbcd3f88}{\$encrypted\+Message}} = \mbox{\hyperlink{_r_s_a__obscure_8php_a794bb25ead12b9fb6b2f0043a8e0cc6b}{encrypt\+With\+Public\+Key}}("{}Ceci est un message de test pour le chiffrement RSA."{})
+\item 
+\mbox{\hyperlink{_r_s_a__obscure_8php_a5b33c48077e6ab447ce0658014f10567}{\$decrypted\+Message}} = \mbox{\hyperlink{_r_s_a__obscure_8php_a639cdbd580fdcd3d0d4694797f76831f}{decrypt\+With\+Private\+Key}}(\$encrypted\+Message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_r_s_a__obscure_8php_a639cdbd580fdcd3d0d4694797f76831f}\index{RSA\_obscure.php@{RSA\_obscure.php}!decryptWithPrivateKey@{decryptWithPrivateKey}}
+\index{decryptWithPrivateKey@{decryptWithPrivateKey}!RSA\_obscure.php@{RSA\_obscure.php}}
+\doxysubsubsection{\texorpdfstring{decryptWithPrivateKey()}{decryptWithPrivateKey()}}
+{\footnotesize\ttfamily \label{_r_s_a__obscure_8php_a639cdbd580fdcd3d0d4694797f76831f} 
+decrypt\+With\+Private\+Key (\begin{DoxyParamCaption}\item[{}]{\$str}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__obscure_8php_a794bb25ead12b9fb6b2f0043a8e0cc6b}\index{RSA\_obscure.php@{RSA\_obscure.php}!encryptWithPublicKey@{encryptWithPublicKey}}
+\index{encryptWithPublicKey@{encryptWithPublicKey}!RSA\_obscure.php@{RSA\_obscure.php}}
+\doxysubsubsection{\texorpdfstring{encryptWithPublicKey()}{encryptWithPublicKey()}}
+{\footnotesize\ttfamily \label{_r_s_a__obscure_8php_a794bb25ead12b9fb6b2f0043a8e0cc6b} 
+encrypt\+With\+Public\+Key (\begin{DoxyParamCaption}\item[{}]{\$str}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_r_s_a__obscure_8php_a4ab2c547063e52107dd4fdba2d3f3a38}\index{RSA\_obscure.php@{RSA\_obscure.php}!generateKeyPair@{generateKeyPair}}
+\index{generateKeyPair@{generateKeyPair}!RSA\_obscure.php@{RSA\_obscure.php}}
+\doxysubsubsection{\texorpdfstring{generateKeyPair()}{generateKeyPair()}}
+{\footnotesize\ttfamily \label{_r_s_a__obscure_8php_a4ab2c547063e52107dd4fdba2d3f3a38} 
+generate\+Key\+Pair (\begin{DoxyParamCaption}\item[{}]{\$key\+Bits}{ = {\ttfamily 2048}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_r_s_a__obscure_8php_a5b33c48077e6ab447ce0658014f10567}\index{RSA\_obscure.php@{RSA\_obscure.php}!\$decryptedMessage@{\$decryptedMessage}}
+\index{\$decryptedMessage@{\$decryptedMessage}!RSA\_obscure.php@{RSA\_obscure.php}}
+\doxysubsubsection{\texorpdfstring{\$decryptedMessage}{\$decryptedMessage}}
+{\footnotesize\ttfamily \label{_r_s_a__obscure_8php_a5b33c48077e6ab447ce0658014f10567} 
+\$decrypted\+Message = \mbox{\hyperlink{_r_s_a__obscure_8php_a639cdbd580fdcd3d0d4694797f76831f}{decrypt\+With\+Private\+Key}}(\$encrypted\+Message)}
+
+\Hypertarget{_r_s_a__obscure_8php_a238e8759da54cfc6e0ecd929dbcd3f88}\index{RSA\_obscure.php@{RSA\_obscure.php}!\$encryptedMessage@{\$encryptedMessage}}
+\index{\$encryptedMessage@{\$encryptedMessage}!RSA\_obscure.php@{RSA\_obscure.php}}
+\doxysubsubsection{\texorpdfstring{\$encryptedMessage}{\$encryptedMessage}}
+{\footnotesize\ttfamily \label{_r_s_a__obscure_8php_a238e8759da54cfc6e0ecd929dbcd3f88} 
+\$encrypted\+Message = \mbox{\hyperlink{_r_s_a__obscure_8php_a794bb25ead12b9fb6b2f0043a8e0cc6b}{encrypt\+With\+Public\+Key}}("{}Ceci est un message de test pour le chiffrement RSA."{})}
+
